@@ -45,7 +45,6 @@ class: center
 
 # What is wildlife?
 
-.center-50[![](WhatIsWildlife.png)]
 
 
 
