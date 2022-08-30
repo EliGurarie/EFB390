@@ -1,0 +1,39 @@
+---
+title: "Wildlife Ecology and Management"
+subtitle: "EFB 390: Fall 2022"
+author: "Prof. [Elie Gurarie](https://eligurarie.github.io/)"
+output: 
+  rmdformats::readthedown:
+    toc_depth: 5
+    thumbnails: TRUE
+    anchor_sections: FALSE
+---
+
+
+```{r, echo=FALSE, eval = TRUE}
+htmltools::img(src = "assets/ESFStacked_Full color.png", alt = 'banner', 
+               style = 'position:absolute; top:0; right:0; padding:10px; width:150px')
+```
+
+
+### Course Materials
+
+Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page containes lectures, assignments and other resources. 
+
+### Lectures
+
+- [0: Highlights of the Syllabus](lectures/HighlightsOfTheSyllabus.html)
+
+
+
+
+
+<!--
+instructions:
+git push origin gh-pages
+
+Or, to merge with (non-existent) main:
+1. git checkout gh-pages
+2. git merge main
+3. git checkout main
+--> 
