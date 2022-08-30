@@ -23,7 +23,7 @@ Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page c
 ### Lectures
 
 - [0: Highlights of the Syllabus](lectures/HighlightsOfTheSyllabus.html)
-
+- [1: Basics and Definitions](lectures/Lecture01/Lecture_Basics.html)
 
 
 
