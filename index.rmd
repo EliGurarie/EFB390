@@ -18,13 +18,13 @@ htmltools::img(src = "assets/ESFStacked_Full color.png", alt = 'banner',
 
 ### Course Materials
 
-Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page containes lectures, assignments and other resources. 
+Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page contains lectures, assignments and other resources. 
 
 ### Lectures
 
 - [0: Highlights of the Syllabus](lectures/HighlightsOfTheSyllabus.html)
 - [1: Basics and Definitions](lectures/Lecture01/Lecture_Basics.html)
-
+- [2: Deep Human-Wildlife History](lectures/Lecture02/Lecture02_DeepHistory.html)
 
 
 
