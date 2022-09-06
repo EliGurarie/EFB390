@@ -28,6 +28,10 @@ Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page c
 - [3: Human-Wildlfe History: Part II](lectures/Lecture03/Lecture03_HistoryPartII.html) ([pdf](pdfs/Lecture03_HistoryPartII.pdf))
 
 
+```{r, echo = FALSE, eval = FALSE}
+# renderthis::to_pdf("file.rmd")
+```
+
 <!--
 instructions:
 git push origin gh-pages
