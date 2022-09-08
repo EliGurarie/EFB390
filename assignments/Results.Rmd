@@ -1,0 +1,109 @@
+---
+title: 'Wildlife in the News'
+subtitle: "Assignment 1 Results"
+author: "Chloe and Dr. G"
+date: "`r Sys.Date()`"
+output: 
+  xaringan::moon_reader:
+    self-contained: true
+    css: ["default", "default-fonts", "mycss.css"]
+    nature:
+      highlightStyle: github
+      countIncrementalSlides: false
+      highlightLines: true
+      titleSlideClass: ["left","middle"]
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, fig.align = "center", message = FALSE, warning = FALSE)
+```
+
+```{r}
+f <- list.files()
+require(knitr)
+```
+
+
+```{r colsFunction, eval = FALSE, echo = FALSE}
+#system("cp ../mycss.css ./")
+#system("cp images/huntingwithcheetahs.jpg ./bg.jpg")
+xaringan::inf_mr()
+```
+
+
+
+
+background-image: url("Assgn1_spp.png")
+background-size: 70%
+class: center
+
+
+### What species were involved? 
+
+
+---
+class: center
+### What people were involved? 
+
+```{r, align = "center", out.height = "90%"}
+include_graphics(f[2])
+```
+
+
+---
+
+background-image: url("Assgn1_locs.png")
+background-size: 70%
+class: center
+
+
+### Where were they? 
+
+
+
+---
+### What was the nature of the interaction? 
+
+```{r}
+include_graphics(f[1])
+```
+
+
+
+---
+background-image: url("Assng1_titles.png")
+background-size: 70%
+class: center
+
+### What were the headlines?
+
+
+---
+background-image: url("Assgn1_sources.png")
+background-size: 70%
+class: center
+### News sources
+
+---
+
+### Surprise popular story
+
+![](Freya0.png)
+
+---
+
+### Surprise popular story
+
+![](Freya1.png)
+
+
+---
+
+### Surprise popular story
+
+![](Freya2.png)
+
+
+
