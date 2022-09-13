@@ -27,15 +27,15 @@ Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page c
 ### Unit I. Basics and history
 
 - [1: Basics and Definitions](lectures/Lecture01/Lecture_Basics.html) ([pdf](pdfs/Lecture01_Basics.pdf))
-- [2: Deep Human-Wildlife History](lectures/Lecture02/Lecture02_DeepHistory.html) ([pdf](pdfs/Lecture02_DeepHistory.pdf))
-- [3: Human-Wildlfe History - Part II](lectures/Lecture03/Lecture03_HistoryPartII.html) ([pdf](lectures/Lecture03/Lecture03_HistoryPartII.pdf))
+- [2: Deep Human-Wildlife History](lectures/Lecture02/Lecture02_DeepHistory.html)  ([pdf](pdfs/Lecture02_DeepHistory.pdf))
+- [3: Human-Wildlfe History - Part II](lectures/Lecture03/Lecture03_HistoryPartII.html)  ([pdf](lectures/Lecture03/Lecture03_HistoryPartII.pdf))
 - [HW1: Wildlife in the News (results)](assignments/Results.html)
 
 
 ### Unit II. Estimation and Sampling
 
-- [4: Counting Animals - Part I](lectures/Lecture04/Lecture04_CountingAnimals.html)([pdf](lectures/Lecture04/Lecture04_CountingAnimals.pdf))
-
+- [4: Counting Animals - Part I](lectures/Lecture04/Lecture04_CountingAnimals.html) ([pdf](lectures/Lecture04/Lecture04_CountingAnimals.pdf))
+- [5: Counting Animals - Part II](lectures/Lecture05/Lecture05_CountingAnimals_PartII.html) ([pdf](lectures/Lecture04/Lecture04_CountingAnimals.pdf))
 
 ```{r, echo = FALSE, eval = FALSE}
 # renderthis::to_pdf("file.rmd")

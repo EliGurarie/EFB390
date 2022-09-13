@@ -1,0 +1,13 @@
+name: EFB390_Sampling
+title: EFB390_Sampling
+username:
+account: egurarie
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6997226
+bundleId: 6298015
+url: https://egurarie.shinyapps.io/EFB390_Sampling/
+when: 1663081772.38577
+lastSyncTime: 1663081772.38579
+asMultiple: FALSE
+asStatic: FALSE
