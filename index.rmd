@@ -36,7 +36,10 @@ Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page c
 
 - [4: Counting Animals - Part I](lectures/Lecture04/Lecture04_CountingAnimals.html) ([pdf](lectures/Lecture04/Lecture04_CountingAnimals.pdf))
 - [5: Counting Animals - Part II](lectures/Lecture05/Lecture05_CountingAnimals_PartII.html) ([pdf](lectures/Lecture04/Lecture04_CountingAnimals.pdf))
-- [6: Counting Animals - Part IIb](lectures/Lecture06/Lecture05_CountingAnimals_PartIIb.html)
+- [6a: Counting Animals - Sampling Uncertainty](lectures/Lecture06/Lecture06a_CountingAnimals_Uncertainty.html) ([pdf](lectures/Lecture06/Lecture06a_CountingAnimals_Uncertainty.pdf))
+- [6b: Example of Antarctic Ice Seals](lectures/Lecture06/Lecture06b_EstimatingAntarcticIceSeals.pdf)
+- [6c: Intro to Mark-Recapture](lectures/Lecture06/Lecture06c_MarkRecapture_OphelieCouriot.pdf) (guest lecture by [Dr. Ophélie Couriot](https://sites.google.com/view/opheliecouriot/cv))
+
 
 ```{r, echo = FALSE, eval = FALSE}
 # renderthis::to_pdf("file.rmd")

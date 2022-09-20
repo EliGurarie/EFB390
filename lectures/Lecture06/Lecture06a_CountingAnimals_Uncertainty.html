@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>.white[Sample Counts: Quantifying Uncertainty]</title>
+    <meta charset="utf-8" />
+    <meta name="author" content=".white[Dr. Elie Gurarie]" />
+    <script src="Lecture06a_CountingAnimals_Uncertainty_files/header-attrs-2.14/header-attrs.js"></script>
+    <link href="Lecture06a_CountingAnimals_Uncertainty_files/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="Lecture06a_CountingAnimals_Uncertainty_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link rel="stylesheet" href="mycss.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: top, center, title-slide
+
+.title[
+# .white[Sample Counts: Quantifying Uncertainty]
+]
+.subtitle[
+## .white[EFB 390: Wildlife Ecology and Management]
+]
+.author[
+### .white[Dr. Elie Gurarie]
+]
+.date[
+### .white[September 20, 2022]
+]
+
+---
+
+
+&lt;!-- https://bookdown.org/yihui/rmarkdown/xaringan-format.html --&gt;
+
+
+
+
+
+
+## The trickiest thing in sampling
+
+Is computing the *precision* (standard errors / confidence intervals)
+
+![](images/MillerEstimator.png)
+
+---
+### General principle: The bigger the sample, the smaller the error. 
+
+
+`1.` If `\(a_s \ll A\)`  (i.e. low sampling intensity)
+
+`$$SE(\widehat{N}) = {A \over a} \sqrt{\sum n_i}$$`
+**remember:** `\(n_s = \sum n_i\)` is the total sample count
+
+.center.red[
+in our example: `\(SE = 100²/(10\times10²) \sqrt{30} = 54.8\)`
+]
+
+--
+
+
+
+---
+class: small
+
+## Example - single transect, simple formula
+
+.center[
+`\(SE(\widehat{D}) = {1 \over a}\sqrt{\sum n_i}\,\,\,\)` and `\(SE(\widehat{N}) = A \times SE(\widehat{D})\)`
+]
+
+
+
+
+.pull-left[
+
+.red.large.center[
+`\(n = 8\)`; `\(a = 1000\)`; `\(A = 10,000\)`
+]
+
+![](Lecture06a_CountingAnimals_Uncertainty_files/figure-html/unnamed-chunk-3-1.png)&lt;!-- --&gt;
+
+
+]
+
+--
+
+
+.pull-right[
+
+
+
+#### point estimates
+
+`$$\widehat{d} = 8/1,000 = .008$$`
+`$$\widehat{N} = \widehat{d} \times A = 80$$`
+
+#### standard errors:
+
+`$$SE(\widehat{D}) = {\sqrt{8} \over 1000}  = 0.0028$$`
+`$$SE(\widehat{N}) = 0.0028 \times 10,000 = 28.28$$`
+#### final abundance estimate:
+
+.darkred[
+`$$\widehat{N} = 80$$`
+`$$95\%\, CI(\widehat{N}) = \widehat{N} \pm {1.96 \times SE(\widehat{N})} = \{24.5, 135\}$$`
+]
+]
+
+
+---
+
+.pull-left[
+
+#### This is why you *want* lots of transects:
+
+
+![](Lecture06a_CountingAnimals_Uncertainty_files/figure-html/unnamed-chunk-4-1.png)&lt;!-- --&gt;
+To capture variation!
+
+]
+
+
+--
+
+.pull-right[
+
+#### This is also why you go along the **gradient** of variation:
+
+![](Lecture06a_CountingAnimals_Uncertainty_files/figure-html/unnamed-chunk-5-1.png)&lt;!-- --&gt;
+
+.red[**gradient**] - means slope of (steepest) change
+]
+
+
+
+
+
+---
+
+## More complex formulae
+
+
+ from Fryxell book Chapter 12:
+
+![](images/fryxellformulae.png)
+These are used when **sampling areas** are unequal, and account for differences when sampling **with replacement** or **without replacement**. 
+
+
+---
+
+## Simple-SWR
+
+- **Simple:** Equal sized sampling frames `\(a_i\)` all equal
+- **SWR:** Sampling 'with replacement', i.e. frames *OVERLAP*; some individuals counted more than once.. 
+
+
+$$SE(\widehat{D}) = {1 \over a_i \sqrt{k(k-1)}} \times \sqrt{\sum n_i^2 - {\left(\sum n_i \right)^2 / k}} $$
+
+`$$SE(\widehat{N}) = A \times SE(\widehat{D})$$`
+
+variable | meaning | in book
+:---:|:---:|:---:
+`\(k\)` | number of units sampled | .green[*n*]
+`\(a_i\)` | the area of a *single* unit | .green[*a*]
+`\(n_i\)` | an individual sample count  |.green[*y*]
+`\(A\)` | total study area |
+
+
+---
+
+## Example:
+
+.pull-left[
+![](Lecture06a_CountingAnimals_Uncertainty_files/figure-html/unnamed-chunk-6-1.png)&lt;!-- --&gt;
+
+
+.red[
+**data:** counts = {2,3,1,1}
+
+a = 100; A = 10,000]
+
+]
+
+--
+
+.pull-right[
+- `\(\widehat{N} = {2+3+1+1 \over 100} \times 10,000  = 70\)`
+
+- `\(SE(\widehat{N}) = {10,000 \over 100 \times \sqrt{4 \times 3}} \times \\\sqrt{(1 + 1 + 9 + 4) - {(1+1+3+2)^2\over 4}}\)`
+
+- `\(SE(\widehat{N}) = {50 \over \sqrt{3}} \times \sqrt{15 - {49 \over 4}} = 48\)`
+
+- `\(\widehat{N} = 70; \,\, 95\% \textrm{CI} = (-23, 164)\)`
+
+.green[*Anything wrong with this confidence interval?*]
+
+]
+
+
+---
+
+## Example:  More Heterogeneity
+
+.pull-left[
+
+
+.darkred[
+**data:** 
+
+- counts = {0,0,0,8}
+- a = 100; A = 10,000
+
+]
+
+![](Lecture06a_CountingAnimals_Uncertainty_files/figure-html/unnamed-chunk-7-1.png)&lt;!-- --&gt;
+
+
+]
+
+--
+
+.pull-right[
+.green[
+`\(\widehat{N} = 80\)`
+]
+`\(SE(\widehat{N}) =\\ {50 \over \sqrt{3}} \times \sqrt{{(0+0+0+8)^2 - {(0+0+0+8^2) \over 4}}} = \\ = {50 \over \sqrt{3}} \times \sqrt{48}  = {50 \over \sqrt{3}} {4\sqrt{3}} = 200\)`
+
+.green[ 
+`$$95\% \textrm{CI} = (-130, 470)$$`
+]
+
+
+.darkred[**Enormous confidence intervals, because of enormous variability in samples!**]
+]
+
+
+---
+
+## Simple - SWOR
+
+- **SWOR:** Sampling *without* replacement, i.e. design guarnatees no individual is counted more than once. 
+
+
+`$$SE(\widehat{D_{swor}}) = SE(\widehat{D_{swr}}) \times \sqrt{1-{a / A}}$$`
+
+The larger the proportion sampled (*coverage*) - the smaller the **sampling error.**
+
+--
+
+## Ratio (SWR/SWOR)
+
+**Ratio**: unequal sample frames .blue[(e.g. both hula hoops and meter squares)].
+
+
+- `\(\widehat{D} = \sum n_i / \sum y_i\)` (same as before)
+
+- Standard errors: more complicated ... see formulae. 
+
+---
+
+## Take-aways
+
+Is it **very important** to quantify uncertainty!   But also, can be **hard** (and **disheartening**).
+
+--
+
+Larger samples &amp; higher coverage `\(\to\)`  smaller errors `\(\to\)` narrower confidence intervals `\(\to\)` more precision. 
+
+--
+
+The error estimates take into account **sample randomness**, but also **heterogeneity**.  The more **heterogeneous** the distribution the larger the errors
+--
+
+  - unless .green[(*spoiler alert*)] you take that into account in your **distribution modelling** ...
+ 
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"countIncrementalSlides": false,
+"highlightLines": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
