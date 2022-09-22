@@ -39,13 +39,13 @@ Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page c
 - [6a: Counting Animals - Sampling Uncertainty](lectures/Lecture06/Lecture06a_CountingAnimals_Uncertainty.html) ([pdf](lectures/Lecture06/Lecture06a_CountingAnimals_Uncertainty.pdf))
 - [6b: Example of Antarctic Ice Seals](lectures/Lecture06/Lecture06b_EstimatingAntarcticIceSeals.pdf)
 - [6c: Intro to Mark-Recapture](lectures/Lecture06/Lecture06c_MarkRecapture_OphelieCouriot.pdf) (guest lecture by [Dr. Ophélie Couriot](https://sites.google.com/view/opheliecouriot/cv))
-
+- [7: More on Mark-Recapture and Index Counts](lectures/Lecture07/Lecture07_IndexCounts.html) ([pdf](lectures/Lecture07/Lecture07_IndexCounts.pdf))
 
 ```{r, echo = FALSE, eval = FALSE}
 # renderthis::to_pdf("file.rmd")
 ```
 
-<!--
+<!-- 
 instructions:
 git push origin gh-pages
 
