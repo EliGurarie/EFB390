@@ -274,7 +274,7 @@ Examples:
 Then ...
 $$\widehat{N_1} = {I_1 C \over I_1 − I_2}$$
 
-$$SD(\widehat{N_1}) = \widehat{N_1} {q^* \over p^*} \sqrt{{1 \over I_1} + {1 \over I_2}}$$
+$$SD(\widehat{N_1}) = \widehat{N_1} {q^* \over p^*} \sqrt{\frac{1}{I_1} + \frac{1}{I_2}}$$
 
 - $p^*$ is proportion removed: $I_1 - I_2 \over I_1$
 - $q^*$ is proportion remaining: $1 - p^*$
