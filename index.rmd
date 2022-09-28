@@ -18,18 +18,13 @@ htmltools::img(src = "assets/ESFStacked_Full color.png", alt = 'banner',
 
 ## Course Materials
 
-Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page contains lectures, assignments and other resources. 
+Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page contains lectures, assignments and other resources.  The latest lectures are near the top. 
 
 ## Lectures
 
-- [0: Highlights of the Syllabus](lectures/HighlightsOfTheSyllabus.html) ([pdf](pdfs/Lecture00_HighlightsOfTheSyllabus.pdf))
+### Unit III. Ranges, Habitats, Movements
 
-### Unit I. Basics and history
-
-- [1: Basics and Definitions](lectures/Lecture01/Lecture_Basics.html) ([pdf](pdfs/Lecture01_Basics.pdf))
-- [2: Deep Human-Wildlife History](lectures/Lecture02/Lecture02_DeepHistory.html)  ([pdf](pdfs/Lecture02_DeepHistory.pdf))
-- [3: Human-Wildlfe History - Part II](lectures/Lecture03/Lecture03_HistoryPartII.html)  ([pdf](lectures/Lecture03/Lecture03_HistoryPartII.pdf))
-- [HW1: Wildlife in the News (results)](assignments/Results.html)
+- [**8: Ranges and Habitats**](lectures/Lecture08/Lecture_Habitat_PartI.html) ([pdf](lectures/Lecture08/Lecture_Habitat_Part1.pdf))
 
 
 ### Unit II. Estimation and Sampling
@@ -40,6 +35,20 @@ Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page c
 - [6b: Example of Antarctic Ice Seals](lectures/Lecture06/Lecture06b_EstimatingAntarcticIceSeals.pdf)
 - [6c: Intro to Mark-Recapture](lectures/Lecture06/Lecture06c_MarkRecapture_OphelieCouriot.pdf) (guest lecture by [Dr. Ophélie Couriot](https://sites.google.com/view/opheliecouriot/cv))
 - [7: More on Mark-Recapture and Index Counts](lectures/Lecture07/Lecture07_IndexCounts.html) ([pdf](lectures/Lecture07/Lecture07_IndexCounts.pdf))
+
+### Unit I. Basics and history
+
+- [1: Basics and Definitions](lectures/Lecture01/Lecture_Basics.html) ([pdf](pdfs/Lecture01_Basics.pdf))
+- [2: Deep Human-Wildlife History](lectures/Lecture02/Lecture02_DeepHistory.html)  ([pdf](pdfs/Lecture02_DeepHistory.pdf))
+- [3: Human-Wildlfe History - Part II](lectures/Lecture03/Lecture03_HistoryPartII.html)  ([pdf](lectures/Lecture03/Lecture03_HistoryPartII.pdf))
+- [HW1: Wildlife in the News (results)](assignments/Results.html)
+
+### Class basics
+
+- [0: Highlights of the Syllabus](lectures/HighlightsOfTheSyllabus.html) ([pdf](pdfs/Lecture00_HighlightsOfTheSyllabus.pdf))
+
+
+
 
 ```{r, echo = FALSE, eval = FALSE}
 # renderthis::to_pdf("file.rmd")
