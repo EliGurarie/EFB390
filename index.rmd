@@ -20,9 +20,11 @@ htmltools::img(src = "assets/ESFStacked_Full color.png", alt = 'banner',
 
 Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page contains lectures, assignments and other resources.  [**Jump to latest unit**](#where-are-the-animals-and-why).
 
-## Class basics
 
-- [0: Highlights of the Syllabus](lectures/HighlightsOfTheSyllabus.html) ([pdf](pdfs/Lecture00_HighlightsOfTheSyllabus.pdf))
+#### Class basics
+
+- [Highlights of the Syllabus](lectures/HighlightsOfTheSyllabus.html) ([pdf](pdfs/Lecture00_HighlightsOfTheSyllabus.pdf))
+
 
 
 ## Lectures
