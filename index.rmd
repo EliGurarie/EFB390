@@ -52,8 +52,9 @@ Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page c
 #### *Where are the animals?  And Why?*
 
 - [8: Ranges and Habitats](lectures/Lecture08/Lecture_Habitat_PartI.html) ([pdf](lectures/Lecture08/Lecture_Habitat_Part1.pdf))
-- [**9: Niches and Habitats**](lectures/Lecture09/Lecture09_NichesAndHabitats.html) ([pdf](lectures/Lecture09/Lecture09_NichesAndHabitats.pdf))
-- [**9b: Caribou Habitat Selection - Guest Lecture Gurarie** (pdf)](lectures/Lecture09/Lecture09b_Gurarie_PorcupineHabitatSelection.pdf)
+- [9: Niches and Habitats](lectures/Lecture09/Lecture09_NichesAndHabitats.html) ([pdf](lectures/Lecture09/Lecture09_NichesAndHabitats.pdf))
+- [9b: Caribou Habitat Selection - Guest Lecture Gurarie (pdf)](lectures/Lecture09/Lecture09b_Gurarie_PorcupineHabitatSelection.pdf)
+- [**10: Modeling Everything (but especially habitats)**](lectures/Lecture10/Lecture_Modeling.html) ([pdf](lectures/Lecture10/Lecture10_Modeling.pdf))
 
 
 ```{r, echo = FALSE, eval = FALSE}
