@@ -59,8 +59,9 @@ Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page c
 ### Unit IV. Population Ecology
 #### *Why are there as many as there are?*
 
-- [**11a: Part I - Exponential Growth**](lectures/Lecture11/Lecture_PopulationEcology.html) ([pdf](lectures/Lecture11/Lecture_PopulationEcology_PartI.pdf))
-- [**11b: Part II - Limits to Growth**](lectures/Lecture11/Lecture_PopulationEcology_PartII.html) ([pdf](lectures/Lecture11/Lecture_PopulationEcology_PartII.pdf))
+- [11a: Part I - Exponential Growth](lectures/Lecture11/Lecture_PopulationEcology.html) ([pdf](lectures/Lecture11/Lecture_PopulationEcology_PartI.pdf))
+- [11b: Part II - Limits to Growth](lectures/Lecture11/Lecture_PopulationEcology_PartII.html) ([pdf](lectures/Lecture11/Lecture_PopulationEcology_PartII.pdf))
+- [**11c: Part III - All the Rest of Population Ecology**](lectures/Lecture11/Lecture_PopulationEcology_PartIII.html) ([pdf](lectures/Lecture11/Lecture_PopulationEcology_PartIII.pdf))
 
 ```{r, echo = FALSE, eval = FALSE}
 # renderthis::to_pdf("file.rmd")
