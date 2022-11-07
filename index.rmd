@@ -61,7 +61,12 @@ Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page c
 
 - [11a: Part I - Exponential Growth](lectures/Lecture11/Lecture_PopulationEcology.html) ([pdf](lectures/Lecture11/Lecture_PopulationEcology_PartI.pdf))
 - [11b: Part II - Limits to Growth](lectures/Lecture11/Lecture_PopulationEcology_PartII.html) ([pdf](lectures/Lecture11/Lecture_PopulationEcology_PartII.pdf))
-- [**11c: Part III - All the Rest of Population Ecology**](lectures/Lecture11/Lecture_PopulationEcology_PartIII.html) ([pdf](lectures/Lecture11/Lecture_PopulationEcology_PartIII.pdf))
+- [11c: Part III - All the Rest of Population Ecology**](lectures/Lecture11/Lecture_PopulationEcology_PartIII.html) ([pdf](lectures/Lecture11/Lecture_PopulationEcology_PartIII.pdf))
+
+
+### Unit V. The North American Model of Wildlife Conservation
+
+- **[12: The North American Model of Wildlife Conservation](lectures/Lecture12/Lecture_NAM.html) ([pdf](lectures/Lecture12/Lecture_NAM.pdf))**
 
 ```{r, echo = FALSE, eval = FALSE}
 # renderthis::to_pdf("file.rmd")
