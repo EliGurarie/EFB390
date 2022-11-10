@@ -72,6 +72,11 @@ Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page c
 # renderthis::to_pdf("file.rmd")
 ```
 
+
+### Exam II: Readings
+
+- are [here](https://drive.google.com/drive/folders/1A-QLapqbN2C4RJ-1j_-TLq7iIeCg3uNN?usp=sharing)
+
 <!-- 
 instructions:
 git push origin gh-pages
