@@ -66,11 +66,17 @@ Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page c
 
 ### Unit V. The North American Model of Wildlife Conservation
 
-- **[12: The North American Model of Wildlife Conservation](lectures/Lecture12/Lecture_NAM.html) ([pdf](lectures/Lecture12/Lecture_NAM.pdf))**
+- [12: The North American Model of Wildlife Conservation](lectures/Lecture12/Lecture_NAM.html) ([pdf](lectures/Lecture12/Lecture_NAM.pdf))
 
 ```{r, echo = FALSE, eval = FALSE}
 # renderthis::to_pdf("file.rmd")
 ```
+
+### Guest Lectures
+
+- Eaqan Chaudhry: [**Cottontail Stress, Habitat Use and Survival**](lectures/GuestLectures/Chaudhry_guestlecture_EFB390.pdf)
+-  Dr. Michael Schummer: [**Migratory Bird Ecology and Management**](lectures/GuestLectures/Schummer_MigratoryBirdEcologyAndManagement.pdf)
+-  Riley Stedman: [**Habitat Selection of Mallards and Black Ducks in Eastern Long Island**](lectures/GuestLectures/Stedman_Habitat selection of Ducks on Eastern Long Island.pdf)
 
 
 ### Exam II: Readings
