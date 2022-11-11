@@ -72,14 +72,14 @@ Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page c
 # renderthis::to_pdf("file.rmd")
 ```
 
-### Guest Lectures
+## Guest Lectures
 
 - Eaqan Chaudhry: [**Cottontail Stress, Habitat Use and Survival**](lectures/GuestLectures/Chaudhry_guestlecture_EFB390.pdf)
 -  Dr. Michael Schummer: [**Migratory Bird Ecology and Management**](lectures/GuestLectures/Schummer_MigratoryBirdEcologyAndManagement.pdf)
 -  Riley Stedman: [**Habitat Selection of Mallards and Black Ducks in Eastern Long Island**](lectures/GuestLectures/Stedman_Habitat selection of Ducks on Eastern Long Island.pdf)
 
 
-### Exam II: Readings
+## Exam II: Readings
 
 - are [here](https://drive.google.com/drive/folders/1A-QLapqbN2C4RJ-1j_-TLq7iIeCg3uNN?usp=sharing)
 
