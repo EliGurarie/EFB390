@@ -17,15 +17,34 @@ htmltools::img(src = "assets/ESFStacked_Full color.png", alt = 'banner',
 
 <img src="assets/moose.jpg" alt="wolf-caribou-moose" style="width:400px" align="right"/>
 
+**Instructor:** Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/)
+
+**Office Hours:**  Thursday 3:30-4:30 or by appointment, Illick 2-6
+
+**Co-instructors:** 
+
+- Chloe Beaupré | Monday 12-1pm, Illick 244
+- Sydney Opel | TBA, Illick 244
+
+**Locations and Times:** 
+
+- Lecture: Illick 5; Tue-Thu 2:00-3:20
+- Recitation Sections: 
+  - Tues, 3:30-4:25 - Baker 310
+  - Tues, 5:00-5:55 - Baker 314
+  - Wed, 3:45-4:40 - Baker 314
+  - Thurs, 8:00-8:55 - Baker 314
+
 
 ## Course Materials
 
-Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page contains lectures, assignments and other resources.  [**Jump to latest unit**](#where-are-the-animals-and-why).
+This page contains lectures, assignments and other resources.  [**Jump to latest unit**](#where-are-the-animals-and-why).
+
 
 
 #### Class basics
 
-- [Highlights of the Syllabus](lectures/HighlightsOfTheSyllabus.html) ([pdf](pdfs/Lecture00_HighlightsOfTheSyllabus.pdf))
+- [Syllabus](EFB390_Syllabus_2023.pdf)
 
 
 ## Lectures
@@ -33,7 +52,7 @@ Taught by Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/).  This page c
 ### Unit I. Basics and history
 #### *What do animals mean to us?*
 
-- [1: Basics and Definitions](lectures/Lecture01/Lecture_Basics.html) ([pdf](pdfs/Lecture01_Basics.pdf))
+- *lecture to come*
 
 
 ## Archive
