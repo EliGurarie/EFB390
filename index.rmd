@@ -17,9 +17,9 @@ htmltools::img(src = "assets/ESFStacked_Full color.png", alt = 'banner',
 
 <img src="assets/moose.jpg" alt="wolf-caribou-moose" style="width:400px" align="right"/>
 
-**Instructor:** Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/)
+**Instructor:** Dr. [Elie Gurarie](https://www.esf.edu/faculty/gurarie/), Illick 206
 
-**Office Hours:**  Thursday 3:30-4:30 or by appointment, Illick 2-6
+**Office hours:**  Thursday 3:30-4:30 or by appointment, 
 
 **Co-instructors:** 
 
@@ -38,23 +38,21 @@ htmltools::img(src = "assets/ESFStacked_Full color.png", alt = 'banner',
 
 ## Course Materials
 
-This page contains lectures, assignments and other resources.  [**Jump to latest unit**](#where-are-the-animals-and-why).
-
-
+This page mainly contains lectures, sometimes assignments and other resources. 
 
 #### Class basics
 
 - [Syllabus](EFB390_Syllabus_2023.pdf)
-
+- [Lecture 0: Highlights of the Syllabus](lectures/Lecture00/HighlightsOfTheSyllabus.html) 
 
 ## Lectures
 
 ### Unit I. Basics and history
 #### *What do animals mean to us?*
 
-- *lecture to come*
+- [Lecture 1: Definitions](lectures/Lecture01/Lecture_Basics.html)
 
 
 ## Archive
 
-- 2022 materials can be found here:  [2022 course](Archive2022/index.html)
+- 2022 materials can be found [here](Archive2022/index_archive.html)
