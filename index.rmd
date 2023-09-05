@@ -44,7 +44,7 @@ This page mainly contains lectures, sometimes assignments and other resources.
 
 - [Syllabus](EFB390_Syllabus_2023.pdf)
 - [Lecture 0: Highlights of the Syllabus](lectures/Lecture00/HighlightsOfTheSyllabus.html)([pdf](lectures/Lecture00/HighlightsOfTheSyllabus.pdf)) 
-- [Mini-pseudo Lecture on Caribou and Research](lectures/Lecture02/ResearchAndCaribou.pdf) 
+
 
 ## Lectures
 
@@ -52,6 +52,13 @@ This page mainly contains lectures, sometimes assignments and other resources.
 #### *What do animals mean to us?*
 
 - [Lecture 1: Definitions](lectures/Lecture01/Lecture_Basics.html) ([pdf](lectures/Lecture01/Lecture_Basics.pdf))
+
+- [Mini-Lecture 2: on Caribou and Research](lectures/Lecture02/ResearchAndCaribou.pdf) 
+
+- [Wildlife in the News](lectures/Lecture03/WildlifeInTheNews.pdf)
+
+- [Lecture 3: Deep History](lectures/Lecture03/Lecture03_DeepHistory.html)
+
 
 
 ## Archive
