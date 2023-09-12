@@ -48,18 +48,25 @@ This page mainly contains lectures, sometimes assignments and other resources.  
 
 ## Lectures
 
-### Unit I. Basics and history
-#### *What do animals mean to us?*
+### Unit I. Basics and history: *What do animals mean to us?*
 
 - [Lecture 1: Definitions](lectures/Lecture01/Lecture_Basics.html) ([pdf](lectures/Lecture01/Lecture_Basics.pdf))
 
 - [Mini-Lecture 2: on Caribou and Research](lectures/Lecture02/ResearchAndCaribou.pdf) 
 
-- [Wildlife in the News](lectures/Lecture03/WildlifeInTheNews.pdf)
-
 - [Lecture 3: Deep History of Humand and Wildlife](lectures/Lecture03/Lecture03_DeepHistory.html)
 
 - [Lecture 4: History of Humans and Wildlife, Part II](lectures/Lecture04/Lecture04_HistoryPartII.html)
+
+**extra:** [Wildlife in the News results](lectures/Lecture03/WildlifeInTheNews.pdf)
+
+
+### Unit II. Estimating Abundances: *How many animals are there?*
+
+- [Lecture 5: Counting Animals Part I](lectures/Lecture05/Lecture05_CountingAnimals.html)
+
+- [Lecture 6: Counting Animals Part II](lectures/Lecture06/Lecture06_CountingAnimals_PartII.html)
+
 
 ## Archive
 

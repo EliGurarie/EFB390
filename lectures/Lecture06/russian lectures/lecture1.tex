@@ -1,0 +1,426 @@
+\documentclass[11pt]{beamer}
+\usepackage[cp1251]{inputenc}
+\usepackage[russian]{babel}
+
+\usepackage{color}
+\usepackage[graph,frame,arrow,tips,matrix]{xy}
+\setbeamertemplate{items}[ball] 
+\setbeamertemplate{blocks}[rounded][shadow=true] 
+
+\definecolor{gurarieblue}{rgb}{.1,.1,.5}
+
+\usecolortheme{gurarie}
+\setbeamertemplate{items}[ball] 	
+\setbeamertemplate{navigation symbols}{} 
+
+%\usepackage{gurarie}
+%\usepackage[final]{animate}
+\usepackage{multicol}
+
+
+% Very nice hiliting feature
+	\def\hilite<#1>{
+		\temporal<#1>
+		{\color{blue!20}}
+		{\color{blue}}
+		{\color{darkgray}}}		
+		
+% Very nice hiliting feature
+		\def\redhilite<#1>{
+		\temporal<#1>
+		{\color{red!10}}
+		{\color{red}}
+		{\color{brightred}}}	
+
+
+\definecolor{green1}{rgb}{0,.4,.1}
+\definecolor{red1}{rgb}{.7,.1,.1}
+\definecolor{cream1}{rgb}{.97,.97,.83}
+\definecolor{deepcream}{rgb}{.2,.2,.05}
+\definecolor{darkblue}{rgb}{0,0,0.3}
+\definecolor{emphasis}{rgb}{0,.5,.1}
+
+\newcommand{\Em}[1]{\emph{\color{emphasis}{#1} }\color{black}}
+\newcommand{\bl}[1]{\color{darkblue}{#1 }\color{black}}
+\newcommand{\gr}[1]{\color{green1}{#1 }\color{black}}
+\newcommand{\rd}[1]{\color{red1}{#1 }\color{black}}
+\newcommand{\ed}{\end{document}}
+\newcommand{\nd}{\vspace{.1in}}
+\newcommand{\nup}{\vspace{-.1in}}
+
+\setbeamerfont{small}{size=\small}
+\setbeamerfont{smaller}{size=\footnotesize}
+\setbeamerfont{tiny}{size=\tiny}
+\setbeamerfont{teeny}{size=\scriptsize}
+\setbeamercolor{uppercol}{fg=cream1,bg=green1}
+\setbeamercolor{lowercol}{fg=black,bg=cream1}
+\setbeamercolor{boxcolor}{fg=cream1,bg=green1}
+\setbeamercolor{boxcolor1}{fg=white,bg=darkblue}
+\setbeamercolor{boxcolor2}{fg=black,bg=cream1}
+
+\newcommand{\Back}[1]{\setbeamertemplate{background canvas}{\includegraphics[height=\paperheight]{#1}}}
+
+\mode<presentation>
+
+\setbeamercovered{transparent}
+
+
+\begin{document}
+
+\Back{./images/TerraIncognita.jpg}	
+\begin{frame}[t]
+	\vspace{.3in}
+	\begin{center}
+	{\Large\color{green1}\textbf{Расчеты Численности Популяций:\\
+		\nd
+		\Large{Первые Шаги}}}\\
+		\vspace{.8in}
+		\large{Эли Гурарий}\\
+		\footnotesize{National Marine Mammal Laboratory, Seattle WA}\\
+		{\bl{Лекция 2 - ИПЭЭ-РАН - Апрель, 2011}}
+	\end{center}
+\end{frame}
+
+
+\Back{./images/nothing.jpg}
+\frame[t]{\frametitle{Общая цель: насчитывать зверей в популяции (\gr{$N$})}
+
+	\begin{columns}
+	\column{.2\textwidth}
+			\includegraphics[width=\textwidth]{./images/NewZealandSheep.jpg}\\
+			\includegraphics[width=\textwidth]{./images/Belugas.jpg}\\
+			\includegraphics[width=\textwidth]{./images/Elephants.jpg}\\
+			\includegraphics[width=\textwidth]{./images/HarpSeals.jpg}
+	\column{.6\textwidth}
+	
+	\small
+	\pause
+				\begin{itemize}
+				\item Если всех можем наблюдать, то \gr{$1,2,3 ... N$,}. \pause
+				\item Если же мы не можем \emph{всех} насчитовать (что на много обычнее) то мы считаем каких можем и как-то экстраполирием на всю площадь. \pause-
+				\item Когда экстраполируем - то получаем \gr{оценку} (\emph{estimate}).\\
+				\item Оценку надo оценивать, т.е.~определять \gr{ошибку} (\emph{error}). \pause
+				\end{itemize}
+	\column{.2\textwidth}
+			\includegraphics[width=\textwidth]{./images/BristolBaySeals.jpg}\\
+			\includegraphics[width=\textwidth]{./images/FlockOfFlamingos.jpg}\\
+			\includegraphics[width=\textwidth]{./images/Wildebeest.jpg}\\
+			\includegraphics[width=\textwidth]{./images/Caribou.jpg}\\
+		\end{columns}
+\nd
+\only<5->{В этой лекции, мы обсудим некоторые статистические свойства учетных данных, которые нам позволят определить качество оценнок численности.}
+}
+
+
+
+\Back{./images/nothing.jpg}
+\frame{\frametitle{Метод Квадратов (``Quadrat Method'')}
+\begin{center}
+	\only<1>{\includegraphics[width=.7\textheight]{Model1A.pdf}}
+	\only<2>{\includegraphics[width=.7\textheight]{Model1B.pdf}}
+	\only<3>{\includegraphics[width=.7\textheight]{Model1C.pdf}}\\
+	
+	\only<1>{Берем $N$ особей разпределенных на площади $A$...}
+	\only<2>{разместим случайно $n$ квадратов площади $a_i$...}
+	\only<3>{... и в этих квадратах подсчитаем число особей: $c_i$.}
+\end{center}
+}
+
+
+\frame{\frametitle{Метод Квадратов: Теория}
+	\begin{columns}
+		\column{0.45\textwidth}
+			
+		\begin{itemize}
+			\item реальная численность: \gr{$N$} \pause
+			\item реальная плотность: \gr{$D = N/A$} \pause
+			\item оценка плотности: \gr{$\widehat{D} = {\sum\limits_{i=1}^n c_i \over \sum\limits_{i=1}^n a_i}$} \pause
+			\item оценка численности: \gr{$\widehat{N} = \widehat{D} \times A$}
+			\end{itemize}
+			
+		\column{0.55\textwidth}
+			\only<1->{\includegraphics[width=\textwidth]{Model1C.pdf}}
+	\end{columns}
+}
+
+
+\frame[t]{\frametitle{Метод Квадратов: Пример}
+		\begin{columns}
+		\small
+			\column{0.5\textwidth}	
+				\begin{table}[ht]
+				\begin{center}
+				\begin{tabular}{cccc}
+				  \hline
+				 кв. & коорд. & уч. & пл.\\ 
+				  \hline
+				  А & (0, 20) & 0 & 100 \\ 
+				  B & (-40, 0) & 1 & 100 \\ 
+				  C & (20, -20) & 1 & 100 \\ 
+				  D & (40, 40) & 0 & 100 \\ 
+				  E & (-20, -40) & 3 & 100 \\ 
+				   \hline
+				\end{tabular}
+				\end{center}
+				\end{table}
+		\column{0.5\textwidth}
+				\only<1->{\includegraphics[width=\textwidth]{Model1C.pdf}}
+		\end{columns}
+	Оценка плотности: $\gr{\widehat{D} = {\sum\limits_{i=1}^n c_i \over \sum\limits_{i=1}^n a_i} = (1+1+3) / 500 = 0.01}$ \\ 
+	Оценка численности: $\gr{\widehat{N} = \widehat{D} \times A = 0.01 \times 100 \times 100 = {\bf 100}}$
+}
+
+
+\frame[c]{\frametitle{Метод Квадратов: Пример}
+	\begin{columns}
+	\column{0.5\textwidth}
+			\begin{itemize}
+				\item Оценка численности:	$\gr{\widehat{N}=100}$ \pause
+				\item Реальная численность:	$\gr{N=100}$ \pause
+				\item Означает ли это что метод точный?... \pause
+				\item \rd{\bf НЕТ!!!!}
+			\end{itemize}
+	\column{0.5\textwidth}
+				\only<1->{\includegraphics[width=\textwidth]{Model1C.pdf}}
+	\end{columns}
+}
+
+\frame[t]{\frametitle{Метод Квадратов: Пример II}
+		\begin{columns}
+		\small
+			\column{0.5\textwidth}
+			\begin{table}
+			\begin{center}	
+			\begin{tabular}{cccc}
+					\hline
+						 кв. & коорд. & уч. & пл.\\ 
+						  \hline
+						A & (20, 0) & 2 & 100 \\ 
+						B & (0, 20) & 0 & 100 \\ 
+						C & (-40, -40) & 1 & 100 \\ 
+						D & (40, 40) & 0 & 100 \\ 
+						E & (-20, -20) & 0 & 100 \\ 
+						   \hline
+		\end{tabular}
+		\end{center}
+		\end{table}
+				
+		\column{0.5\textwidth}
+				\only<1->{\includegraphics[width=\textwidth]{Model1CTake2.pdf}}
+		\end{columns}
+	Оценка плотности: $\gr{\widehat{D} = {\sum\limits_{i=1}^n c_i \over \sum\limits_{i=1}^n a_i} = (2+1) / 500 = 0.006}$ \\ 
+	Оценка численности: $\gr{\widehat{N} = \widehat{D} \times A = 0.01 \times 100 \times 100 = {\bf 60}}$
+}
+
+\frame[t]{\frametitle{Метод Квадратов: Симуляция}
+\nup
+	\begin{center}
+		\includegraphics[width=.9\textwidth]{CountSims.pdf}\\
+	\end{center}
+
+	Повторим симуляцию 1000 раз с параметрами:
+	 $N=100,\, A=100\times100,\, n = 5,\, a = 100$.
+}
+
+\frame[t]{\frametitle{Метод Квадратов: Распределение оценки учета $\widehat{N}$}
+\footnotesize
+{\bf Показатели оценки:} \\
+	$\bullet$ Среднее (\emph{mean}) или Ожидаемая величина (\emph{expected value/expectation})
+	\begin{equation*} 
+			\gr{\text{E}(N) = \mu = {1\over n} \sum\limits_{i=1}^n N_i}
+	\end{equation*}
+	
+	$\bullet$ Медиана (\emph{median}): 
+	\begin{equation*} 
+			\gr{\widetilde\mu = Q_{0.5} (N_i)}
+	\end{equation*}
+
+{\bf Показатели ошибки:} \\
+$\bullet$ Дисперсия (\emph{variance}): 
+		\begin{equation*} 
+			\gr{\text{Var}[N] = \sigma^2 = {1\over n-1} \sum\limits_{i=1}^n (N_i - \mu)^2} 
+		\end{equation*}
+$\bullet$ Стандартное отклонение (\emph{standard deviation} - SD): 
+		\begin{equation*} 
+			\gr{\sigma = \sqrt{\sigma^2}} 
+		\end{equation*}
+$\bullet$ Коэффицент вариации (\emph{coefficient of variation} - CV): 
+	\begin{equation*} 
+			\gr{\sigma / \mu}
+	\end{equation*}
+$\bullet$ Доверительный интервал (\emph{confidence interval} - CI): 
+		\begin{equation*} 
+				\gr{Q_{.025} (N_i), Q_{.975} (N_i) \approx \mu \pm 2\sigma_N}
+		\end{equation*}
+}
+
+
+\frame[t]{\frametitle{Метод Квадратов: Оценка оценки $\widehat{N}$}
+\nup
+	\begin{center}
+		\includegraphics[width=.8\textwidth]{CountSims.pdf}\\
+	\end{center}
+\nup
+\footnotesize
+Показатели оценки: \\
+\begin{tabular}{llll}
+	$\bullet$ Среднее: 	& 100.42\\
+	$\bullet$ Медиана: & 100\\
+\end{tabular}
+\nd
+
+Показатели ошибки: \\
+\begin{tabular}{llll}
+$\bullet$ Стандартное отклонение (SD): & \rd{44.32}\\
+$\bullet$ Коэффицент вариации (CV): & \rd{44\%}\\
+$\bullet$ Доверительный интервал (CI): & \rd{(20, 200) $\approx$ (12, 188)}
+\end{tabular}
+\nd\pause
+
+\normalsize
+Значит оценка $\widehat N$ {\bf верная} (\emph{accurate}), т.е. {\bf не смещенная} (\emph{unbiased}), но не очень {\bf точнaя} (\emph{precise}).
+}
+
+\frame[c]{\frametitle{Метод Квадратов: Как оценивать ошибку?}
+	\begin{center}
+	\only<1> {\bf{Распределение Пуассона}}
+	\only<2-> {$\mathbb{P}(c=k) = \frac{\lambda^k}{k!}\, e^{-\lambda}$; где $\lambda$ = ожидаемое число}
+	\only<1-2> {\\ \nd \bl{$\lambda = 1$} \\ \nd \includegraphics[width=.9\textwidth]{Poisson1.pdf} }
+	\only<3> {\\ \nd \bl{$\lambda = 4$} \\ \nd \includegraphics[width=.9\textwidth]{Poisson4.pdf} }
+	\only<4> {\\ \nd \bl{$\lambda = 10$} \\ \nd \includegraphics[width=.9\textwidth]{Poisson10.pdf} }
+	\end{center}
+}
+
+
+
+\frame[c]{ 
+	\begin{columns}
+		\column{.4\textwidth}
+			\includegraphics[width=\textwidth]{./images/SimeonPoisson.jpg}\\
+			\includegraphics[width=\textwidth]{./images/PoissonQuote.png}
+		\column{.6\textwidth}
+\footnotesize		{\bf Симеон Дени Пуассон} (1781-1840) - 
+			великий француский математик и физик, разработал теорию учетов для анализа решений судов в уголовных и гражданских делах Франции, отмечая eще в 1837-м году что: \\
+			\nd \emph{``Наука вероятностей применяется равно ко всем видам предметов - будь они моральные или физические - при условии, что в каждом случае наблюдение обеспечивают количественные данные, необходимые для ее [науки вероятностей] приложения.''}
+		\\	\nd (\footnotesize Труды по вероятности вердиктов по уголовным и гражданским делам, включая общие правила расчета вероятностей)\\
+			
+	\end{columns}
+}
+
+\frame[c]{
+			\includegraphics[width=\textwidth]{./images/PoissonProcess.png}\\
+			\nd\nd
+			В нашем применении:\\
+			\nd
+			\bl{\emph{Количество особей {\bf независимо} и {\bf случайно} распределенных в пространстве с {\bf постоянной плотностью}}.}
+}
+
+\begin{frame}[c]\frametitle{Уникальное свойство распределение Пуассона.}
+			\includegraphics[width=\textwidth]{PoissonPlot.pdf}\\
+	Если \gr{$X \sim \text{Poisson}(\lambda)$} то
+			\rd{\begin{eqnarray*} 
+					\text{E}[X] &=& \lambda \\ 
+					\text{Var}[X] &=& \lambda
+			\end{eqnarray*}}
+		то есть: {\bf Дисперсия = Ожидание = Интенсивность!} \pause \\
+		\normalsize Используя это свойство, легко можно проверить соответсвуют ли данные распределению Пуассона.
+\end{frame}
+		
+		
+\frame[t]{\frametitle{Прогноз ошибки}
+\begin{columns}
+		\column{.35\textwidth}
+		\large Оценка: $\widehat{N} = {A\over a} \sum\limits_{i=1}^n c_i$ \normalsize
+	\column{.65\textwidth}
+			\includegraphics[height=.5\textwidth]{CountSims.pdf}
+\end{columns}
+\nup\nup
+
+	\footnotesize
+		\begin{table}
+		\begin{tabular}{ccccc}
+		 {\bf Величина}	& {\bf Теория} & {\bf Прогноз} & {\bf Симуляция}\\
+			\hline
+			%$\widehat{N}$ & ${A\over a} \sum\limits_{i=1}^n c_i$ & & 100.2\\
+			$C=\sum\limits_{i=1}^n c_i$ & $\text{Poisson}(D\times a)$ & $\rd{\text{Poisson}(5)}$ & ...\\
+			$\text{E}[\widehat{N}]$ & ${A\over a} \, \text{E}[C] = {A\over a} (D \times a)$  & $\rd{{100^2\over500} 5 = 100}$ & \gr{100.42}\\
+			&&&&\\
+			$\text{Var}[\widehat{N}]$ & $\left({A\over a} \right)^2 \text{Var}[C] = \left({A\over a} \right)^2 \text{E}[C] = D\,{A^2 \over a} $ & \rd{2000} & \gr{1964}\\
+			&&&&\\
+			$\text{SD}[\widehat{N}]$ & $\sqrt{\text{Var}[\widehat{N}]}$ & \rd{44.72} & \gr{44.32}\\	
+		\end{tabular}
+		\end{table}
+}
+
+\frame[c]{\frametitle{Выводы}
+	\begin{columns}
+	\column{0.5\textwidth}
+			\begin{itemize}
+				\item Оценка численности:	\\
+					\rd{$\widehat{N} = {A\over a} \sum\limits_{i=1}^n c_i$}
+						\nd\nd\nd
+				\item Оценка ошибки: \\
+					\rd{$\widehat{\text{SD}}(\widehat{N}) = {A\over a} \sqrt{\sum\limits_{i=1}^n c_i}$}
+			\end{itemize}
+	\column{0.5\textwidth}
+				{\includegraphics[width=\textwidth]{Model1C.pdf}}\\
+				{\includegraphics[width=\textwidth]{SDExpected.pdf}}
+	\end{columns}
+}
+
+\frame[c]{\frametitle{Но - очень, очень важно иметь в виду \emph{предположения!}}
+	\begin{columns}
+	\column{0.5\textwidth}
+	\small
+		\begin{beamerboxesrounded}[upper=uppercol,lower=lowercol,shadow=true]{Предположения (\emph{Assumptions})}
+				\begin{itemize}
+					\alert<2>{\item Мы можем точно {\bf определить площадь} $A$ где могут находится особи	}
+					\alert<3>{\item Особи распространены {\bf гомогенно} внутри $A$
+						\only<3> {\footnotesize \\  - Отсутствие градиентов и предпочтений к особенным местообитаниям (\emph{habitat selection})
+											\small}}
+					\alert<4>{\item Особи распространенные  {\bf случайно} (по Пуассону)
+						\only<4> {\footnotesize \\
+												$-$ Нерегулярно \\ $-$ Нескученно (\emph{not clustered}) 
+											\small}}
+					\alert<5>{\item {\bf Все} особи в площаде подучетов наблюдаются}
+					\alert<6>{\item Особи {\bf не} совершают значительных {\bf перемещений} во время учетов}
+				
+				\end{itemize}	
+		\end{beamerboxesrounded}\\
+		
+	\column{0.5\textwidth}
+		\begin{figure}
+			\only<1>{\includegraphics[width=.9\textwidth]{./images/NewZealandSheep.jpg}\\
+							 \includegraphics[width=.9\textwidth]{./images/Belugas.jpg}\\}
+			\only<2>{\includegraphics[width=\textwidth]{./images/FlockOfFlamingos.jpg}\\
+								\includegraphics[width=\textwidth]{./images/BristolBaySeals.jpg}\\}
+			\only<3>{\includegraphics[width=\textwidth]{./images/HarpSeals.jpg}\\
+								\includegraphics[width=\textwidth]{./images/narwhalssigned.jpg}\\}
+			\only<4>{\includegraphics[width=\textwidth]{./images/Elephants.jpg}\\
+							\includegraphics[width=\textwidth]{./images/SwedishBirchForest.jpg}\\}
+			\only<5>{\includegraphics[width=\textwidth]{./images/WhiteSeaHarpSeal.jpg}\\
+								\includegraphics[width=\textwidth]{./images/WhiteSeaHarpSeal2.jpg}}
+			\only<6>{\includegraphics[width=\textwidth]{./images/Wildebeest.jpg}\\
+								\includegraphics[width=\textwidth]{./images/Caribou.jpg}\\}
+		\end{figure}		
+	\end{columns}
+}
+
+
+\frame{\frametitle{Но квадратики не обязательны!}
+\includegraphics[width=\textwidth]{./images/WildlifeTriangles.png}
+}
+
+\frame{\frametitle{Но квадратики не обязательны!}
+\includegraphics[width=\textwidth]{./images/ManateeTransects.jpg}
+}
+
+\frame[c]{\frametitle{Упраженние в \includegraphics[width=.3in]{./images/R.jpg}: Учет овец}
+\centerline{
+  \only<1>{\includegraphics[width=.7\textwidth]{./example/SheepRaw.jpg}}
+  \only<2>{\includegraphics[width=.7\textwidth]{./example/SheepImageProcess.jpg}}
+  \only<3>{\includegraphics[width=.8\textwidth]{./example/SheepData.pdf}}}
+}
+
+
+\ed
