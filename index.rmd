@@ -65,9 +65,9 @@ This page mainly contains lectures, sometimes assignments and other resources.  
 
 ### Unit II. Estimating Abundances: *How many animals are there?*
 
-- [Lecture 5: Counting Animals Part I](lectures/Lecture05/Lecture05_CountingAnimals.html)
+- [Lecture 5: Counting Animals Part I](lectures/Lecture05/Lecture05_CountingAnimals.html)([pdf](lectures/Lecture05/Counting animals.pdf))
 
-- [Lecture 6: Counting Animals Part II](lectures/Lecture06/Lecture06_CountingAnimals_PartII.html)
+- [Lecture 6: Counting Animals Part II](lectures/Lecture06/Lecture06_CountingAnimals_PartII.html)([pdf](lectures/Lecture06/Counting Animals Part II_ Sample Counts.pdf))
 
 
 ## Archive
