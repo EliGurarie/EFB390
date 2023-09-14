@@ -152,7 +152,7 @@ True population:
 
 Population **estimate** (best guess for `\(N\)`): just replace true (unknown) density `\(D\)` with *sampling estimate* of density `\(d_s\)`:
 
-.red.large[$$\widehat{N} = A \times \widehat{D} = A \times {n_s \over a_s}$$]
+.red.large[$$\widehat{N} = A \times \widehat{D} = A \times d_s =  A \times {n_s \over a_s}$$]
 
 
 ---
@@ -177,16 +177,19 @@ Population **estimate** (best guess for `\(N\)`): just replace true (unknown) de
 
 .green[
 `\(n_s = \sum n_i = 21\)`
-`\(d_s = \widehat{D} = {35 \over 10 \times 10 \times 10} = 0.021\)`
+
+`\(d_s = \widehat{D} = {21 \over 10 \times 10 \times 10} = 0.021\)`
+
 `\(A = 100 \times 100\)`
 ]
+
 --
 
 
 #### final estimate:
 
 .large.green[
-`$$\widehat{N} = \widehat{D} \times A = 100\times100\times0.021 = 210$$`]
+`$$\widehat{N} = \widehat{D} \times A = 100\times100\times0.021 = \textbf{210}$$`]
 
 
 ---
@@ -248,11 +251,13 @@ Conclusion: this estimate is **accurate** (unbiased), but not very **precise** (
 
 `1.` If `\(a_s \ll A\)`  (i.e. low sampling intensity)
 
-`$$SE(\widehat{N}) = {A \over a} \sqrt{\sum n_i}$$`
-**remember:** `\(n_s = \sum n_i\)` is the total sample count
+`$$SE(\widehat{N}) = {A \over a} {\sqrt{\sum n_i} \over k}$$`
+**remember:** 
+- `\(n_s = \sum n_i\)` is the total **sample count**
+- `\(k\)` is the total number of samples: `\(i =\{1,2,...,k\}\)` )
 
 .center.red[
-in our example: `\(SE = 100²/(10\times10²) \sqrt{30} = 54.8\)`
+in our example: `\(SE = 100²/10^2 \times \sqrt{21}/10 = 54.8\)`
 ]
 
 --
@@ -260,7 +265,7 @@ in our example: `\(SE = 100²/(10\times10²) \sqrt{30} = 54.8\)`
 
 `2.` If you are NOT resampling previously sampled locations: 
 
-`$$SE(\widehat{N}) = {A \over a} \sqrt{\sum n_i (1 - a_s/A)}$$`
+`$$SE(\widehat{N}) = {A \over ak} \sqrt{\sum n_i \left(1 - {a_s \over A}\right)}$$`
 
 This is the .blue[Finite Area Correction].  If `\(a = A\)` - you sampled everything - SE goes to 0 as expected.  
 
@@ -321,7 +326,7 @@ If you **sample** from these kinds of spatial distributions, your standard error
 
 
 ---
-## Also ... densities of animals can depend on habitat
+### Also ... densities of animals depend on habitat!
 .pull-left-60[
 **Wolf habitat use**
 ![](images/vikihabitat.png)
@@ -358,10 +363,13 @@ Habitat | Area | n | Density
 ---:|:---:|:---:|:---
 open | 100 | 21 | 0.21
 mixed | 100 | 43 | 0.43
-dense | 200 | 31 | 0.17
+dense | 200 | 31 | 0.16
 **total** | 400 | 95 | 0.24
 
 ]
+
+
+
 
 .blue[Knowing how densities differ as a function of **covariates** can be very important for generating estimates of abundances, increasing both **accuracy** and **precision**, and informing **survey design**.]
 
@@ -369,13 +377,14 @@ dense | 200 | 31 | 0.17
 ---
 ### Sample frames need not be **squares**
 
-.pull-left-60[
+.pull-left-50[
 
 ![](images/aerial-survey.jpg)
 
 ]
 
-.pull-right-40[
+.pull-right-50[
+
 ## Transects
 
 
