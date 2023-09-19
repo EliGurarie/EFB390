@@ -69,6 +69,10 @@ This page mainly contains lectures, sometimes assignments and other resources.  
 
 - [Lecture 6: Counting Animals Part II](lectures/Lecture06/Lecture06_CountingAnimals_PartII.html)
 
+- [Lecture 6b: A bit more on uncertainty](lectures/Lecture06b/Lecture06b_CountingAnimals_Uncertainty.html)
+
+- [Lecture 7: Mark Recapture and Index Counts](lectures/Lecture07/Lecture07_IndexCounts.html)
+
 
 ## Archive
 
