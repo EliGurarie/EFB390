@@ -15,6 +15,8 @@ htmltools::img(src = "assets/ESFStacked_Full color.png", alt = 'banner',
                style = 'position:absolute; top:0; right:0; padding:10px; width:150px')
 ```
 
+> NOTE: I will be removing items from this archive as we work through the material in a current year - so many links might not work. 
+
 
 ## Course Materials
 

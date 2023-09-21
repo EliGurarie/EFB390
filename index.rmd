@@ -72,6 +72,10 @@ This page mainly contains lectures, sometimes assignments and other resources.  
 - [Lecture 7: Mark Recapture and Index Counts](lectures/Lecture07/Lecture07_IndexCounts.html)
 
 
+### Unit III. Habitat: *Where are they? And why?*
+
+- [Lecture 8: Habitats Part I](lectures/Lecture08/Lecture_Habitat_PartI.html)
+
 ## Archive
 
 - 2022 materials can be found [here](Archive2022/index_archive.html)
