@@ -76,6 +76,8 @@ This page mainly contains lectures, sometimes assignments and other resources.  
 
 - [Lecture 8: Habitats Part I](lectures/Lecture08/Lecture_Habitat_PartI.html)
 
+- [Lab 1: Intro to R](labs/IntroToR.html)
+
 ## Archive
 
 - 2022 materials can be found [here](Archive2022/index_archive.html)
