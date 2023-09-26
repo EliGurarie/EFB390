@@ -11,7 +11,7 @@
 
 <meta name="author" content="Dr. Elie Gurarie" />
 
-<meta name="date" content="2023-09-25" />
+<meta name="date" content="2023-09-26" />
 
 <title>Introduction to R</title>
 
@@ -1488,7 +1488,7 @@ border-radius: 0px;
 <h1 class="title toc-ignore">Introduction to R</h1>
 <h3 class="subtitle">EFB 390 - Fall 2023</h3>
 <h4 class="author">Dr. Elie Gurarie</h4>
-<h4 class="date">2023-09-25</h4>
+<h4 class="date">2023-09-26</h4>
 
 </div>
 
@@ -1600,8 +1600,9 @@ estimate. Remember, the <strong>standard error</strong> of an estimate
 is the standard deviation of all the estimates. The <a href="https://en.wikipedia.org/wiki/Standard_deviation">standard
 deviation</a> is a measure of the spread around the mean. A formula for
 it is given by:</p>
-<p><span class="math display">\[\text{SE}(\widehat{N}) = \sqrt{{1 \over
-k-1}\sum_{i= 1}^k \left(N_i - \widehat{N} \right)^2}\]</span></p>
+<p><span class="math display">\[\text{SE}(\widehat{N}) =
+\sqrt{\frac{1}{k-1}\sum_{i= 1}^k \left(N_i - \widehat{N}
+\right)^2}\]</span></p>
 <p>There’s kind of a lot going on here! But easy to pick apart in R.</p>
 <ol style="list-style-type: decimal">
 <li>The difference between the observations and the means (the

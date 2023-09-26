@@ -114,7 +114,7 @@ mean(counts)
 
 A little trickier is the **standard error** of this estimate.  Remember, the **standard error** of an estimate is the standard deviation of all the estimates.  The [standard deviation](https://en.wikipedia.org/wiki/Standard_deviation) is a measure of the spread around the mean.  A formula for it is given by:
 
-$$\text{SE}(\widehat{N}) = \sqrt{{1 \over k-1}\sum_{i= 1}^k \left(N_i - \widehat{N} \right)^2}$$
+$$\text{SE}(\widehat{N}) = \sqrt{\frac{1}{k-1}\sum_{i= 1}^k \left(N_i - \widehat{N} \right)^2}$$
 
 
 There's kind of a lot going on here!  But easy to pick apart in R.
