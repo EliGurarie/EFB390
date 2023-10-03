@@ -183,24 +183,6 @@ The `abline` puts a line, with intercept `a` and slope `b` onto a figure.
 ]
 
 
-
----
-
-# Some comments on linear models
-
-
-$$ Y_i \sim \alpha + \beta X_i + \epsilon_i$$
-
-1. `\(\epsilon_i\)` is **unexplained variation** or **residual variance**.  It is often POORLY/WRONGLY referred to as "**error**".  It is a **random variable**, NOT a **parameter**
-
---
-
-2. A **better**, more sophisticated way to think of this model is not to focus on isolating the residual variance, but that the whole process is a random variable: `$$Y_i \sim {\cal N}(\alpha + \beta X_i, \sigma)$$` This is better because: (a) the three parameters ( `\(\alpha, \beta, \sigma\)` ) are more clearly visible, (b) it can be "generalized".  For example the **Normal distribution** can be a **Bernoulli distribution** (for binary data), or a **Poisson distribution** for count data, etc. 
-
---
-
-3. `\(\alpha+\beta X_i\)` is the **predictor**, or the "modeled" portion.  There can be any number of variables in the **predictor** and they can have different powers, so: `$$Y_i \sim {\cal N}(\alpha + \beta X_i + \gamma Z_i + \delta X_i^2 + \nu X_i Z_i, \sigma )$$` is also a **linear** model. 
-
 ---
 
 
@@ -226,11 +208,127 @@ This is (almost always) done using **Maximum Likelihood Estimation**, i.e. an al
 .small[Another gratuitous sea lion picture.]
 ]
 
+
+---
+
+
+# All models have these pieces:
+
+`$$\Huge Y = f({\bf X} | \bf{\Theta})$$`
+ - **Y** - response | dependent variable.  The thing we want to model / predict / understand. The **effect** (maybe). 
+ 
+- **X** - predictor(s) | independent variable(s) | covariate(s).  The thing(s) that "explain(s)" **Y**. The **cause** (maybe). 
+
+- **f** - the model structure.  This includes: some **deterministic functional form** form (*linear? periodic? polynomial? exponential?*) AND some **probabilistic assumptions**, i.e. a way to characterize the variability / randomness / unpredictability of the process. 
+
+- `\(\bf \Theta\)` - the parameters of the model.  There are usually some parameters associated with the **predictors**, and some associated with the **random bit**. 
+
+---
+
+# Goals (Art / Science)  of Modeling
+
+`$$\Huge Y = f({\bf X} | \bf{\Theta})$$`
+
+.pull-left[
+
+### 1. Model fitting
+
+.darkred[
+What are the **best** `\(\bf \Theta\)` values given `\(f, {\bf X}, Y\)`?
+]
+
+**Fitting the model** = **estimating the parameters**.  
+
+Usually according to some criterion (almost always **Maximum Likelihood**.
+
+]
+
+--
+
+
+
+.pull-right[
+### 2. Model selection
+
+.darkred[
+
+What are the **best** of a set of models `\(f_1\)`, `\(f_2\)`, `\(f_3\)` given `\(\bf X\)` and `\(Y\)`?
+
+]
+
+Different models *usually* vary by what particular variables go into **X**, but can also vary by **functional form** and **distribution assumptions**
+
+Use some **Criterion** (e.g. AIC) to "select" the best model, which balances **how many parameters you estimated**  verses **how good the fit is**. 
+
+]
+
+
+
+
+---
+
+# Whoa!   What is "Maximum Likelihood"!?
+
+
+.pull-left[
+
+### Oakie
+
+![](images/likelihoods/blackmorph.jpg) 
+
+]
+
+.pull-right[
+
+### Orange
+
+![](images/likelihoods/greysquirrels.jpg) 
+
+]
+
+.red.center.large[**Q:** What is the "best model" for squirrel morph distribution?]
+
+
+---
+
+
+
+`$$\Huge Y = f({\bf X} | \bf{\Theta})$$`
+
+.pull-left[
+#### Linear model
+
+Two ways to write the same thing: 
+
+`$$Y_i = \alpha + \beta X_i + \epsilon_i$$`
+`$$Y_i \sim {\cal N}(\alpha + \beta X_i,  \sigma)$$`
+
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-9-1.png)&lt;!-- --&gt;
+]
+
+
+.pull-right.large[
+
+- Response `\(Y\)` - Weight
+
+- Predictor `\(X\)` - Length
+
+- Parameters `\(\Theta\)`:  `\(\alpha\)`;  `\(\beta\)`; `\(\sigma\)`
+
+- Function `\(f()\)`: Normal distribution `\({\cal N()}\)`
+
+
+
+]
+
 ---
 
 .pull-left-60[
 
 ## Statistical output
+
+
+`$$\large Y_i \sim {\cal N}(\alpha + \beta X_i,  \sigma)$$`
 
 &lt;font size="4"&gt;&lt;pre&gt;
 
@@ -283,6 +381,7 @@ Proportion of variance explained is high:
 ### Models and Hypotheses
 
 &gt; .large[**Every *p*-value is a Hypothesis test.**]
+&gt;
 
 .center[
 &lt;table class="table" style="margin-left: auto; margin-right: auto;"&gt;
@@ -322,6 +421,23 @@ Proportion of variance explained is high:
 Both null-hypotheses strongly rejected. 
 ]
 
+
+---
+
+## But other variables might influence pup size
+
+
+
+
+
+.pull-left-30[
+Lots of competing models with different **main** and **interaction** effects. 
+]
+
+.pull-right-70[
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-14-1.png)&lt;!-- --&gt;
+]
+
 ---
 
 ## Linear modeling with a discrete factor
@@ -335,7 +451,7 @@ Both null-hypotheses strongly rejected.
 .pull-left-50[
 
 
-![](Lecture_Modeling_files/figure-html/unnamed-chunk-11-1.png)&lt;!-- --&gt;
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-15-1.png)&lt;!-- --&gt;
 ]
 
 .pull-right[
@@ -383,6 +499,7 @@ Note - this is very similar to a *t*-test comparing two means (baby stats).
 ]
 
 
+
 ---
 
 ## Linear modeling with multiple factors
@@ -392,7 +509,7 @@ Very easy to extend this to more complicated models!
 .pull-left-50[
 
 
-![](Lecture_Modeling_files/figure-html/unnamed-chunk-14-1.png)&lt;!-- --&gt;
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-18-1.png)&lt;!-- --&gt;
 ]
 
 .pull-right[
@@ -516,7 +633,7 @@ Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 **Exploratory plot**
 
 .center[
-&lt;img src="Lecture_Modeling_files/figure-html/unnamed-chunk-18-1.png" width="90%" /&gt;
+&lt;img src="Lecture_Modeling_files/figure-html/unnamed-chunk-22-1.png" width="90%" /&gt;
 ]
 It looks like, maybe, there are different body proportions for .blue[**MALES**] and .red[**FEMALES**]. 
 ]
@@ -742,7 +859,7 @@ class: small
 .large[$$Y_i \sim {\cal Normal}(\alpha_0 + \beta_1 X_i, \sigma)$$]
 Models continuous data with a "normal-like" distribution.
 
-![](Lecture_Modeling_files/figure-html/unnamed-chunk-21-1.png)&lt;!-- --&gt;
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-25-1.png)&lt;!-- --&gt;
 ]
 
 --
@@ -756,7 +873,7 @@ There's some *probability* of something happening that depends on the predictor 
 
 **Bernoulli** just means the data are all 0 or 1. 
 
-![](Lecture_Modeling_files/figure-html/unnamed-chunk-22-1.png)&lt;!-- --&gt;
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-26-1.png)&lt;!-- --&gt;
 
 This models **presence/absence**, **dead/alive**, **male/female** other response variables with **2** possible outcomes. 
 ]
@@ -862,7 +979,7 @@ Sampled in the estuary of the Tejo river in Portugal
 # Presence of *Solea solea* against **salinity**
 
 .pull-left-40[
-![](Lecture_Modeling_files/figure-html/unnamed-chunk-24-1.png)&lt;!-- --&gt;
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-28-1.png)&lt;!-- --&gt;
 ]
 
 .pull-right-60[
@@ -912,7 +1029,7 @@ Clearly - *Solea solea* presence is very significantly *negatively* related to s
 ### Out of this model we can make predictions
 
 
-&lt;img src="Lecture_Modeling_files/figure-html/unnamed-chunk-27-1.png" width="80%" /&gt;
+&lt;img src="Lecture_Modeling_files/figure-html/unnamed-chunk-31-1.png" width="80%" /&gt;
 
 ---
 
@@ -1037,7 +1154,7 @@ Clearly - *Solea solea* presence is very significantly *negatively* related to s
 .pull-right[
 **Salinity** clearly among the more important covariates (in the top 4 models). 
 
-![](Lecture_Modeling_files/figure-html/unnamed-chunk-30-1.png)&lt;!-- --&gt;
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-34-1.png)&lt;!-- --&gt;
 
 ]
 
@@ -1047,7 +1164,7 @@ Clearly - *Solea solea* presence is very significantly *negatively* related to s
 background-image: url("images/RSF_dAIC.png")
 background-size: cover
 
-## FLASHBAK: how the caribou Resource Selection Function was selected
+## FLASHBACK: how the caribou Resource Selection Function was selected
 
 ---
 ## Poisson regression
@@ -1115,7 +1232,7 @@ Lots of 0's, some 1's, and just one 2 count.
 ##     2     0         0     1
 ```
 
-![](Lecture_Modeling_files/figure-html/unnamed-chunk-32-1.png)&lt;!-- --&gt;
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-36-1.png)&lt;!-- --&gt;
 ]
 
 .pull-right[
@@ -1148,7 +1265,7 @@ Lots of 0's, some 1's, and just one 2 count.
 ##     2     0         0     1
 ```
 
-![](Lecture_Modeling_files/figure-html/unnamed-chunk-34-1.png)&lt;!-- --&gt;
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-38-1.png)&lt;!-- --&gt;
 ]
 
 .pull-right[
@@ -1327,11 +1444,11 @@ background-size: cover
 2. We structure our models to have a **response variable** and one or more **predictors** or **covariates**. 
 
 3. Depending on the reponse variable, a different **family** is chosen:
-  - if **continuous** and symmatric: **Normal** family
+  - if **continuous** and symmetric: **Normal** family
   - if two values (presence/absence, dead/alive): **Binomial** family
   - if count data: **Poisson** family. 
 
-3. An improtant task is **Model selection**, identifying which model is "best" 
+3. An important task is **Model selection**, identifying which model is "best" 
   - Best means *"explains the most variation without overfitting"* 
   - Very common criterion is **AIC.**
   
@@ -1346,7 +1463,26 @@ background-size: cover
 
 
 
+---
 
+# extra slides
+
+---
+
+# Some comments on linear models
+
+
+$$ Y_i \sim \alpha + \beta X_i + \epsilon_i$$
+
+1. `\(\epsilon_i\)` is **unexplained variation** or **residual variance**.  It is often POORLY/WRONGLY referred to as "**error**".  It is a **random variable**, NOT a **parameter**
+
+--
+
+2. A **better**, more sophisticated way to think of this model is not to focus on isolating the residual variance, but that the whole process is a random variable: `$$Y_i \sim {\cal N}(\alpha + \beta X_i, \sigma)$$` This is better because: (a) the three parameters ( `\(\alpha, \beta, \sigma\)` ) are more clearly visible, (b) it can be "generalized".  For example the **Normal distribution** can be a **Bernoulli distribution** (for binary data), or a **Poisson distribution** for count data, etc. 
+
+--
+
+3. `\(\alpha+\beta X_i\)` is the **predictor**, or the "modeled" portion.  There can be any number of variables in the **predictor** and they can have different powers, so: `$$Y_i \sim {\cal N}(\alpha + \beta X_i + \gamma Z_i + \delta X_i^2 + \nu X_i Z_i, \sigma )$$` is also a **linear** model. 
 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
