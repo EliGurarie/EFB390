@@ -80,6 +80,12 @@ This page mainly contains lectures, sometimes assignments and other resources.  
 
 - [Lecture 10: Modeling Everything](lectures/Lecture10/Lecture_Modeling.html)([pdf](lectures/Lecture10/Lecture10_Modeling.pdf))
 
+
+### Unit IV: Population Ecology
+
+- [Lecture 11: Population Modeling Part I](lectures/Lecture11/Lecture_PopulationEcology.html)
+
+
 #### Examples of habitat analysis
 
 - [Long Island Ducks](lectures/Lecture09/DuckSlides.pdf)
