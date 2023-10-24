@@ -1,9 +1,9 @@
 ---
-title: "Week 6: Fitting Models and Stochasticity"
-subtitle: 'EFB 390 - Fall 2023'
+title: "Linear models for exponential growth"
+subtitle: '[EFB 390](Indiana University of Pennsylvania) - Fall 2023'
 author: "Dr. Gurarie"
 date: "`r Sys.Date()`"
-output: 
+output:         
   html_document: 
     toc: true
     toc_float: true
