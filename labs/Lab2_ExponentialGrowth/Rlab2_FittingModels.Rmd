@@ -32,7 +32,7 @@ knitr::opts_chunk$set(echo = TRUE,
 
 
 
-> There are TWO exercises in this lab, set aside in green boxes like this one.  To work through the exercises in this lab, you'll need to download the [`SeaLions.csv`](SeaLions.csv) and [`SeaOtters.csv`](SeaOtters.csv) datasets as last time by following the links (also available on Blackboard). For Exercise 2, you will also need to download [`BC_SeaOtters.csv`](BC_SeaOtters.csv). If you've forgotten how, follow the instructions from the previous lab. 
+> There are TWO exercises in this lab, set aside in green boxes like this one.  To work through the exercises in this lab, you'll need to download the [`SeaLions.csv`](SeaLions.csv) and [`SeaOtters.csv`](SeaOtters.csv) datasets as last week by following the links (also available on Blackboard). For Exercise 2, you will also need to download [`BC_SeaOtters.csv`](BC_SeaOtters.csv). If you've forgotten how, follow the instructions from the previous lab. 
 
 ```{r}
 SeaOtters <- read.csv("SeaOtters.csv")

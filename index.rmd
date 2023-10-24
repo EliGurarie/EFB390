@@ -76,10 +76,10 @@ This page mainly contains lectures, sometimes assignments and other resources.  
 
 - [Lecture 8: Habitats Part I](lectures/Lecture08/Lecture_Habitat_PartI.html) ([pdf](lectures/Lecture08/Lecture08_Habitat_Part1.pdf))
 
-- [Lecture 9: Habitats Part II](lectures/Lecture09/Lecture09_NichesAndHabitats.html) ([pdf](lectures/Lecture09/Lecture09_NichesAndHabitats.pdf))
+- [Lecture 9: Habitats Part II](lectures/Lecture09/Lecture09_NichesAndHabitats.html)  ([pdf](lectures/Lecture09/Lecture09_NichesAndHabitats.pdf))
 
 
-- [Lecture 10: Modeling Everything](lectures/Lecture10/Lecture_Modeling.html) ([pdf](lectures/Lecture10/Lecture10_Modeling.pdf))
+- [Lecture 10: Modeling Everything](lectures/Lecture10/Lecture_Modeling.html)  ([pdf](lectures/Lecture10/Lecture10_Modeling.pdf))
 
 
 
