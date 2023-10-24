@@ -32,7 +32,7 @@ knitr::opts_chunk$set(echo = TRUE,
 
 
 
-> There are TWO exercises in this lab, set aside in green boxes like this one.  To work through the exercises in this lab, you'll need to download the [`SeaLions.csv`](SeaLions.csv) and [`SeaOtters.csv`](SeaOtters.csv) datasets as last week by following the links (also available on Blackboard). For Exercise 2, you will also need to download [`BC_SeaOtters.csv`](BC_SeaOtters.csv). If you've forgotten how, follow the instructions from the previous lab. 
+> There are TWO exercises in this lab, set aside in green boxes like this one.  To work through the exercises in this lab, you'll need to download the [`SeaLions.csv`](SeaLions.csv) and [`SeaOtters.csv`](SeaOtters.csv) datasets as last time by following the links (also available on Blackboard). For Exercise 2, you will also need to download [`BC_SeaOtters.csv`](BC_SeaOtters.csv). If you've forgotten how, follow the instructions from the previous lab. 
 
 ```{r}
 SeaOtters <- read.csv("SeaOtters.csv")
@@ -270,7 +270,7 @@ How does this relate to an exponential growth model?
 $$e^{\log(Y_i)} = e^{\alpha + \beta\, X_i + \epsilon_i}$$
 $$Y_t = N_0  e^{\beta\, X_t + \epsilon_t}$$
 
-We just replaced $e^\alpha$ with $N_0$, and $i$ with $t$.  But $\beta$ is EXACTLY the growth rate $r$ (and $e^\beta = \lambda$).  The $\epsilon_i$ hanging on the end is a bit of stochasticity.  
+We replaced $e^\alpha$ with $N_0$, and $i$ with $t$.  But $\beta$ is EXACTLY the growth rate $r$ (and $e^\beta = \lambda$).  The $\epsilon_i$ hanging on the end is a bit of stochasticity.  
 
 Anyways, doing this with our linear modeling tools is easy.  We just wrap `count` in a log.  
 
@@ -279,7 +279,7 @@ logotter.fit <- lm(log(count) ~ year, data = SeaOtters)
 summary(logotter.fit)
 ```
 
-Note how our statistics changed.  Specifically: our $\beta$ estimate (which is also $r$) is now 0.07325, which is a good estimate of the intrinsic growth rate.  Even better, we know have a standard error around that estimate: 0.00237, which means our growth rate can be written as:  $\widehat{r} = (7.32 \pm 0.47)\times 10^{-2}$.  We can convert that to an annual growth rate in R as well (*do NOT worry about understanding the following code*:
+Note how our statistics changed.  Specifically: our $\beta$ estimate (which is also $r$) is now 0.07325, which is a good estimate of the intrinsic growth rate.  Even better, we now have a standard error around that estimate: 0.00237, which means our growth rate can be written as:  $\widehat{r} = (7.32 \pm 0.47)\times 10^{-2}$.  We can convert that to an annual growth rate in R as well (*do NOT worry about understanding the following code*:
 
 ```{r}
 r.hat <- summary(logotter.fit)$coefficients[2,1]
