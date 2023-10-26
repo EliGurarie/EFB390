@@ -93,8 +93,10 @@ This page mainly contains lectures, sometimes assignments and other resources.  
 ### Unit IV. Population Ecology: *What is happening to how many there are?*
 
 - [Lecture 11: Population Ecology Part I](lectures/Module4_PopulationEcology/Lecture_PopulationEcology.html)
+
 - [Lecture 12: Population Ecology Part II](lectures/Module4_PopulationEcology/Lecture_PopulationEcology_PartII.html)
 
+- [Lecture 13: All The Rest of Population Ecology](lectures/Module4_PopulationEcology/Lecture_PopulationEcology_PartIII.html)
 
 
 ## R/Computer labs
