@@ -98,6 +98,14 @@ This page mainly contains lectures, sometimes assignments and other resources.  
 
 - [Lecture 13: All The Rest of Population Ecology](lectures/Module4_PopulationEcology/Lecture_PopulationEcology_PartIII.html) ([pdf](lectures/Module4_PopulationEcology/Lecture12_PopulationEcologyPartIII.pdf))
 
+- [Lecture 14: Body Condition and Disease](lectures/Lecture14/Lecture_WildlifeDiseases.html)
+  - [COVID and Wildlife](lectures/Lecture14/Covid and Wildlife.pdf)
+  - [Gurarie - Deer-Wolf-CWD study](lectures/Lecture14/deer_wolf_CWD.pdf)
+  
+### Unit V. Wildlife "Management" and its Dicontents
+
+- [Lecture 15: North American Model of Wildlife Conservation](lectures/Lecture15/Lecture_NAM.html)
+
 
 ## R/Computer labs
 
