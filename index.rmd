@@ -23,8 +23,8 @@ htmltools::img(src = "assets/ESFStacked_Full color.png", alt = 'banner',
 
 **Co-instructors:** 
 
-- Sydney Opel | Office Hours TBA
-- Colton Moyer | Office Hours TBA 
+- [Sydney Opel](mailto:slopel@esf.edu) | Office Hours TBD
+- [Colton Moyer](mailto:cmoyer@esf.edu) | Office Hours TBD 
 
 **Locations and Times:** 
 

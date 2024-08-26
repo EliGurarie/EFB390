@@ -17,6 +17,11 @@
 .center-70 { text-align-last: center; width: 70%; }
 .center-80 { text-align-last: center; width: 80%; }
 
+.pull-left-80 { float: left; width: 76.5%; }
+.pull-right-20 { float: right; width: 18.5%; }
+.pull-right-20 + * { clear: both; }
+
+
 .pull-left-70 { float: left; width: 66.5%; }
 .pull-right-30 { float: right; width: 28.5%; }
 .pull-right-30 + * { clear: both; }
