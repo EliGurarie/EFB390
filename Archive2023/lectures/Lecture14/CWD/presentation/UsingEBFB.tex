@@ -1,0 +1,806 @@
+\PassOptionsToPackage{unicode=true}{hyperref} % options for packages loaded elsewhere
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[9pt,ignorenonframetext,aspectratio=169]{beamer}
+\usepackage{pgfpages}
+\setbeamertemplate{caption}[numbered]
+\setbeamertemplate{caption label separator}{: }
+\setbeamercolor{caption name}{fg=normal text.fg}
+\beamertemplatenavigationsymbolsempty
+% Prevent slide breaks in the middle of a paragraph:
+\widowpenalties 1 10000
+\raggedbottom
+\setbeamertemplate{part page}{
+\centering
+\begin{beamercolorbox}[sep=16pt,center]{part title}
+  \usebeamerfont{part title}\insertpart\par
+\end{beamercolorbox}
+}
+\setbeamertemplate{section page}{
+\centering
+\begin{beamercolorbox}[sep=12pt,center]{part title}
+  \usebeamerfont{section title}\insertsection\par
+\end{beamercolorbox}
+}
+\setbeamertemplate{subsection page}{
+\centering
+\begin{beamercolorbox}[sep=8pt,center]{part title}
+  \usebeamerfont{subsection title}\insertsubsection\par
+\end{beamercolorbox}
+}
+\AtBeginPart{
+  \frame{\partpage}
+}
+\AtBeginSection{
+  \ifbibliography
+  \else
+    \frame{\sectionpage}
+  \fi
+}
+\AtBeginSubsection{
+  \frame{\subsectionpage}
+}
+\usepackage{lmodern}
+\usepackage{amssymb,amsmath}
+\usepackage{ifxetex,ifluatex}
+\usepackage{fixltx2e} % provides \textsubscript
+\ifnum 0\ifxetex 1\fi\ifluatex 1\fi=0 % if pdftex
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provides euro and other symbols
+\else % if luatex or xelatex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Ligatures=TeX,Scale=MatchLowercase}
+\fi
+% use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+% use microtype if available
+\IfFileExists{microtype.sty}{%
+\usepackage[]{microtype}
+\UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\IfFileExists{parskip.sty}{%
+\usepackage{parskip}
+}{% else
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+}
+\usepackage{hyperref}
+\hypersetup{
+            pdftitle={Что такое осень? Что такое весна?},
+            pdfauthor={Elie Gurarie - University of Maryland},
+            pdfborder={0 0 0},
+            breaklinks=true}
+\urlstyle{same}  % don't use monospace font for urls
+\newif\ifbibliography
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\setlength{\emergencystretch}{3em}  % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{0}
+
+% set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+\usepackage[T1, T2A]{fontenc}
+\input{preamble.tex}
+\usepackage[scaled=0.85]{PTMono}
+
+\title{Что такое осень? Что такое весна?}
+\providecommand{\subtitle}[1]{}
+\subtitle{Analysis of Phenological Data with the \texttt{ebfb} package}
+\author{Elie Gurarie - University of Maryland}
+\date{November 5, 2017}
+
+\begin{document}
+\frame{\titlepage}
+
+\begin{frame}[fragile]{The \texttt{ebfb} package}
+\protect\hypertarget{the-ebfb-package}{}
+
+\bcols
+\col{.5}
+
+\bi
+
+\I The \texttt{ebfb} package is an in-house package for the analysis of
+the phenological data in \texttt{R}. \I In this presentation, I show a
+few possible analyses WITH ALL THE CODE.\\
+\I If you install the package, you can easily recreate the figrus and
+replicate the results \ei
+
+\col{.5}
+
+\bi
+
+\I Пакет \texttt{ebfb} - данные и функции для рассматривания, обработки
+и анализа фенологический данных в (безплатном!) прогамме \texttt{R}.
+\I В этом докладе, я демонстрирую пару возможных анализов и ВКЛЮЧАЮ
+СКРИПТЫ. \I Если вы инсталируете пакет, то сможете запросто поврторить
+анализ и создать соответственные картини. \ei 
+
+\ecols
+
+\end{frame}
+
+\begin{frame}[fragile]{loading}
+\protect\hypertarget{loading}{}
+
+\bcols
+\col{.5}
+
+Install and load library \col{.5}
+
+Инсталироавать и загружать библиотеку
+
+\ecols
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{library}\NormalTok{(ebfb)}
+\end{Highlighting}
+\end{Shaded}
+
+\end{frame}
+
+\begin{frame}{Data sets \textbar{} Данные}
+\protect\hypertarget{data-sets-}{}
+
+\bcols
+\col{.5}
+
+The package - first and foremost - contains the relevant data \col{.5} В
+пакете, в первую очередь, держатся данные: \ecols
+
+\small
+
+\end{frame}
+
+\begin{frame}[fragile]{Data: \texttt{sites}}
+\protect\hypertarget{data-sites}{}
+
+\bcols
+\col{.5}
+
+Table of site information: Name, Coordinates, N. Observations \col{.5}
+Таблица мест наблюдений (в основном, ООПТ). Загружается одной строкой:
+\ecols
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{data}\NormalTok{(sites)}
+\end{Highlighting}
+\end{Shaded}
+
+\bcols
+\col{.5}
+
+Detailed explanation: \col{.5} Подробное описание: \ecols
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{?sites}
+\end{Highlighting}
+\end{Shaded}
+
+\end{frame}
+
+\begin{frame}[fragile]{Data: \texttt{sites}}
+\protect\hypertarget{data-sites-1}{}
+
+\bcols
+\col{.5}
+
+The first few rows:
+
+\col{.5}
+
+Первые ряды: \ecols
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{head}\NormalTok{(sites)}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize В сумме: X локаций
+
+\end{frame}
+
+\begin{frame}[fragile]{Data: \texttt{sites}}
+\protect\hypertarget{data-sites-2}{}
+
+\bcols
+
+\col{.5} Map of sites: \col{.5} Карта: \ecols
+
+\small
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{require}\NormalTok{(maps); }\KeywordTok{require}\NormalTok{(mapdata)}
+\KeywordTok{map}\NormalTok{(}\StringTok{"worldHires"}\NormalTok{, }\DataTypeTok{xlim =} \KeywordTok{c}\NormalTok{(}\DecValTok{2}\NormalTok{,}\DecValTok{160}\NormalTok{), }\DataTypeTok{ylim =} \KeywordTok{c}\NormalTok{(}\DecValTok{40}\NormalTok{,}\DecValTok{75}\NormalTok{))}
+\KeywordTok{points}\NormalTok{(sites}\OperatorTok{$}\NormalTok{East, sites}\OperatorTok{$}\NormalTok{North, }\DataTypeTok{col=}\StringTok{"darkblue"}\NormalTok{, }\DataTypeTok{pch =} \DecValTok{19}\NormalTok{)}\ErrorTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\bcols\col{.2}\col{.6}
+
+\col{.2}\ecols
+
+\end{frame}
+
+\begin{frame}[fragile]{Data: \texttt{phenodata}}
+\protect\hypertarget{data-phenodata}{}
+
+\bcols
+\col{.5}
+
+This is the main dataset that contains all the of the phenological
+events. To load the data, type: \col{.5} Главные данные всех
+фено-явлений. Загружается одной строкой: \ecols
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{data}\NormalTok{(phenodata)}
+\end{Highlighting}
+\end{Shaded}
+
+\bcols
+\col{.5}
+
+Detailed explanation: \col{.5} Подробное описание: \ecols
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{?phenodata}
+\end{Highlighting}
+\end{Shaded}
+
+\end{frame}
+
+\begin{frame}[fragile]{\texttt{phenodata}}
+\protect\hypertarget{phenodata}{}
+
+\bcols\col{.5}The first few rows: \col{.5}Первые ряды:\ecols
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{head}\NormalTok{(phenodata, }\DecValTok{5}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\scriptsize
+
+\small
+\bcols\col{.5}
+
+Each row represents a single \textbf{event} for a single
+\textbf{species} at a single \textbf{site} in a single \textbf{year}.
+The main response variable is \textbf{day} (of year)
+
+\col{.5}
+
+Каждый ряд отражает одно \texttt{явление}, для одного \texttt{вида}, в
+одном \texttt{месте}, в одном \texttt{году}. Главная переменная -
+\texttt{День} (года).\\
+\ecols
+
+\end{frame}
+
+\begin{frame}[fragile]{\texttt{phenodata\$Group}}
+\protect\hypertarget{phenodatagroup}{}
+
+\footnotesize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{table}\NormalTok{(phenodata}\OperatorTok{$}\NormalTok{Group)}
+\end{Highlighting}
+\end{Shaded}
+
+\nup
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{barplot}\NormalTok{(}\KeywordTok{sort}\NormalTok{(}\KeywordTok{table}\NormalTok{(phenodata}\OperatorTok{$}\NormalTok{Group)), }\DataTypeTok{horiz =} \OtherTok{TRUE}\NormalTok{, }\DataTypeTok{las =} \DecValTok{1}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\bcols\col{.7}
+
+\col{.3}
+\normalsize
+
+Много растений!
+
+Мало слизняков! \ecols
+
+\end{frame}
+
+\begin{frame}[fragile]{\texttt{phenodata\$Events}}
+\protect\hypertarget{phenodataevents}{}
+
+\bcols\col{.5} Most common events: \col{.5} Самые многочисленные явления
+в данных:\ecols
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{sort}\NormalTok{(}\KeywordTok{table}\NormalTok{(}\KeywordTok{subset}\NormalTok{(phenodata, Group }\OperatorTok{==}\StringTok{ "Plants"}\NormalTok{)}\OperatorTok{$}\NormalTok{Event), }\DataTypeTok{decreasing =} \OtherTok{TRUE}\NormalTok{)[}\DecValTok{1}\OperatorTok{:}\DecValTok{10}\NormalTok{]}
+\KeywordTok{sort}\NormalTok{(}\KeywordTok{table}\NormalTok{(}\KeywordTok{subset}\NormalTok{(phenodata, Group }\OperatorTok{==}\StringTok{ "Birds"}\NormalTok{)}\OperatorTok{$}\NormalTok{Event), }\DataTypeTok{decreasing =} \OtherTok{TRUE}\NormalTok{)[}\DecValTok{1}\OperatorTok{:}\DecValTok{10}\NormalTok{]}
+\end{Highlighting}
+\end{Shaded}
+
+\end{frame}
+
+\begin{frame}[fragile]{\texttt{phenodata\$Species}}
+\protect\hypertarget{phenodataspecies}{}
+
+\bcols
+
+\col{.6}
+\footnotesize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{table}\NormalTok{(}\KeywordTok{subset}\NormalTok{(phenodata, Group }\OperatorTok{==}\StringTok{ "Plants"}\NormalTok{)}\OperatorTok{$}\NormalTok{Species)}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize 989 plants in total
+
+\col{.4}
+
+Most common plants:
+
+Наиболее многочисленные растения:
+
+\scriptsize
+
+\ecols
+
+\end{frame}
+
+\begin{frame}{Question 1 \textbar{} Вопрос 1}
+\protect\hypertarget{question-1--1}{}
+
+\bcols
+\col{.5}
+
+Has flowering time of birches changed in the past century? \col{.5}
+Изменился ли срок распускания цветов березы за последнее столетие?
+\ecols
+
+\bc \PlotW{.5}{floweringbirch} \ec
+
+\end{frame}
+
+\begin{frame}[fragile]{First flowering time of birch / Распускание
+цветов березы \emph{Betula pendula}}
+\protect\hypertarget{first-flowering-time-of-birch---}{}
+
+\small
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{birches <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(phenodata, Species }\OperatorTok{==}\StringTok{ "Betula pendula"} \OperatorTok{&}\StringTok{ }\NormalTok{Event }\OperatorTok{==}\StringTok{ "onset of blooming"}\NormalTok{)}
+\KeywordTok{ddply}\NormalTok{(birches, }\StringTok{"Site"}\NormalTok{, summarize, }\DataTypeTok{n =} \KeywordTok{length}\NormalTok{(Day), }
+            \DataTypeTok{firstyear =} \KeywordTok{min}\NormalTok{(Year), }\DataTypeTok{lastyear =} \KeywordTok{max}\NormalTok{(Year),}
+            \DataTypeTok{mean.day =} \KeywordTok{mean}\NormalTok{(Day), }\DataTypeTok{sd.day =} \KeywordTok{sd}\NormalTok{(Day)) }\OperatorTok{%>%}\StringTok{ }\KeywordTok{arrange}\NormalTok{(mean.day)}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
+
+Earliest average (April 24) in Браславские Озера, Беларусь.
+
+Latest (May 25) in Столбы, Сибирь.
+
+\end{frame}
+
+\begin{frame}[fragile]{Change in time \textbar{} Изменение по времени -
+пример}
+\protect\hypertarget{change-in-time------}{}
+
+\bc
+\footnotesize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{with}\NormalTok{(}\KeywordTok{subset}\NormalTok{(birches, Site }\OperatorTok{==}\StringTok{ "Centralno-Chernozemnyj"}\NormalTok{), }\KeywordTok{plot}\NormalTok{(Year, Day))}
+\end{Highlighting}
+\end{Shaded}
+
+Hard to see a trends! \ec
+
+\end{frame}
+
+\begin{frame}[fragile]{With linear model \textbar{} С трендом}
+\protect\hypertarget{with-linear-model--}{}
+
+\footnotesize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{require}\NormalTok{(ggplot2)}
+\KeywordTok{ggplot}\NormalTok{(}\KeywordTok{subset}\NormalTok{(birches, Site }\OperatorTok{==}\StringTok{ "Centralno-Chernozemnyj"}\NormalTok{), }\KeywordTok{aes}\NormalTok{(Year, Day)) }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{geom_point}\NormalTok{() }\OperatorTok{+}\StringTok{ }\KeywordTok{stat_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{ggtitle}\NormalTok{(}\StringTok{"Centralno-Chernozemnyj"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\end{frame}
+
+\begin{frame}[fragile]{Everywhere (and all birches) \textbar{} Всюду (и
+все березы - \emph{betula spp.})}
+\protect\hypertarget{everywhere-and-all-birches------}{}
+
+\footnotesize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{allbirches <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(phenodata, }\KeywordTok{grepl}\NormalTok{(}\StringTok{"Betula"}\NormalTok{, Species) }\OperatorTok{&}\StringTok{ }\NormalTok{Event }\OperatorTok{==}\StringTok{ "onset of blooming"}\NormalTok{)}
+\KeywordTok{ggplot}\NormalTok{(allbirches, }\KeywordTok{aes}\NormalTok{(Year, Day, }\DataTypeTok{col =}\NormalTok{ Site)) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_point}\NormalTok{() }\OperatorTok{+}\StringTok{ }\KeywordTok{stat_smooth}\NormalTok{(}\DataTypeTok{method =} \StringTok{"lm"}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{theme_few}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize Negetive trend \textbar{} Отрицательная тенденция?
+
+\end{frame}
+
+\begin{frame}[fragile]{Statistics \textbar{} Статистика}
+\protect\hypertarget{statistics-}{}
+
+\bcols\col{.5}
+
+Simple linear model \textbar{} Простая линейная модель
+
+\footnotesize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{lm}\NormalTok{(Day }\OperatorTok{~}\StringTok{ }\NormalTok{Year, }\DataTypeTok{data =}\NormalTok{ allbirches)}
+\end{Highlighting}
+\end{Shaded}
+
+\footnotesize
+
+NEGATIVE and SIGNIFICANT slope: -0.1 days / year in all study domain.
+
+\pause
+
+\col{.5}
+
+Mixed effects linear model \textbar{} Смешаная линейная модель (без
+подробностей - более правильная модель)
+
+\footnotesize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{require}\NormalTok{(lme4)}
+\KeywordTok{lmer}\NormalTok{(Day }\OperatorTok{~}\StringTok{ }\NormalTok{Year }\OperatorTok{+}\StringTok{ }\NormalTok{(}\DecValTok{1} \OperatorTok{|}\StringTok{ }\NormalTok{Site), }\DataTypeTok{data =}\NormalTok{ allbirches) }
+\end{Highlighting}
+\end{Shaded}
+
+\footnotesize
+
+even MORE NEGATIVE and MORE SIGNIFICANT slope: -0.14 days / year.
+
+\ecols
+
+\end{frame}
+
+\begin{frame}[fragile]{What about geographic factors (North / East)?}
+\protect\hypertarget{what-about-geographic-factors-north-east}{}
+
+Combining data:
+
+\small
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{allbirches <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(allbirches, sites, }\DataTypeTok{by=}\StringTok{"SiteID"}\NormalTok{, }\DataTypeTok{all =} \OtherTok{TRUE}\NormalTok{)}
+\KeywordTok{ggplot}\NormalTok{(allbirches, }\KeywordTok{aes}\NormalTok{(Year, Day, }\DataTypeTok{col =}\NormalTok{ North, }\DataTypeTok{size =}\NormalTok{ East)) }\OperatorTok{+}\StringTok{ }\KeywordTok{geom_point}\NormalTok{() }\OperatorTok{+}\StringTok{ }\KeywordTok{theme_few}\NormalTok{()}
+\end{Highlighting}
+\end{Shaded}
+
+\bcols
+\col{.6}
+
+\col{.4}
+\normalsize
+\bi
+
+\I More eastern birches flower later \ldots{} North, less clear.
+\I Более восточные березы позже распускают цветы \ldots{} Северные, не
+так ясно (). \ei \ecols
+
+\end{frame}
+
+\begin{frame}[fragile]{Statistics \textbar{} Статистика}
+\protect\hypertarget{statistics--1}{}
+
+\bc
+
+\small
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{lmer}\NormalTok{(Day }\OperatorTok{~}\StringTok{ }\NormalTok{Year }\OperatorTok{+}\StringTok{ }\NormalTok{North }\OperatorTok{+}\StringTok{ }\NormalTok{East }\OperatorTok{+}\StringTok{ }\NormalTok{(Year }\OperatorTok{|}\StringTok{ }\NormalTok{Site.x), }\DataTypeTok{data =}\NormalTok{ allbirches) }
+\end{Highlighting}
+\end{Shaded}
+
+\small
+\ec
+
+\normalsize
+\bcols
+\col{.5}
+
+All effects (YEAR - NORTH - EAST) significant. About 1.5 days later per
+degree north, 1 day later for 4 degrees east. \col{.5} Все переменные
+(ГОД - СЕВЕР - ВОСТОК) значимые. Примерно 1.5 дней позже на г.N и один
+день на 4 г.E. \ecols
+
+\end{frame}
+
+\begin{frame}{(Preliminary) Conclusions \textbar{} (Предворительные)
+Заключения}
+\protect\hypertarget{preliminary-conclusions--}{}
+
+\bcols
+\col{.3}
+
+Spring - as measured by birch flowering - is very variable, but moving
+earlier and earlier in the year (about 2 weeks in 100 years), even
+accounting for geographical variation.
+
+\nd\nd\nd
+
+(But need to look at interactions, model comparison, non-linear effects,
+etc.)
+
+\col{.3}
+
+Весна - по крайней мере индекс расцветания березы - не смотря на широкий
+разброс - крадется все раньше и раньше (пр. 2 недели на 100 лет), даже
+если включать географические еффекты.
+
+\nd\nd\nd
+
+(Но надо по-подробнее моделировать).
+
+\col{.4}
+\PlotW{1}{birchcatkins.png}
+
+\ecols
+
+\end{frame}
+
+\begin{frame}{Question 2 \textbar{} Вопрос 2}
+\protect\hypertarget{question-2--2}{}
+
+\bcols
+\col{.3}
+
+\bi
+
+\I How long is fall? \I Сколько осень продолжается? \ei
+
+\col{.6}
+\PlotW{1}{autumn.jpg}
+
+\ecols
+
+\end{frame}
+
+\begin{frame}[fragile]{Birches again \textbar{} Опять березы}
+\protect\hypertarget{birches-again--}{}
+
+\bcols{}
+\col{.6}
+
+Beginning and end of leaf fall:
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{birch.start <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(phenodata, }
+\NormalTok{                      Event }\OperatorTok{==}\StringTok{ "onset of leaf fall"} \OperatorTok{&}\StringTok{ }\KeywordTok{grepl}\NormalTok{(}\StringTok{"Betula"}\NormalTok{, Species))}
+\NormalTok{birch.end <-}\StringTok{ }\KeywordTok{subset}\NormalTok{(phenodata, }
+\NormalTok{                    Event }\OperatorTok{==}\StringTok{ "leaf fall end"} \OperatorTok{&}\StringTok{ }\KeywordTok{grepl}\NormalTok{(}\StringTok{"Betula"}\NormalTok{, Species))}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize
+
+Merging the two by \texttt{Site}:
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{birch.fall <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(birch.start, birch.end, }\DataTypeTok{by =} \KeywordTok{c}\NormalTok{(}\StringTok{'Site'}\NormalTok{,}\StringTok{'Year'}\NormalTok{))}
+\end{Highlighting}
+\end{Shaded}
+
+\col{.4}
+
+No obvious patterns:
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{with}\NormalTok{(birch.fall, }\KeywordTok{plot}\NormalTok{(Day.x, Day.y, }\DataTypeTok{xlab =} \StringTok{"fall start"}\NormalTok{, }\DataTypeTok{ylab =} \StringTok{"fall end"}\NormalTok{, }\DataTypeTok{col =} \KeywordTok{alpha}\NormalTok{(}\DecValTok{1}\NormalTok{, }\FloatTok{.1}\NormalTok{), }\DataTypeTok{pch =} \DecValTok{19}\NormalTok{))}
+\KeywordTok{abline}\NormalTok{(}\DecValTok{0}\NormalTok{,}\DecValTok{1}\NormalTok{, }\DataTypeTok{col=}\DecValTok{2}\NormalTok{, }\DataTypeTok{lwd=}\DecValTok{2}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\normalsize Note: a few places, fall ended before it began!
+
+\ecols
+
+\end{frame}
+
+\begin{frame}[fragile]{Fall duration against fall start}
+\protect\hypertarget{fall-duration-against-fall-start}{}
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{birch.fall <-}\StringTok{ }\KeywordTok{mutate}\NormalTok{(birch.fall, }\DataTypeTok{fall.start =}\NormalTok{ Day.x, }\DataTypeTok{fall.end =}\NormalTok{ Day.y, }\DataTypeTok{fall.duration =}\NormalTok{ fall.end }\OperatorTok{-}\StringTok{ }\NormalTok{fall.start)}
+\NormalTok{birch.fall <-}\StringTok{ }\KeywordTok{merge}\NormalTok{(birch.fall, sites, }\DataTypeTok{by =} \StringTok{"Site"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\bcols
+\col{.5}
+\small
+
+Against start of fall
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggplot}\NormalTok{(birch.fall, }\KeywordTok{aes}\NormalTok{(fall.start, fall.duration, }
+                       \DataTypeTok{size=}\NormalTok{East, }\DataTypeTok{col=}\NormalTok{North)) }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{geom_point}\NormalTok{(}\DataTypeTok{alpha =} \FloatTok{0.3}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{theme_few}\NormalTok{() }
+\end{Highlighting}
+\end{Shaded}
+
+\small
+
+The later the fall starts, the shorter it is. The more East, the more
+North, the shorter the fall.
+
+\col{.5}
+\small
+
+Against Year:
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{ggplot}\NormalTok{(birch.fall, }\KeywordTok{aes}\NormalTok{(Year, fall.duration, }
+                       \DataTypeTok{size=}\NormalTok{East, }\DataTypeTok{col=}\NormalTok{Site)) }\OperatorTok{+}\StringTok{ }
+\StringTok{    }\KeywordTok{geom_point}\NormalTok{(}\DataTypeTok{alpha =} \FloatTok{0.3}\NormalTok{) }\OperatorTok{+}\StringTok{ }\KeywordTok{theme_few}\NormalTok{() }
+\end{Highlighting}
+\end{Shaded}
+
+\small
+
+No obvious trends in time \ecols
+
+\end{frame}
+
+\begin{frame}[fragile]{Statistics}
+\protect\hypertarget{statistics}{}
+
+\scriptsize
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{lmer}\NormalTok{(fall.duration }\OperatorTok{~}\StringTok{ }\NormalTok{fall.start }\OperatorTok{+}\StringTok{ }\NormalTok{North }\OperatorTok{+}\StringTok{ }\NormalTok{East }\OperatorTok{+}\StringTok{ }\NormalTok{Year }\OperatorTok{+}\StringTok{ }\NormalTok{(}\DecValTok{1}\OperatorTok{|}\NormalTok{Site), }\DataTypeTok{data =}\NormalTok{ birch.fall)}
+\end{Highlighting}
+\end{Shaded}
+
+\scriptsize
+
+\normalsize 
+\bi
+
+\I Lots of significant effects! It seems like fall is getting a bit
+LONGER each year, at about the same rate as spring is moving forward.
+
+\I Много значимих еффектов, включая удлиненния осени со временем -
+примерно таким же темпом как и весна наступает раньше.\\
+\ei
+
+\end{frame}
+
+\begin{frame}[fragile]{Actual conclusions \textbar{} Реальные выводы}
+\protect\hypertarget{actual-conclusions--}{}
+
+\bcols
+\col{.5}
+
+\bi
+
+\I The package is available to any collaborator (contact me). \I It
+should make it relatively EASY to explore and analyze this insanely rich
+dataset. \I It will be grow, with more phenological data, meteorological
+data, and functions with time. We will try to keep you up to date on its
+progress (and availability). \I USE IT! \ei 
+
+\col{.5}
+\bi
+
+\I Пакет \texttt{ebfb} доступен любим сотрудником проекта. \I Он создан
+для того что-бы упростить аналитическую работу с этим массивном сбором
+объедененых данных. \I Пакет будет расти - добавлять данные и
+фенологические и метеорологическии, и с новыми функциами. Но мы
+постараемся держать коллектив в курсе. \I ИСПОЛЬЗУЕТЕ ЕГО! \ei \ecols
+
+\end{frame}
+
+\begin{frame}{Thanks \textbar{} Спасибо}
+\protect\hypertarget{thanks-}{}
+
+\bc
+\PlotW{1}{altai.jpg}
+
+(на Алтае) \ec
+
+\end{frame}
+
+\end{document}
