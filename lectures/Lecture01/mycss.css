@@ -13,7 +13,14 @@
   background-size: cover;
 }
 
-.center-50 { float: center; width: 50%; }
+.center-60 { text-align-last: center; width: 60%; }
+.center-70 { text-align-last: center; width: 70%; }
+.center-80 { text-align-last: center; width: 80%; }
+
+.pull-left-80 { float: left; width: 76.5%; }
+.pull-right-20 { float: right; width: 18.5%; }
+.pull-right-20 + * { clear: both; }
+
 
 .pull-left-70 { float: left; width: 66.5%; }
 .pull-right-30 { float: right; width: 28.5%; }
@@ -45,6 +52,7 @@
 
 .black { color: black; }
 .red { color: red; }
+.darkred { color: darkred; }
 .blue { color: blue; }
 .green { color: green; }
 .yellow { color: yellow; }
@@ -53,6 +61,7 @@
 .gray { color: gray; }
 .grey { color: gray; }
 .white { color: Ivory; }
+.cyan { color: Cyan; }
 
 /******************
  * 
@@ -79,10 +88,10 @@
 .content-box-purple,
 .content-box-red,
 .content-box-yellow {
-    border-radius: 15px;
-    margin: 0 0 25px;
+    border-radius: 5px;
+    margin: 0 0 5px;
     overflow: hidden;
-    padding: 20px;
+    padding: 5px;
     width: 100%;
 }
 
@@ -126,3 +135,57 @@
     flex: 1 1 auto;
 }
 
+/* from sydney.css https://github.com/garthtarr/sydney_xaringan/blob/master/assets/sydney.css*/
+
+blockquote, .blockquote {
+  display: block;
+  margin-top: 0.1em;
+  margin-bottom: 0.2em;
+  margin-left: 5px;
+  margin-right: 5px;
+  border-left: solid 10px #0148A4;
+  border-top: solid 2px #0148A4;
+  border-bottom: solid 2px #0148A4;
+  border-right: solid 2px #0148A4;
+  box-shadow: 0 0 6px rgba(0,0,0,0.5);
+  /* background-color: #e64626; */
+  color: #e64626;
+  padding: 0.5em;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+}
+
+.blockquote p {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.blockquote > h1:first-of-type {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.blockquote > h2:first-of-type {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.blockquote > h3:first-of-type {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.blockquote > h4:first-of-type {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.footnote {
+  position: absolute;
+  bottom: 0;
+  padding-right: 8em; /* to avoid the page numbering */ 
+}
+/* footnote identifier use: .fn[1] */
+.fn {
+  vertical-align: super;
+  font-size: 60%;
+}
+.footnote {
+  font-size: 0.7em;
+}
