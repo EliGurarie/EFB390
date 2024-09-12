@@ -67,6 +67,8 @@ We will hopefully also get you even more interested in wildlife ecology than you
 ### Unit II. Estimating Abundances: *How many animals are out there?*
 
 - 5. [Counting Animals, Part I](lectures/Lecture05/Lecture05_CountingAnimals.html)
+- 6. [Counting Animals, Part II](lectures/Lecture06/Lecture06_CountingAnimals_PartII.html)
+- 6b. [Estimating Ice Seal Abundance](lectures/Lecture06/Lecture06b_EstimatingAntarcticIceSeals.pdf)
 
 <!--  -->
 
