@@ -270,38 +270,206 @@ Conclusion: this estimate is **accurate** (unbiased), but not very **precise** (
 
 
 ---
-### General principle: The bigger the sample, the smaller the error. 
+## Estimating **precision** of the estimate **v. 1**
+
+**IF:**
+
+`1.` Total area covered is small: `\(a_s \ll A\)` 
+- (.green[.small[*Fryxell says &lt; 15% coverage*]])
+
+`2.` **OR** You are potentially resampling the same individuals 
+- (.green[.small[*Fryxell calls this*  ***Sampling With Replacement*** [SWR]]])
+
+`3.` **And** samples are .blue[*distributed throughout the range*] 
+- (.green.small[this is a BIG assumption, we will revisit])
+
+then: 
+
+.darkred[$$SE(\widehat{N}) = A  {\sqrt{\sum n_i} \over ak}$$]
+
+- `\(n_i\)` is set of **sample counts**
+- `\(k\)` is the **number of samples**: `\(i =\{1,2,...,k\}\)` )
+- `\(a\)` is the area of the sample frame
+
+]
+
+**Much uglier!** but this formula takes into account the actual *variability* among the counts correctly. 
+
+---
+
+## In our example
+
+.Large.darkred[$$SE(\widehat{N}) = A  {\sqrt{\sum n_i} \over ak}$$]
+
+- `\(n_i\)` is set of **sample counts**
+- `\(k\)` is the **number of samples**: `\(i =\{1,2,...,k\}\)` )
+- `\(a\)` is the area of the sample frame
+
+raw counts were  `n = {0,0,5,0,3,1,2,3,6,1}`
+
+.pull-left[
+
+quantity | value
+---|---
+a | 10
+A | 100²
+k | 10
+`\(\sum n\)` | 21
+]
+.pull-right.darkred[
+
+`$$\begin{align} SE &amp;= 100² \times {\sqrt{21} \over 100 \times 10}\\
+&amp;= {\huge 54.8} \end{align}$$`
+
+]
 
 
-`1.` If `\(a_s \ll A\)`  (i.e. low sampling intensity)
+---
+## Estimating **precision** of the estimate **v. 2**
 
-`$$SE(\widehat{N}) = {A \over a} {\sqrt{\sum n_i} \over k}$$`
-**remember:** 
-- `\(n_s = \sum n_i\)` is the total **sample count**
-- `\(k\)` is the total number of samples: `\(i =\{1,2,...,k\}\)` )
 
-.center.red[
-in our example: `\(SE = 100²/10^2 \times \sqrt{21}/10 = 54.8\)`
+**IF:**
+
+`1.` Total area covered is small: `\(a_s \ll A\)` 
+- (.green[.small[*Fryxell says &lt; 15% coverage*]])
+
+`2.` **OR** You are potentially resampling the same individuals 
+- (.green[.small[*Fryxell calls this*  ***Sampling With Replacement*** [SWR]]])
+
+`3.` **And** samples are .blue[*you don't knoe how they are distributed throughout the range*]  - (.green.small[this is a MUCH BETTER assumption])
+
+then: 
+
+.darkred[ 
+
+`$$SE(\widehat{N}) = {A \over ka}  \sqrt{ {\sum n_i^2 - (\sum n_i)^2/k) \over k(k - 1)}}$$`
+
+]
+
+.center[**Much uglier!  But more useful!**]
+
+
+---
+
+## In our example
+
+.Large.darkred[$$SE(\widehat{N}) = A  \sqrt{ {\sum n_i^2 - (\sum n_i)^2/k) \over k(k - 1)}}$$]
+
+raw counts:  `n = {0,0,5,0,3,1,2,3,6,1}`
+
+
+.pull-left-40[
+
+
+quantity | value
+---|---
+a | 10
+A | 100²
+k | 10
+`\(\sum n^2\)` | 85
+`\((\sum n)^2\)` | 441
+]
+.pull-right-60[
+
+
+``` r
+n = c(0,0,5,0,3,1,2,3,6,1)
+a &lt;- 10; A &lt;- 100^2; k &lt;- 10
+(A/(k*a) * sqrt( (sum(n^2) - (sum(n)^2/k)) / (k*(k-1)) ))
+```
+
+```
+## [1] 67.41249
+```
+
+.large.center.darkred[ 
+`\(SE(\widehat{N}) = 67.4\)` 
+]
+
+]
+
+
+---
+class: inverse
+
+## In-class Experiment
+
+#### Some facts
+
+- There are **62** students in this class. 
+
+- Each student has a first name, composed of some number *n* of letters
+
+- There are a total of .red[***N***] letters in all the first names of the class.
+
+#### The challenge:
+
+- break into groups of **8-12** and record the number of letters in the first names of all the people in your group
+
+- estimate the total number of letters in the names of the entire class.
+
+#### formulae
+
+.center.red[ 
+`\(\widehat{N} = A {\sum n \over ak};  \,\,\,\,\, SE(\widehat{N}) = A  \sqrt{ {\sum n_i^2 - (\sum n_i)^2/k) \over k(k - 1)}}\)`
+
+] 
+ 
+ 
+ 
+---
+
+# Combining estimates
+
+.pull-left[
+If you have multiple sub-count estimates (e.g. one for each of `\(r\)` sub-region): 
+
+.darkred[
+
+-  `\(\widehat{N_1}, \widehat{N_2},  ..., \widehat{N_r},\)` 
+
+]
+
+and each estimate has a standard error: 
+
+.darkred[ 
+
+- `\(SE(\widehat{N_1}), SE(\widehat{N_2}), ..., SE(\widehat{N_r})\)` 
+
+]
+
+Then ... ]
+
+--
+
+.pull-right[
+
+... the **total** estimate will be: 
+
+.darkgreen[
+
+`$$\widehat{N} = \sum_{i = 1}^r \widehat{N_i}$$`
+
+
+]
+
+and the standard error will be:
+
+.darkgreen[
+
+`$$SE(\widehat{N}) = \sqrt{\sum_{i = 1}^r SE(\widehat{N_i})^2}$$`
+
+]
+
 ]
 
 --
 
-
-`2.` If you are NOT resampling previously sampled locations: 
-
-`$$SE(\widehat{N}) = {A \over ak} \sqrt{\sum n_i \left(1 - {a_s \over A}\right)}$$`
-
-This is the .blue[Finite Area Correction].  If `\(a = A\)` - you sampled everything - SE goes to 0 as expected.  
-
-.center.red[
-in our example: `\(SE = 54.5\)`
-... Almost no difference (because `\(a \ll A\)`).
-]
-
-
+.red.center[*Is this estimate more precise?*]
 
 ---
-## Some more complex formulae
+
+## Some other formulae
 
 
  from Fryxell book Chapter 12:
