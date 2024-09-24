@@ -2864,11 +2864,16 @@ of abundance with standard errors</h2>
 <p>Let’s say you had 5 people count all the sea lions on a rookery. Here
 are their counts:</p>
 <pre class="r"><code>counts &lt;- c(150,125,105,110,140)</code></pre>
+<div id="the-mean" class="section level3" number="1.5.1">
+<h3><span class="header-section-number">1.5.1</span> The
+<strong>mean</strong></h3>
 <p>The <em>average</em> - or arithemtic mean - of these counts gives us
 a good <strong>point estimate</strong> of sea lions at this location.
 This is defined (in math terms) as:</p>
 <p><span class="math display">\[\widehat{N} = {1\over k} \sum_{i=1}^k
 N_i\]</span></p>
+<p>In this notation, <span class="math inline">\(N_i\)</span> is the
+<span class="math inline">\(i\)</span>’th count, where <span class="math inline">\(i = \{1,2, ... k\}\)</span>, i.e. there are <span class="math inline">\(k\)</span> counts.</p>
 <p>Two ways to do this in R. Decompose everything:</p>
 <pre class="r"><code>k &lt;- length(counts)
 sum(counts)/k</code></pre>
@@ -2876,15 +2881,37 @@ sum(counts)/k</code></pre>
 <p>Or just use the <code>mean()</code> function:</p>
 <pre class="r"><code>mean(counts)</code></pre>
 <pre><code>## [1] 126</code></pre>
-<p>A little trickier is the <strong>standard error</strong> of this
-estimate. Remember, the <strong>standard error</strong> of an estimate
-is the standard deviation of all the estimates. The <a href="https://en.wikipedia.org/wiki/Standard_deviation">standard
-deviation</a> is a measure of the spread around the mean. A formula for
-it is given by:</p>
+</div>
+<div id="standard-deviation-vs.-standard-error" class="section level3" number="1.5.2">
+<h3><span class="header-section-number">1.5.2</span> <strong>Standard
+deviation</strong> vs. <strong>standard error</strong></h3>
+<p>What we ultimately want is the <strong>standard error</strong> of
+this estimate. But first, we have to go through its close cousin, the
+<strong>standard deviation</strong>.</p>
+<p>The difference between these two is <u>confusing</u> and
+<u>important</u>. Here are some bullet points:</p>
+<ul>
+<li><p>The <a href="https://en.wikipedia.org/wiki/Standard_deviation">standard
+deviation (SD)</a> is a measure of total spread of data.</p></li>
+<li><p>The <a href="https://en.wikipedia.org/wiki/Standard_error">standard error
+(SE)</a> is a measure of the precision of an estimate. You need it for
+constructing <strong>confidence intervals</strong>.</p></li>
+<li><p>The <strong>standard deviation</strong> is (basically) always
+estimates with the same formula: <span class="math display">\[\text{SD}(N) = \sqrt{\frac{1}{k-1}\sum_{i= 1}^k
+\left(N_i - \widehat{N} \right)^2}\]</span></p></li>
+<li><p>The <strong>standard error</strong> is estimated in lots of
+different ways totally depending on the kind of estimate you’re
+computing it for. In this example (the standard error of an estimate of
+the mean), it’s formula would be:</p></li>
+</ul>
 <p><span class="math display">\[\text{SE}(\widehat{N}) =
-\sqrt{\frac{1}{k-1}\sum_{i= 1}^k \left(N_i - \widehat{N}
-\right)^2}\]</span></p>
-<p>There’s kind of a lot going on here! But easy to pick apart in R.</p>
+\frac{1}{\sqrt{k}} \text{SD}(N)\]</span></p>
+</div>
+<div id="compute-standard-deviation" class="section level3" number="1.5.3">
+<h3><span class="header-section-number">1.5.3</span> Compute standard
+deviation</h3>
+<p>There’s kind of a lot going on in the standard deviation formula
+above! But it is easy to pick apart the pieces in R.</p>
 <ol style="list-style-type: decimal">
 <li>The difference between the observations and the means (the
 <em>deviations</em>) are:</li>
@@ -2892,24 +2919,41 @@ it is given by:</p>
 <pre class="r"><code>counts - mean(counts)</code></pre>
 <pre><code>## [1]  24  -1 -21 -16  14</code></pre>
 <p>Some are positive, some negative, and they add up to 0.</p>
-<p>Next, square them and sum them:</p>
+<ol start="2" style="list-style-type: decimal">
+<li>Next, square them and sum them:</li>
+</ol>
 <pre class="r"><code>sum((counts - mean(counts))^2)</code></pre>
 <pre><code>## [1] 1470</code></pre>
 <p>That’s a big number!</p>
-<p>Now, divide by <span class="math inline">\(k-1\)</span> and take the
-square root of the whole thing:</p>
+<ol start="3" style="list-style-type: decimal">
+<li>Divide that thing by <span class="math inline">\(k-1\)</span> and
+take the square root of the whole thing:</li>
+</ol>
 <pre class="r"><code>sqrt(sum((counts - mean(counts))^2) / (k-1))</code></pre>
 <pre><code>## [1] 19.17029</code></pre>
-<p>Voilá! The standard error.</p>
+<p>Voilá! The standard deviation.</p>
 <p>Of course all of that can be done in one quick command in R:</p>
-<pre class="r"><code>sd(counts)</code></pre>
+<pre class="r"><code>count.sd &lt;- sd(counts)
+count.sd</code></pre>
 <pre><code>## [1] 19.17029</code></pre>
-<p>But isn’t it nice to know how the sausage is made!</p>
-<p>If you want to report a confidence interval (<span class="math inline">\(\widehat{N} \pm 2 \times SE(\widehat{N})\)</span>)
-yuo can do that like this:</p>
-<pre class="r"><code>mean(counts) + c(-2,2)*sd(counts)</code></pre>
-<pre><code>## [1]  87.65942 164.34058</code></pre>
+<p>Super fast and convenient! But isn’t it nice to know how the sausage
+is made?</p>
+<p>Notice also that this time we saved the output into an object called
+<code>count.sd</code>.</p>
+</div>
+<div id="standard-error-and-confidence-interval" class="section level3" number="1.5.4">
+<h3><span class="header-section-number">1.5.4</span> Standard error and
+Confidence Interval</h3>
+<p>Once we have the SD, it’s easy to get the SE:</p>
+<pre class="r"><code>count.se &lt;- count.sd / sqrt(k)
+count.se</code></pre>
+<pre><code>## [1] 8.573214</code></pre>
+<p>So now If you want to report a confidence interval (<span class="math inline">\(\widehat{N} \pm 2 \times SE(\widehat{N})\)</span>)
+you can do that like this:</p>
+<pre class="r"><code>mean(counts) + c(-2,2)*count.se</code></pre>
+<pre><code>## [1] 108.8536 143.1464</code></pre>
 <p><font color="#2E8B57"></p>
+</div>
 </div>
 <div id="exercise-1-calculate-point-estimate-and-standard-error-of-your-flag-counts" class="section level2" number="1.6">
 <h2><span class="header-section-number">1.6</span> Exercise 1: Calculate

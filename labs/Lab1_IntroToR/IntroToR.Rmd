@@ -98,9 +98,13 @@ Let's say you had 5 people count all the sea lions on a rookery. Here are their 
 counts <- c(150,125,105,110,140)
 ```
 
+### The **mean**
+
 The *average* - or arithemtic mean - of these counts gives us a good **point estimate** of sea lions at this location.  This is defined (in math terms) as:
 
 $$\widehat{N} = {1\over k} \sum_{i=1}^k N_i$$
+
+In this notation, $N_i$ is the $i$'th count, where $i = \{1,2, ... k\}$, i.e. there are $k$ counts. 
 
 Two ways to do this in R.  Decompose everything: 
 
@@ -115,15 +119,28 @@ mean(counts)
 ```
 
 
-A little trickier is the **standard error** of this estimate.  Remember, the **standard error** of an estimate is the standard deviation of all the estimates.  The [standard deviation](https://en.wikipedia.org/wiki/Standard_deviation) is a measure of the spread around the mean.  A formula for it is given by:
+### **Standard deviation** vs. **standard error**
 
-$$\text{SE}(\widehat{N}) = \sqrt{\frac{1}{k-1}\sum_{i= 1}^k \left(N_i - \widehat{N} \right)^2}$$
+What we ultimately want is the **standard error** of this estimate. But first, we have to go through its close cousin, the **standard deviation**. 
 
+The difference between these two is <u>confusing</u> and <u>important</u>.  Here are some bullet points: 
 
-There's kind of a lot going on here!  But easy to pick apart in R.
+- The [standard deviation (SD)](https://en.wikipedia.org/wiki/Standard_deviation) is a measure of total spread of data.  
+
+- The [standard error (SE)](https://en.wikipedia.org/wiki/Standard_error) is a measure of the precision of an estimate.  You need it for constructing **confidence intervals**. 
+
+- The **standard deviation** is (basically) always estimates with the same formula: 
+$$\text{SD}(N) = \sqrt{\frac{1}{k-1}\sum_{i= 1}^k \left(N_i - \widehat{N} \right)^2}$$
+
+- The **standard error** is estimated in lots of different ways totally depending on the kind of estimate you're computing it for. In this example (the standard error of an estimate of the mean), it's formula would be:
+
+$$\text{SE}(\widehat{N}) = \frac{1}{\sqrt{k}} \text{SD}(N)$$
+
+### Compute standard deviation
+
+There's kind of a lot going on in the standard deviation formula above!  But it is easy to pick apart the pieces in R.
 
 1. The difference between the observations and the means (the *deviations*) are:
-
 
 ```{r}
 counts - mean(counts)
@@ -131,7 +148,7 @@ counts - mean(counts)
 
 Some are positive, some negative, and they add up to 0. 
 
-Next, square them and sum them:
+2. Next, square them and sum them:
 
 ```{r}
 sum((counts - mean(counts))^2)
@@ -139,27 +156,37 @@ sum((counts - mean(counts))^2)
 
 That's a big number!
 
-Now, divide by $k-1$ and take the square root of the whole thing:
+3. Divide that thing by $k-1$ and take the square root of the whole thing:
 
 ```{r}
 sqrt(sum((counts - mean(counts))^2) / (k-1))
 ```
 
-Voilá!   The standard error.  
+Voilá!  The standard deviation.  
 
 Of course all of that can be done in one quick command in R:
 
 ```{r}
-sd(counts)
+count.sd <- sd(counts)
+count.sd
 ```
+Super fast and convenient!  But isn't it nice to know how the sausage is made?
 
-But isn't it nice to know how the sausage is made!
+Notice also that this time we saved the output into an object called `count.sd`. 
 
-If you want to report a confidence interval ($\widehat{N} \pm 2 \times SE(\widehat{N})$) yuo can do that like this:
 
+### Standard error and Confidence Interval
+
+Once we have the SD, it's easy to get the SE:
 
 ```{r}
-mean(counts) + c(-2,2)*sd(counts)
+count.se <- count.sd / sqrt(k)
+count.se
+```
+So now If you want to report a confidence interval ($\widehat{N} \pm 2 \times SE(\widehat{N})$) you can do that like this:
+
+```{r}
+mean(counts) + c(-2,2)*count.se
 ```
 
 <font color = "#2E8B57">
@@ -169,7 +196,6 @@ mean(counts) + c(-2,2)*sd(counts)
 > Use the formulas and code above to compute the point estimate and standard error around the 3 flag counts from your group. Report: > (1) the point estimate; (2) the standard error, (3) the confidence interval. 
 
 </font>
-
 
 
 ## Multiple Vectors and Data Frames
