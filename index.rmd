@@ -7,6 +7,11 @@ output:
     toc_depth: 5
     thumbnails: TRUE
     anchor_sections: FALSE
+analytics:
+  provider: "google-gtag"
+  google:
+    tracking_id: "G-TF1EE90BWT"
+    anonymize_ip: false # default
 ---
 
 > ## Course Materials
@@ -51,7 +56,7 @@ Wildlife *management* places all the complexity of wildlife ecology into a slopp
 
 In this course, we will introduce methods, theories, concepts, and contemporary research topics in wildlife ecology, placing these into the very human inflected context of management. 
 
-We will hopefully also get you even more interested in wildlife ecology than you maybe already are!  It is my opinion (and that of a great many of my colleagues) that there is no better or more interesting job than being a wildlife ecologist1  
+We will hopefully also get you even more interested in wildlife ecology than you maybe already are!  It is my opinion (and that of a great many of my colleagues) that there is no better or more interesting job than being a wildlife ecologist.   
 
 
 ## Lectures
@@ -59,16 +64,23 @@ We will hopefully also get you even more interested in wildlife ecology than you
 ### Unit I. Basics and history: *What do animals mean to us?*
 
 - 0. [Highlights of the Syllabus](lectures/Lecture00/HighlightsOfTheSyllabus.html)  
-- 1. [Lecture 1: Definitions](lectures/Lecture01/Lecture_Basics.html) 
-- 2. [Mini-Lecture: on Caribou and Research](lectures/Lecture03/ResearchAndCaribou.pdf)
+- 1. [Definitions](lectures/Lecture01/Lecture_Basics.html) 
+- 2. [Mini-Lecture on Caribou and Referencing](lectures/Lecture03/ResearchAndCaribou.pdf)
 - 3. [Deep History of Human-Wildlife Interactions, Part I](lectures/Lecture03/Lecture03_DeepHistory.html)
 - 4. [Deep History of Human-Wildlife Interactions, Part II](lectures/Lecture04/Lecture04_HistoryPartII.html)
 
 ### Unit II. Estimating Abundances: *How many animals are out there?*
 
 - 5. [Counting Animals, Part I](lectures/Lecture05/Lecture05_CountingAnimals.html)
-- 6. [Counting Animals, Part II](lectures/Lecture06/Lecture06_CountingAnimals_PartII.html)
-- 6b. [Estimating Ice Seal Abundance](lectures/Lecture06/Lecture06b_EstimatingAntarcticIceSeals.pdf)
+- 6. [Counting Animals, Part II](lectures/Lecture06/Lecture06_CountingAnimals_PartII.html) <br>
+6b. [Estimating Ice Seal Abundance](lectures/Lecture06/Lecture06b_EstimatingAntarcticIceSeals.pdf)
+
+
+
+## Labs
+- 1. [**Introduction to R**](labs/Lab1_IntroToR/IntroToR.html) <br> (also [R code](labs/Lab1_IntroToR/IntroToR.R) and [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv))
+    
+- 2. [**Estimating Abundances in R**](labs/Lab1b_EstimatingFlagAbundances/EstimatingAbundancesInR.html) <br> (also [R code](labs/Lab1b_EstimatingFlagAbundances/EstimatingAbundancesInR.R) and [flag count dataset](labs/Lab1b_EstimatingFlagAbundances/CirclesAndSquares.csv))
 
 <!--  -->
 

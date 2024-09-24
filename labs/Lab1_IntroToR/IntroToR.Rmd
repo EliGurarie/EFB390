@@ -1,12 +1,15 @@
 ---
 title: "Introduction to R"
-subtitle: 'EFB 390 - Fall 2023'
+subtitle: '[EFB 390](https://eligurarie.github.io/EFB390/) - Fall 2024'
 author: "Dr. Elie Gurarie"
 date: "`r Sys.Date()`"
 output: 
   html_document: 
+    theme: journal
     toc: true
-    toc_float: true
+    toc_float: true  
+    df_print: paged
+    number_sections: true
 ---
 
 ```{r setup, include=FALSE}
@@ -15,7 +18,7 @@ knitr::opts_chunk$set(echo = TRUE,
                       mmessage = FALSE)
 ```
 
-# Part 1: Basics
+# Basics
 
 > The following examples should give you a first look at what R does and how it works. 
 
@@ -197,7 +200,7 @@ mydata$X
 mydata$Y
 ```
 
-# Part 2: Loading and Exploring Data
+# Loading and Exploring Data
 
 > The following examples should explain how to import data frames and to work with the data contained within them. 
 
@@ -308,7 +311,7 @@ Which sex is larger!?
 
 ### Scatterplot
 
-A scatterplot shows us relationships between two continuous variables:
+Finally, a scatterplot shows us relationships between two continuous variables:
 
 ```{r, echo = -1}
 plot(Length, Weight)
