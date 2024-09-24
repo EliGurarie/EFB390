@@ -7,12 +7,17 @@ output:
     toc_depth: 5
     thumbnails: TRUE
     anchor_sections: FALSE
-analytics:
-  provider: "google-gtag"
-  google:
-    tracking_id: "G-TF1EE90BWT"
-    anonymize_ip: false # default
 ---
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DTFGD3SPTQ"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-DTFGD3SPTQ');
+</script>
 
 > ## Course Materials
 >

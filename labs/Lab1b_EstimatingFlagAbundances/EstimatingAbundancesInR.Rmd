@@ -55,7 +55,7 @@ mean(total.counts)
 
 The confidence interval is the **standard error** of those estimates:
 
-$SE = {SD \over \sqrt{n}}$$
+$SE = \frac{1}{\sqrt{n}}SD$$
 
 Where $SD$ is **standard deviation**: 
 
@@ -104,7 +104,7 @@ transect.areas <- c(8,8,8,8,8)
 
 For both transects and sampling frames, the key is always to FIRST estimate the density, and then turn that into an abundance estimate. Remmber, the density estimate is:
 
-$$\widehat{D} = {\sum_{i = 1}^k c_i \over  \sum_{i = 1}^k a_i}$$
+$$\widehat{D} = \frac{\sum_{i = 1}^k c_i}{\sum_{i = 1}^k a_i}$$
 
 i.e., sum up the counts and divide by the sum of the areas.  In the transect study, there are always 40m x 1m of area total, so $\sum a_i = 40$. 
 
