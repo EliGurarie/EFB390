@@ -2808,8 +2808,8 @@ those estimates:</p>
 <p><span class="math inline">\(SE = {SD \over \sqrt{n}}\)</span>$</p>
 <p>Where <span class="math inline">\(SD\)</span> is <strong>standard
 deviation</strong>:</p>
-<p><span class="math display">\[SD_X = \sqrt{{1 \over n - 1}
-\sum_{i=1}^n (X_i-\overline{X})^2} \]</span></p>
+<p><span class="math display">\[SD_X = \sqrt{\frac{1}{n -
+1}  \sum_{i=1}^n (X_i-\overline{X})^2} \]</span></p>
 <p>Woah! That’s crazy complicated. The LONG WAY to do this in R is:</p>
 <pre class="r"><code>n &lt;- length(total.counts)
 counts.sd &lt;- sqrt( (1/(n-1)) * sum( (total.counts - mean(total.counts))^2 ) )</code></pre>

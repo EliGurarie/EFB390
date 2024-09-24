@@ -59,7 +59,7 @@ $SE = {SD \over \sqrt{n}}$$
 
 Where $SD$ is **standard deviation**: 
 
-$$SD_X = \sqrt{{1 \over n - 1} \sum_{i=1}^n (X_i-\overline{X})^2} $$
+$$SD_X = \sqrt{\frac{1}{n - 1}  \sum_{i=1}^n (X_i-\overline{X})^2} $$
 
 Woah!  That's crazy complicated.  The LONG WAY to do this in R is:
 
