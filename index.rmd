@@ -79,7 +79,7 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - 5. [Counting Animals, Part I](lectures/Lecture05/Lecture05_CountingAnimals.html)
 - 6. [Counting Animals, Part II](lectures/Lecture06/Lecture06_CountingAnimals_PartII.html) <br>
 6b. [Estimating Ice Seal Abundance](lectures/Lecture06/Lecture06b_EstimatingAntarcticIceSeals.pdf)
-
+- 7. [Mark-Recapture and Index Counts](lectures/Lecture07/Lecture07_IndexCounts.html) 
 
 
 ## Labs
