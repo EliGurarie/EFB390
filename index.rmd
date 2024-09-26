@@ -82,6 +82,11 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - 7. [Mark-Recapture and Index Counts](lectures/Lecture07/Lecture07_IndexCounts.html) 
 
 
+### Unit III. Habitat: *Where are they? And why?*
+
+- 8. [Habitats - Part I](lectures/Lecture08/Lecture_Habitat_PartI.html)
+
+
 ## Labs
 - 1. [**Introduction to R**](labs/Lab1_IntroToR/IntroToR.html) <br> (also [R code](labs/Lab1_IntroToR/IntroToR.R) and [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv))
     
