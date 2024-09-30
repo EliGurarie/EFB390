@@ -1,0 +1,172 @@
+"ID","Name","Article","species.","population.","point.estimate","Did.your.article.report.","Lower.confidence.interval.","Upper.confidence.interval.","Standard.error.or.coefficient.of.variation."
+"2","kristen bashen","Article1","white-tailed deer","67 deer per square mile",200,"Confidence intervals","65","200",NA
+"2","kristen bashen","Article2","spiders","164",50,"margalef’s index, berger-parker index, moritisa-horn index",NA,NA,NA
+"2","kristen bashen","Article3","Wild Golden Lion Tamarians ","3,706 ",2000,"Confidence intervals","2000","3706",NA
+"3","Jacob Painter","Article1","White-tailed deer","579",6,"Standard error",NA,NA,"2"
+"3","Jacob Painter","Article2","Moose","294",24.5,"Standard error",NA,NA,"3.3"
+"3","Jacob Painter","Article3","Redband trout","971,313",5250,"Confidence intervals","825617","1117009",NA
+"4","Caleb Landry","Article1","Red/Blue/Suni/Abbott's duiker, bushbuck","Forest Antelopes in mountains of Tanzania",29,"Standard Dev",NA,NA,NA
+"4","Caleb Landry","Article2","Monodon monoceros","Narwhals of the Canadian High Arctic",45532,"Coefficient of variation",NA,NA,"0.33"
+"4","Caleb Landry","Article3","Oreamnos americanus","Mountain Goats of Olympic Mountains",39,"Standard error",NA,NA,"44"
+"5","Sim Yee Siew","Article1","Ixodes ricinus and Ixodes persulcatus ticks","ticks in boreal forest, Finland",502,"(AUC = 0.91, 0.94)",NA,NA,NA
+"5","Sim Yee Siew","Article2","Amazona vinacea","Atlantic forest biome, Brazil",8000,"Confidence intervals","7795","8492",NA
+"5","Sim Yee Siew","Article3","Odocoileus virginianus","Urban Syracuse Roads",121,"Confidence intervals","93","159",NA
+"6","Megan Walters","Article1","Grevy's Zebra","Northern Kenya",344,"Confidence intervals","237","451",NA
+"6","Megan Walters","Article2","Coyotes","New York State",14310,"Confidence intervals","8719","22887",NA
+"6","Megan Walters","Article3","Pheasant ","DEC Region 8",400,"Coefficient of variation",NA,NA,"0.47"
+"7","Margaret Carroll","Article1","Harbor Seals","Harbor Seals in Gulf of Alaska",35981,"Standard error",NA,NA,"1833"
+"7","Margaret Carroll","Article2","Fur Seal","Pribilof fur seals",31342,"Total count numbers",NA,NA,NA
+"7","Margaret Carroll","Article3","Karner blue butterflies","Wisconsin Karner blue butterflies",235,"Total count numbers","0","0",NA
+"8","Casey Turkosz","Article1","Blainville's Beaked Whales","15.8 whales/1000km2",15.8,"Confidence intervals","13.2","21.2",NA
+"8","Casey Turkosz","Article2","Bobcat","3 bobcats/100Km2",3,"Confidence intervals","8","28",NA
+"8","Casey Turkosz","Article3","Moose","656 Moose",656,"Confidence intervals","501","859",NA
+"9","FaithAnn Vanderwalker","Article1","Long Billed Curlew","16 Western states",164515,"Standard error",NA,NA,"42047"
+"9","FaithAnn Vanderwalker","Article2","Whimbrels","Breeding adults on Chiloe Island, Chile",15032,"Confidence intervals","13234","16741",NA
+"9","FaithAnn Vanderwalker","Article3","White Tailed deer","Adirondack Park",16352,"Confidence intervals","11762","22734",NA
+"10","Tannar Cliffe","Article1","Bats","21",0.79,"Bayesian credible intervals 95%",NA,NA,NA
+"10","Tannar Cliffe","Article2","Sitatunga","11.1. sitatunga/km^2",179.5,"Standard error",NA,NA,"10"
+"10","Tannar Cliffe","Article3","Ticks","65",8,"Standard error",NA,NA,"10.62"
+"11","Conner Colesante","Article1","green-winged teal","3.2 million",2200000,"Standard error",NA,NA,"2e+05"
+"11","Conner Colesante","Article2","African Savanna elephant","659",308,"Confidence intervals","80","94",NA
+"11","Conner Colesante","Article3","Mourning Dove","194000000",11000000,"Confidence intervals","40","50",NA
+"12","Klementyna Cemerys","Article1","Balanoptera musculus","Blue Whale",303,"Confidence intervals","176","625",NA
+"12","Klementyna Cemerys","Article2","Lynx rufus","Bobcat",60,"Confidence intervals","45","79",NA
+"12","Klementyna Cemerys","Article3","Ixodes persulcatus","tick",988,"Standard error",NA,NA,"311"
+"13","Ryan Frohlich","Article1","Komodo Dragon","Komodo island ",925,"Confidence intervals","0.61","0.8",NA
+"13","Ryan Frohlich","Article2","Chinese Giant Salamander ","Turvey",13000,"Coefficient of variation",NA,NA,"0.8"
+"13","Ryan Frohlich","Article3","Kemps seaTurtle ","Rancho Nuevo",900,"Standard error",NA,NA,"0.3"
+"14","Megan Galenski ","Article1","Moose","501–859",656,"Standard error",NA,NA,"0.03"
+"14","Megan Galenski ","Article2","Adelie penguins","123,850",104139,"Confidence intervals","2","0.97",NA
+"14","Megan Galenski ","Article3","Blue Sharks","3,577",2218,"Confidence intervals","11000","15300",NA
+"15","Bryan Hidalgo","Article1","Cheetah","Global",7087,"Standard error",NA,NA,"20"
+"15","Bryan Hidalgo","Article2","Indian wolf","All populations",5500,"21",NA,NA,NA
+"15","Bryan Hidalgo","Article3","Asiatic lion","All in India",620,"Standard error",NA,NA,"5"
+"16","Alex Schmidt","Article1","Mallards","1,500,000",1235606,"Standard error",NA,NA,"135648"
+"16","Alex Schmidt","Article2","Deer","130",126,"Confidence intervals","17","30",NA
+"16","Alex Schmidt","Article3","Sea Lions","N/A ",2126,"Coefficient of variation",NA,NA,"0.463"
+"17","Deandre Gutierrez","Article1","Mexican Wolf","New Mexico and Arizona Mexican Wolf populations",40,"n/a",NA,NA,NA
+"17","Deandre Gutierrez","Article2","Wolverine","KENAI PENINSULA WOLVERINE POPULATION",130,"n/a",NA,NA,NA
+"17","Deandre Gutierrez","Article3","Bison","Antelope Island Bison Population",490,"n.a","0","0",NA
+"18","Rainn Anderson","Article1","Grey's Zebra","Lewa Wildlife Conservancy population",379,"Confidence intervals","237","451",NA
+"18","Rainn Anderson","Article2","Flordia manatee","Populations off of west and east coasts of Florida",8810,"Confidence intervals","7520","10280",NA
+"18","Rainn Anderson","Article3","White-tailed deer","The Blue Hills Reservation population",129,"Confidence intervals","65","107",NA
+"19","Caitlin Eaton","Article1","mule deer (Odocoileus hemionus) ","Rangely Data Analysis Unit D-6 (DAU-D6), Colorado",11052,"Confidence intervals","7549","14555",NA
+"19","Caitlin Eaton","Article2","gray wolf (Canis lupus)","Game Management Unit 21D, Alaska",256,"Confidence intervals","208","303",NA
+"19","Caitlin Eaton","Article3","house crow (Corvus splendens) ","city of Junagadh, state of Gujarat, India",2127,"Confidence intervals","2070","2184",NA
+"20","Mara Bugler","Article1","various duck species","279,717 in 2012 and 742,027 in 2013",510872,"Coefficient of variation",NA,NA,"0.37"
+"20","Mara Bugler","Article2","Plethodontid salamanders","44.5 (±53.6) across non-trail transects and 34.8 (±31.1) in the trail transects",39.65,"Standard error",NA,NA,"42.4"
+"20","Mara Bugler","Article3","Grenada Dove","160",160,"Standard error",NA,NA,"30"
+"21","Eli Grippin","Article1","Sage grouse","Wyoming",16740,"% of land surveyed",NA,NA,NA
+"21","Eli Grippin","Article2","Wild boar","north-eastern Poland",9.14,"Standard error",NA,NA,"1.09"
+"21","Eli Grippin","Article3","Prairie dogs","Iron County, Utah",1000,"area of collection","1","1",NA
+"22","Megan Cheshire","Article1","Eurasian wild boar (Sus scrofa)","throughout hunting grounds of the European Union ",1,"Standardized population trends",NA,NA,NA
+"22","Megan Cheshire","Article2","mammals ","Chernobyl ",7,"Coefficient of variation",NA,NA,"1"
+"22","Megan Cheshire","Article3","Sparus aurata","Salinas del Astur ",15000,"linear regression","1","2",NA
+"23","Hannah Ashe","Article1","Bald Eagle","Nationwide Eagle Nests",31304,"Standard error",NA,NA,"2511"
+"23","Hannah Ashe","Article2","Moose","Maine",3.35,"Estimate was of moose/kilometer squared",NA,NA,NA
+"23","Hannah Ashe","Article3","Elephant","Zimbabwe",82092,"Coefficient of variation",NA,NA,"8650"
+"24","John Henry","Article1","Manatees","Florida Manatees in the Atlantic",1607,"Confidence intervals","1353","1972",NA
+"24","John Henry","Article2","Ungulates","Wild and livestock populations in Kenya",384117,"Standard Error and Coefficient of variation, but not shown",NA,NA,NA
+"24","John Henry","Article3","Bighorn sheep","Wild sheep populations in Idaho",287,"Confidence intervals","233","341",NA
+"25","Grace Rudolph","Article1","Jackdaw","33,000",261738,"Standard error",NA,NA,"5000"
+"25","Grace Rudolph","Article2","Sloth Bear","29/100 km^2",61,"Confidence intervals","26","32",NA
+"25","Grace Rudolph","Article3","Brown tree snake","7195",337,"Confidence intervals","16.5","24",NA
+"26","Connor Fallon","Article1","elephant and buffalo ","Masai Mara ecosystem, where elephant and buffalo are active",9069,"Standard error",NA,NA,"1559"
+"26","Connor Fallon","Article2","hippopotamus","lagoon populated by hippo",112,"Standard error",NA,NA,"0"
+"26","Connor Fallon","Article3","Bald Eagles ","40-km area of the Malheur River in Oregon",8,"standard deviation ","0","0",NA
+"27","Samuel Kelsey","Article1","Jaguar","Mexico",4767,"Standard error",NA,NA,"706"
+"27","Samuel Kelsey","Article2","Little Penguins","Penguin Island, west of Australia",2069,"Standard error",NA,NA,"172"
+"27","Samuel Kelsey","Article3","Asian Elephant","Biligiri Rangasway Temple Tiger Reserve, in India",713,"Population Density","0","0",NA
+"28","Jack Caulfield","Article1","Gray wolf","278",4.05,"Confidence intervals","0.82","0.9",NA
+"28","Jack Caulfield","Article2","Sika deer","550",1078,"Confidence intervals","406","503",NA
+"28","Jack Caulfield","Article3","Toheroa","860",1270,"Standard error",NA,NA,"100"
+"29","Lillian Gannon","Article1","coyotes","North Carolina",3010,"Standard error",NA,NA,"0.019"
+"29","Lillian Gannon","Article2","northern red-backed salamander","Allegheny National Forest",275,"0.0001",NA,NA,NA
+"29","Lillian Gannon","Article3","White-tail deer","Huntington National Forest",3000,"Standard error",NA,NA,"0.09"
+"30","Jack Caulfield","Article1","Gray wolf","Looking at the number of Gray wolves in Upper Michigan ",278,"Confidence intervals","0.82","0.9",NA
+"30","Jack Caulfield","Article2","Sika deer","Looking at the number of Sika deer found in Scotland",1078,"Confidence intervals","938","1238",NA
+"30","Jack Caulfield","Article3","Toheroa","Toheroa found at Oretile beach New Zealand",1270,"Confidence intervals","1070","1410",NA
+"31","Tyler Hills","Article1","Adelie Penguins","44,022 adults",44000,"Confidence intervals","31654","60000",NA
+"31","Tyler Hills","Article2","Fallow Deer","2078",2100,"Standard error",NA,NA,"55"
+"31","Tyler Hills","Article3","red-necked pheasant","3850",4000,"Standard error",NA,NA,"55"
+"32","Andrew Beck","Article1","Island Scrub Jay","1613-3007",2267,"Confidence intervals","1613","3007",NA
+"32","Andrew Beck","Article2","Cheetah","3070-3213",3141,"Unsure (very complex statistical calcs in article)",NA,NA,NA
+"32","Andrew Beck","Article3","White Chinned Petrel (breeding pairs)","125,600–192,500 (breeding pairs)",155500,"Confidence intervals","125600","192500",NA
+"33","Alexis LaFever","Article1","Alaska caribou (Rangifer tarandus)","Nelchina herd in south-central Alaska",71000,"Confidence intervals","42585","66319",NA
+"33","Alexis LaFever","Article2","Lake trout","Lake Swan, MT",2,"Confidence intervals","1.7","3.3",NA
+"33","Alexis LaFever","Article3","brown bear (Ursus arctos)","south-central Sweeden",190,"Confidence intervals","136","272",NA
+"34","TIm Carlson","Article1","Brown Bear ","105",105,"estimate inflation",NA,NA,NA
+"34","TIm Carlson","Article2","Dolphin","3850",3500,"Confidence intervals","378","3850",NA
+"34","TIm Carlson","Article3","bobcat","15",15,"Confidence intervals","86","91",NA
+"35","Nick Moses","Article1","Savannah Elephant","Savannah elephants in 18 African countries",352271,"Confidence intervals","334464","370078",NA
+"35","Nick Moses","Article2","Polar Bear","Chukchi Sea",2937,"Confidence intervals","1522","5944",NA
+"35","Nick Moses","Article3","Wolverine","south central ALaska and Yukon",4.95,"Confidence intervals","4.7","5.2",NA
+"36","Ava Canterino","Article1","Red Fox","Red Foxes of France",996,"Confidence intervals","324","2401",NA
+"36","Ava Canterino","Article2","Elephant","Maputo Elephant Reserve Elephants",311,"Confidence intervals","198","490",NA
+"36","Ava Canterino","Article3","Black Rhino","Western Zimbabwe Black Rhinos",15,"Confidence intervals","12","18",NA
+"37","Zachary Mills","Article1","Feral pigeons","1,238,310 ",3656,"Standard error",NA,NA,"1.3"
+"37","Zachary Mills","Article2","gray wolf ","123",0.0152,"Confidence intervals","14.7","18.8",NA
+"37","Zachary Mills","Article3","feral cats","1858",13.3,"Confidence intervals","1361","2537",NA
+"38","Joshua White","Article1","Free-roaming horses","Free-roaming horses in the Navajo Nation",38223,"Confidence intervals","29365","47080",NA
+"38","Joshua White","Article2","Pacific Walrus ","Pacific Walrus on the offshore ice floes off of Point Lay coastal haul out",189000,"Confidence intervals","135000","251000",NA
+"38","Joshua White","Article3","Florida Manatee","Florida manatee off the west, and east coasts of Florida",8810,"Confidence intervals","7520","10280",NA
+"39","Arica Bartlette","Article1","Ground dwelling spiders in 103 species, 58 genera, and 13 families.","The study was conducted along the Boreal forest-tundra transition alongside the Dempster Highway in the Yukon Territory, Canada. Dominant families found were Lycisudae, Linyphiidae, Gnaphosidae, and Thomisidae.",80.54,"Standard error",NA,NA,"6.32"
+"39","Arica Bartlette","Article2","Frogs and lizards of 38 species","33 frog species and five lizard species around the Los Amigos Research Center in south-eastern Perú.",10.5,"Standard error",NA,NA,"1.29"
+"39","Arica Bartlette","Article3","montane salamanders","Plethodontid salamanders in the Appalachian Highlands",1600,"Range of elevations","1500","2025",NA
+"40","Charles Anderson","Article1","Death Valley popfish","number of Death Valley pupfish",40,"none were mentioned in the study",NA,NA,NA
+"40","Charles Anderson","Article2","Blanding's turtle","number of Blanding’s turtle nest in 3 locations in Massachusetts",67,"Confidence intervals","90","95",NA
+"40","Charles Anderson","Article3","Chittenango ovate amber snail","number of Chittenango ovate amber snail",99,"none were mentioned in the article ","0","0",NA
+"41","Katarina Wulf","Article1","Green Iguana","Melanistic Green Iguanas in Saba, Caribbean",8233,"Confidence intervals","6028","10438",NA
+"41","Katarina Wulf","Article2","Amazonian Frog","Amazonian Frogs in French Guiana",10,"Confidence intervals","9.7","10.3",NA
+"41","Katarina Wulf","Article3","Hooded Seals","Hooded Seals in Atlantic of Northeastern Newfoundland",62400,"Confidence intervals","43700","89400",NA
+"42","Alyssa Colasanti","Article1","Red Deer","Southern Spain",19.51,"Standard error",NA,NA,"3.19"
+"42","Alyssa Colasanti","Article2","Bison","Wood Buffalo National Park",1320,"Standard error",NA,NA,"178"
+"42","Alyssa Colasanti","Article3","sea ducks","U.S. Atlantic Coast",1742,"Standard error",NA,NA,"843.11"
+"43","Abigail Thomas","Article1","Grevys zebras","Lewa Wildlife Conservation, Northern Kenya ",344,"Confidence intervals","237","451",NA
+"43","Abigail Thomas","Article2","Oribi","Northern Serengeti",5986,"Confidence intervals","4900","7072",NA
+"43","Abigail Thomas","Article3","Adelie penguins","Rookery Islands Antarctic Specially Protected Area",73630,"Standard error",NA,NA,"6268"
+"44","Stesha Grossman","Article1","African elephant","critically endangered",49,"Standard error",NA,NA,"57"
+"44","Stesha Grossman","Article2","Mountain gorilla","critically endangered",302,"Confidence intervals","20","36",NA
+"44","Stesha Grossman","Article3","Large herbivores ","very abundant ",5298,"Coefficient of variation",NA,NA,"48"
+"45","McKenzie Hagenbuch","Article1","Ring-necked Pheasants","Wild-breeding pheasant population of New York state",150,"Failure time analysis",NA,NA,NA
+"45","McKenzie Hagenbuch","Article2","Common yellowthroat, Palm warblers, Killdeer, red-winged blackbird and Doves","Wintering birds",3500,"Model of observations and population dynamics",NA,NA,NA
+"45","McKenzie Hagenbuch","Article3","White-tailed deer","Long Island NY White-tailed deer population",700,"regression model","0","0",NA
+"46","Celebrity Wright","Article1","Dugong","Cempedak Island ",20,"Sighting coordinates",NA,NA,NA
+"46","Celebrity Wright","Article2","Red panda","Nuwakot, Rasuwa, Baglung, Gorkha, Myagdi, Manang, Mustang, Kaski, Lamjung, Dhading and Parbat of Chitwan-Annapurna Landscape",125,"Encounter rate",NA,NA,NA
+"46","Celebrity Wright","Article3","Polar bear","Chukchi Sea",4439.5,"Confidence intervals","2300","8152",NA
+"47","David Hoffmann ","Article1","Dolphin","coast of California",372000,"Coefficient of variation",NA,NA,"0.16"
+"47","David Hoffmann ","Article2","Elk","within Olympic National park",107,"Standard error",NA,NA,"59.2"
+"47","David Hoffmann ","Article3","Mountain goats","Olympic mountains",623,"Confidence intervals","561","741",NA
+"48","Sherone Smith","Article1","North Atlantic Right Whale","70",61,"Bias of less than 10%",NA,NA,NA
+"48","Sherone Smith","Article2","Fin Whales","5000",6581,"Confidence intervals","4811","8351",NA
+"48","Sherone Smith","Article3","Canadian lynx","-",13,"Confidence intervals","8","14",NA
+"49","Jake Carbone","Article1"," Odocoileus virginianus (white-tailed deer)","56",56,"Coefficient of variation",NA,NA,"29.9"
+"49","Jake Carbone","Article2","Loxodonta africana (African Elephant)","366",366,"Coefficient of variation",NA,NA,"12.5"
+"49","Jake Carbone","Article3","Rhinoceros unicornis (One-horned rhino) ","534",534,"Confidence intervals","71","78",NA
+"50","Alyvia Nazak","Article1","Caribou (Rangifer tarandus groenlandicus)","West Greenland",24000,"Coefficient of variation",NA,NA,"0.18"
+"50","Alyvia Nazak","Article2","Baltic ringed seal (Phoca hispida botnica)","The Baltic",149,"Confidence intervals","0.7","2.18",NA
+"50","Alyvia Nazak","Article3","Asian elephant (Elephas maximus)","Central Sabah elephant range",3.59,"Confidence intervals","2.6","4.66",NA
+"51","Lane Moyer","Article1","Various migratory beach nesting birds/ coastal birds","Various migratory beach nesting birds/ coastal birds in Gulf Islands National Seashore in Florida",106.8,"Standard error",NA,NA,"21.3"
+"51","Lane Moyer","Article2","Wildebeest","wildebeest in Serengeti National Park",0,"They didn't reveal the number as the point was to judge the effectiveness of automated ariel observation vs pre-established human observations.",NA,NA,NA
+"51","Lane Moyer","Article3","Amami Thrush","The Amami Thrush on Amami-Oshima Island in Japan",2512,"none, they simply stated a single estimate w/ no CI, CV, or SE.","2512","2512",NA
+"52","Adam Orlando","Article1","Guanacos (Lama guanicoe)","Santa Cruz population",1066600,"Confidence intervals","727800","1563200",NA
+"52","Adam Orlando","Article2","Wild horses (Equus caballus)","Adobe Town and Salt Wells Creek herd in Wyoming",906,"Confidence intervals","857","981",NA
+"52","Adam Orlando","Article3","All kangaroo species in Victoria","Population along the Grey Kangaroo Overlap Zone in Victoria",1442000,"Confidence intervals","976000","2132000",NA
+"53","Jennifer Phelan","Article1","Mice","Small mammals",232,"Confidence intervals","0.5","0.31",NA
+"53","Jennifer Phelan","Article2","White-Tailed Deer","Deer",120,"Coefficient of variation",NA,NA,"1.48"
+"53","Jennifer Phelan","Article3","alces alces","Moose",119,"Confidence intervals","0.859","0.941",NA
+"54","Alex Zamojski ","Article1","Tortoise","Gopher tortoise",1.75,"Coefficient of variation",NA,NA,"15"
+"54","Alex Zamojski ","Article2","Penguins ","Adélie penguin",25658,"Confidence intervals","10","12",NA
+"54","Alex Zamojski ","Article3","Antelope","Saiga antelope in Kazakhstan",48000,"Confidence intervals","4000","41000",NA
+"55","Sydney White","Article1","Wolves","Northwest Alaska",48,"Confidence intervals","33.84","67.94",NA
+"55","Sydney White","Article2","Rio Grande wild turkey ","Brooks and kenedy counties of Texas",355,"Confidence intervals","0.16","0.48",NA
+"55","Sydney White","Article3","ostriches","Northern Tanzania",634,"Confidence intervals","0","0",NA
+"56","Timothy Maron","Article1","Moose ","Northern counties in Maine",2.7,"Confidence intervals","2.1","3.3",NA
+"56","Timothy Maron","Article2","Stellar Sea Lions","Continental shelf off western coast of Hokkaido, Japan",3206,"Coefficient of variation",NA,NA,"0.352"
+"56","Timothy Maron","Article3","Ruffed Grouse","Northern Georgia",5342,"Confidence intervals","1356","22168",NA
+"57","Darian Devereaux","Article1","Zooplankton","Stratified",0,"None of the above",NA,NA,NA
+"57","Darian Devereaux","Article2","Magellanic Penguins","Stratified",0,"None of the above",NA,NA,NA
+"57","Darian Devereaux","Article3","Elephants","Systematic",75,"None of the above","0","0",NA
+"58","Olivia O'Hara","Article1","All north american waterfowl species (unable to list them all as there are 60+)","The entire breeding population of waterfowl species located in Northcentral Canada and the Northeastern United States.",0,"They reported the counts and confidence intervals, but since there are over 50 species logged with this data I can't list them all.",NA,NA,NA
+"58","Olivia O'Hara","Article2","Armadillidium vulgare (common roly poly)","Isopods located on the San Pablo ridge in Tilden Regional park in California at elevations above 1,000ft.",538,"It was difficult to find since this is an older article and there were multiple variables tested.",NA,NA,NA
+"58","Olivia O'Hara","Article3","Aptenodytes fosteri (emperor penguin)","The entire population of Antarctica located with satellites. ",238079,"Confidence intervals","217336","258788",NA
