@@ -92,6 +92,8 @@ We will hopefully also get you even more interested in wildlife ecology than you
     
 - 2. [**Estimating Abundances in R**](labs/Lab1b_EstimatingFlagAbundances/EstimatingAbundancesInR.html) <br> (also [R code](labs/Lab1b_EstimatingFlagAbundances/EstimatingAbundancesInR.R) and [flag count dataset](labs/Lab1b_EstimatingFlagAbundances/CirclesAndSquares.csv))
 
+- 3. [**Linear Models**](labs/Lab2_LinearModeling/Lab2_Modeling.html) <br>
+also using the [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv))
 <!--  -->
 
 
