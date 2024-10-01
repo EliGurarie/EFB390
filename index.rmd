@@ -75,7 +75,6 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - 4. [Deep History of Human-Wildlife Interactions, Part II](lectures/Lecture04/Lecture04_HistoryPartII.html)
 
 ### Unit II. Estimating Abundances: *How many animals are out there?*
-
 - 5. [Counting Animals, Part I](lectures/Lecture05/Lecture05_CountingAnimals.html)
 - 6. [Counting Animals, Part II](lectures/Lecture06/Lecture06_CountingAnimals_PartII.html) <br>
 6b. [Estimating Ice Seal Abundance](lectures/Lecture06/Lecture06b_EstimatingAntarcticIceSeals.pdf)
@@ -83,9 +82,9 @@ We will hopefully also get you even more interested in wildlife ecology than you
 
 
 ### Unit III. Habitat: *Where are they? And why?*
-
 - 8. [Habitats - Part I](lectures/Lecture08/Lecture_Habitat_PartI.html)
-
+- 9. [The Niche Concept](lectures/Lecture09/Lecture09_NichesAndHabitats.html)
+- 10. [How to Model Anyting (but especially habitat use)](lectures/Lecture10/Lecture_Modeling.html)
 
 ## Labs
 - 1. [**Introduction to R**](labs/Lab1_IntroToR/IntroToR.html) <br> (also [R code](labs/Lab1_IntroToR/IntroToR.R) and [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv))
@@ -93,7 +92,7 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - 2. [**Estimating Abundances in R**](labs/Lab1b_EstimatingFlagAbundances/EstimatingAbundancesInR.html) <br> (also [R code](labs/Lab1b_EstimatingFlagAbundances/EstimatingAbundancesInR.R) and [flag count dataset](labs/Lab1b_EstimatingFlagAbundances/CirclesAndSquares.csv))
 
 - 3. [**Linear Models**](labs/Lab2_LinearModeling/Lab2_Modeling.html) <br>
-also using the [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv))
+(also using the [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv))
 <!--  -->
 
 
