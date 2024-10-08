@@ -5,7 +5,11 @@
     <meta charset="utf-8" />
     <meta name="author" content="Dr. Elie Gurarie" />
     <meta name="date" content="2024-10-03" />
+<<<<<<< HEAD
     <script src="Lecture_Modeling_files/header-attrs-2.25/header-attrs.js"></script>
+=======
+    <script src="Lecture_Modeling_files/header-attrs-2.26/header-attrs.js"></script>
+>>>>>>> 966bacd07be1e372fa38e963594a45bcdfa97dfc
     <link href="Lecture_Modeling_files/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="Lecture_Modeling_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
     <script src="Lecture_Modeling_files/fabric-4.3.1/fabric.min.js"></script>
@@ -472,7 +476,11 @@ But you can also get (good) Confidence Intervals from looking at the curve of th
 ![](Lecture_Modeling_files/figure-html/unnamed-chunk-11-1.png)&lt;!-- --&gt;
 
 
+<<<<<<< HEAD
 ``` r
+=======
+```r
+>>>>>>> 966bacd07be1e372fa38e963594a45bcdfa97dfc
 mean(pups$Weight)
 ```
 
@@ -480,7 +488,11 @@ mean(pups$Weight)
 ## [1] 33.51004
 ```
 
+<<<<<<< HEAD
 ``` r
+=======
+```r
+>>>>>>> 966bacd07be1e372fa38e963594a45bcdfa97dfc
 sd(pups$Weight)
 ```
 
@@ -578,7 +590,10 @@ Lots of competing models with different **main** and **interaction** effects.
 
 
 .pull-left-70[
+<<<<<<< HEAD
 &lt;table class="table" style="margin-left: auto; margin-right: auto;"&gt;
+=======
+&lt;table class="table" style="color: black; margin-left: auto; margin-right: auto;"&gt;
  &lt;thead&gt;
   &lt;tr&gt;
    &lt;th style="text-align:left;"&gt; Model &lt;/th&gt;
@@ -676,11 +691,621 @@ This is what we expect ... the interaction between **sex** and **length** is con
 
 The best model: 
 
+`$$Y_{ijk} = \beta_0 + \beta_{1i} \text{Island}_{ijk} + (\beta_2 + \beta_{3j} \text{Sex}_{ijk})\times(\text{Length}_{ijk})  + \epsilon_{ijk}$$`
+
+.pull-left[
+
+What are the **parameter estimates** (effect sizes) of the selected model? 
+
+.small[
+
+|term           | estimate| std.error| statistic| p.value|
+|:--------------|--------:|---------:|---------:|-------:|
+|SexFemale      |   -39.34|      3.69|    -10.67|    0.00|
+|SexMale        |   -59.29|      3.06|    -19.37|    0.00|
+|Length         |     0.66|      0.03|     19.11|    0.00|
+|IslandChirpoev |    -2.00|      0.34|     -5.81|    0.00|
+|IslandLovushki |    -0.47|      0.34|     -1.35|    0.18|
+|IslandRaykoke  |    -0.45|      0.35|     -1.31|    0.19|
+|IslandSrednova |    -0.35|      0.35|     -1.00|    0.32|
+|SexMale:Length |     0.20|      0.04|      4.55|    0.00|
+
+]]
+
+.pull-right[
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-19-1.png)&lt;!-- --&gt;
+]
+
+
+---
+
+.pull-left[
+# **Step III:** Model Selection
+
+ANOVA is helpful for "nested" models, where each one is a subset of another more complex one.  For comparing a **set of competing,non-nested** models, we use . 
+
+.footnotesize[
+
+### `\(\Delta\)`AIC table
+
+&lt;table class="table" style="color: black; margin-left: auto; margin-right: auto;"&gt;
+>>>>>>> 966bacd07be1e372fa38e963594a45bcdfa97dfc
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Model &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; k &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; R2 &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; logLik &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; AIC &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; dAIC &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;font-weight: bold;background-color: yellow !important;"&gt; Weight ~ Length * Sex + Island &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;background-color: yellow !important;"&gt; 8 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;background-color: yellow !important;"&gt; 0.818 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;background-color: yellow !important;"&gt; -1144.6 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;background-color: yellow !important;"&gt; 2307.3 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;background-color: yellow !important;"&gt; 0.0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Weight ~ Length * Sex * Island &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.824 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1137.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2316.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 8.8 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Weight ~ Length + Sex + Island &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 7 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.811 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1155.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2325.9 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18.6 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+<<<<<<< HEAD
+   &lt;td style="text-align:left;"&gt; Weight ~ Length * Sex &lt;/td&gt;
+=======
+   &lt;td style="text-align:left;font-weight: bold;color: darkblue !important;background-color: yellow !important;"&gt; M7 &lt;/td&gt;
+   &lt;td style="text-align:left;font-weight: bold;color: darkblue !important;background-color: yellow !important;"&gt; Length * Sex + Island &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: yellow !important;"&gt; 8 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: yellow !important;"&gt; 0.818 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: yellow !important;"&gt; -1144.6 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: yellow !important;"&gt; 2307.3 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: yellow !important;"&gt; 0.0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; M8 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; Length * Sex * Island &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.824 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1137.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2316.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 8.8 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+]
+
+.pull-right[
+
+**Degrees of freedom *k*:**
+
+- Number of estimated parameters. Measure of *complexity*. 
+
+**Coefficient of determination R&lt;sup&gt;2&lt;/sup&gt;:**  
+
+- Percent variation explained. It ALWAYS increases the more complex the model.
+- Is is always zero for the **NULL** model. 
+
+**log-likelihood `\(\log({\cal L})\)`:**  
+
+- Total probability score of model. It ALWAYS increases the more complex the model.
+
+**Akaike Information Criterion:**  
+
+- `\(AIC = -2 \log({\cal L}) + 2\,k\)`
+- A measure of model quality. 
+- Smaller is better It starts getting bigger if the model complexity gets too high. 
+- .red[**The lowest AIC value is the "best" model.**] 
+- (but within 2 `\(\Delta AIC\)` is pretty much equivalent to best)
+]
+
+---
+background-image: url('images/AfricanUngulatesBiomass.png')
+background-size: cover
+
+## AIC in action: **What predicts ungulate body size?**
+
+Quality (Nitrogen)? or Type (browse/grass)? 
+
+---
+background-image: url('images/GurarieSpringMigrations0.png')
+background-size: cover
+
+.pull-left-60[
+
+
+&lt;!-- &lt;video width="100%" controls="controls"&gt; --&gt; 
+
+&lt;iframe src="https://esf0-my.sharepoint.com/personal/egurarie_esf_edu/_layouts/15/embed.aspx?UniqueId=75126850-958b-4f5a-8e01-69137cacd16a&amp;embed=%7B%22ust%22%3Atrue%2C%22hv%22%3A%22CopyEmbedCode%22%7D&amp;referrer=StreamWebApp&amp;referrerScenario=EmbedDialog.Create" width="640" height="360" frameborder="0" scrolling="no" allowfullscreen title="migrationanimation6.mp4"&gt;&lt;/iframe&gt;
+
+&lt;/video&gt;
+]
+
+.pull-right-40[
+## Caribou spring migrations
+
+Remarkable temporal synchrony at a continental scale. 
+]
+
+---
+background-image: url('images/GurarieSpringMigrations.png')
+background-size: cover
+
+## Could the synchrony be driven by global weather drivers?
+
+.pull-right-70[
+Pacific Decadal Oscillation, Arctic Oscillation, North Atlantic Oscillation:  determine whether the winter is wet &amp; snowy or dry &amp; cold. 
+]
+
+---
+background-image: url('images/GurarieSpringMigrations2.png')
+background-size: cover
+
+## `\(\Delta\)`AIC Table 1: **Departure time** 
+
+.pull-right[... driven by LARGE climate oscillations.]
+
+---
+background-image: url('images/GurarieSpringMigrations3.png')
+background-size: cover
+
+## `\(\Delta\)`AIC Table 2: **Arrival time** 
+
+.pull-right[... completely independent of climate!]
+
+---
+class: small
+
+.pull-left[
+## ***Step IV:*** *Generalized* linear modeling
+
+### Normal Model
+
+.large[$$Y_i \sim {\cal Normal}(\alpha_0 + \beta_1 X_i, \sigma)$$]
+Models continuous data with a "normal-like" distribution.
+
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-21-1.png)&lt;!-- --&gt;
+]
+
+--
+
+.pull-right[
+### Binomial model
+
+.large[$$Y_i \sim {\cal Bernoulli}\left( \frac{\exp(\alpha + \beta X_i)}{1 + \exp(\alpha + \beta X_i)} \right)$$]
+
+There's some *probability* of something happening that depends on the predictor `\(X\)`.  
+
+**Bernoulli** just means the data are all 0 or 1. 
+
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-22-1.png)&lt;!-- --&gt;
+
+This models **presence/absence**, **dead/alive**, **male/female** other response variables with **2** possible outcomes. 
+]
+
+---
+background-image: url('images/SoleaSolea.png')
+background-size: cover
+
+### What factors predict occurence of *Solea solea* larvae?
+
+Sampled in the estuary of the Tejo river in Portugal
+
+- Lots of environmental factors in data
+
+.pull-right-70[.footnotesize[
+&lt;table class="table" style="color: black; margin-left: auto; margin-right: auto;"&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:right;"&gt; depth &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; temp &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; salinity &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; transp &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; gravel &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; large_sand &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; fine_sand &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; mud &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; presence &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 3.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 30 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 15 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3.74 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 13.15 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 11.93 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 71.18 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 2.6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 18 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 29 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 15 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1.94 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 4.99 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5.43 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 87.63 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 2.6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 19 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 30 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 15 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2.88 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 8.98 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 16.85 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 71.29 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;"&gt; 1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 2.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 29 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 15 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 11.06 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 11.96 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 21.95 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 55.03 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 3.2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 30 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 15 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 9.87 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 28.60 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 19.49 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 42.04 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:right;"&gt; 3.5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 32 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 7 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 32.45 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 7.39 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 9.43 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 50.72 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;"&gt; 0 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]]
+
+---
+
+# Presence of *Solea solea* against **salinity**
+
+.pull-left-40[
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-24-1.png)&lt;!-- --&gt;
+]
+
+.pull-right-60[
+
+Modeling is EXACTLY the same as **linear regression** except:
+- `glm` - for **generalized** linear model (instead of `lm`)
+- `family = 'binomial'` is the instruction to fit the logistic regression
+
+
+`glm(presence ~ salinity, family ='binomial')`
+
+
+
+|            | Estimate| Std. Error| z value| Pr(&gt;&amp;#124;z&amp;#124;)|
+|:-----------|--------:|----------:|-------:|------------------:|
+|(Intercept) |    2.661|      0.902|   2.951|              0.003|
+|salinity    |   -0.130|      0.035|  -3.716|              0.000|
+
+Clearly - *Solea solea* presence is very significantly *negatively* related to salinity.  
+]
+
+
+---
+### Out of this model we can make predictions
+
+
+&lt;img src="Lecture_Modeling_files/figure-html/unnamed-chunk-27-1.png" width="80%" /&gt;
+
+---
+
+.pull-left[
+
+## `\(\Delta\)`AIC analysis - and coefficients
+
+
+
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt;  &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Model &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; k &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; logLik &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; AIC &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; dAIC &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;font-weight: bold;color: darkblue !important;background-color: yellow !important;"&gt; M9 &lt;/td&gt;
+   &lt;td style="text-align:left;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;font-weight: bold;color: darkblue !important;background-color: yellow !important;"&gt; salinity + gravel &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;font-weight: bold;color: darkblue !important;background-color: yellow !important;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;font-weight: bold;color: darkblue !important;background-color: yellow !important;"&gt; -33.2 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;font-weight: bold;color: darkblue !important;background-color: yellow !important;"&gt; 72.5 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;font-weight: bold;color: darkblue !important;background-color: yellow !important;"&gt; 0.0 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; M2 &lt;/td&gt;
+   &lt;td style="text-align:left;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; salinity &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; -34.3 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; 72.6 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; 0.1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; M7 &lt;/td&gt;
+   &lt;td style="text-align:left;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; temp + salinity &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; -34.0 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; 74.0 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; 1.5 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; M5 &lt;/td&gt;
+   &lt;td style="text-align:left;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; depth + salinity &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; -34.1 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; 74.3 &lt;/td&gt;
+   &lt;td style="text-align:right;font-weight: bold;color: darkblue !important;background-color: lightgreen !important;"&gt; 1.8 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; M11 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; depth + temp + salinity &lt;/td&gt;
+>>>>>>> 966bacd07be1e372fa38e963594a45bcdfa97dfc
+   &lt;td style="text-align:right;"&gt; 4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.803 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1164.5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2339.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 31.7 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Weight ~ Length + Sex &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.795 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1174.5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2357.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 49.7 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Weight ~ Length &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.779 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1193.4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2392.8 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 85.5 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Weight ~ Sex &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.293 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1483.2 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 2972.4 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 665.1 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+<<<<<<< HEAD
+   &lt;td style="text-align:left;"&gt; Weight ~ Island &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.028 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1562.5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3137.0 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 829.7 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; Weight ~ 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.000 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1569.5 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3143.1 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 835.8 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+=======
+   &lt;td style="text-align:left;"&gt; M8 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; temp + gravel &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -43.3 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 92.6 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 20.1 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]
+
+.pull-right[
+**Salinity** clearly among the more important covariates (in the top 4 models). 
+
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-30-1.png)&lt;!-- --&gt;
+
+]
+
+---
+## Poisson regression
+
+.pull-left-30[
+
+![](images/Poisson1.png)
+![](images/Poisson4.png)
+![](images/Poisson10.png)
+
+]
+
+.pull-right-70[
+
+.large[$$Y_i \sim {\cal Poisson}\left(\lambda = \exp(\alpha + \beta X_i) \right)$$]
+
+- We are **counting** something ... the data are between 0 and `\(\infty\)` 
+- `\(\lambda\)` is a **density**;  **densities** vary across habitat types (covariate **X**). 
+
+.center[&lt;img src='images/Moose2.png' width='70%'/&gt;]
+]
+
+
+
+---
+
+## Field flags
+
+.large[**Did flag densities vary with region?**]
+
+.pull-left-40[
+
+Approximate areas:
+
+region | area
+--|--
+**North:** | 82 m&lt;sup&gt;2&lt;/sup&gt;
+**South:** | 82 m&lt;sup&gt;2&lt;/sup&gt;
+**Perimeter:** | 196 m&lt;sup&gt;2&lt;/sup&gt;
+--|--
+**Sampling square (hula hoop)** | 0.5 m&lt;sup&gt;2&lt;/sup&gt;
+]
+.pull-right-60[
+
+![](images/court.png)]
+
+
+---
+
+
+.pull-left[
+
+### Count data
+
+
+
+Lots of 0's, some 1's, and just one 2 count.
+
+
+```
+##      Region
+## Count North Perimeter South
+##     0    15        12     9
+##     1     1         1     6
+##     2     0         0     1
+```
+
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-32-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+### Fitting models
+
+.large[
+`glm(count ~ region, family = 'poisson')`
+
+Exact same syntax as before, except the "family" is **Poisson.** 
+]]
+
+---
+
+
+.pull-left[
+
+### Count data
+
+
+
+Lots of 0's, some 1's, and just one 2 count.
+
+
+```
+##      Region
+## Count North Perimeter South
+##     0    15        12     9
+##     1     1         1     6
+##     2     0         0     1
+```
+
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-34-1.png)&lt;!-- --&gt;
+]
+
+.pull-right[
+
+### Fitting models
+
+
+
+|                | Estimate| Std. Error| z value| Pr(&gt;&amp;#124;z&amp;#124;)|
+|:---------------|--------:|----------:|-------:|------------------:|
+|(Intercept)     |   -2.773|      1.000|  -2.773|              0.006|
+|RegionPerimeter |    0.208|      1.414|   0.147|              0.883|
+|RegionSouth     |    2.079|      1.061|   1.961|              0.050|
+
+The **intercept** here is "North", the *p*-values compare with North.  So **South** has - borderline - significantly more 
+
+#### `\(\Delta AIC\)` table
+
+
+|             | df|   AIC|
+|:------------|--:|-----:|
+|Null.model   |  1| 53.47|
+|Region.model |  3| 49.15|
+
+Model that includes **Region** has lower AIC
+
+>>>>>>> 966bacd07be1e372fa38e963594a45bcdfa97dfc
+]
+
+.pull-right-30[
+
+This is what we expect ... the interaction between **sex** and **length** is consistent across islands, but there are some main effect differences across islands (mainly because of the time we sampled). 
+]
+---
+
+## Model selection vs. parameter estimates
+
+<<<<<<< HEAD
+The best model: 
+
 `$$Y_{ijk} = \beta_{sex} + \beta_{island} \text{Island}_{ijk} + (\beta_{length} \times\text{Length}_{ijk}) + \epsilon_{ijk}$$`
 
 .pull-left[
 
 What are the **parameter estimates** (effect sizes) of the selected model? 
+=======
+
+|Region    | area|    fit| se.fit| l.hat| l.low| l.high| d.hat| d.low| d.high| N.hat| N.low| N.high|
+|:---------|----:|------:|------:|-----:|-----:|------:|-----:|-----:|------:|-----:|-----:|------:|
+|South     |   82| -0.693|  0.354| 0.500| 0.247|  1.014| 1.000| 0.493|  2.028|  82.0|  40.4|  166.3|
+|North     |   82| -2.773|  1.000| 0.063| 0.008|  0.462| 0.125| 0.017|  0.924|  10.2|   1.4|   75.8|
+|Perimeter |  196| -2.565|  1.000| 0.077| 0.010|  0.568| 0.154| 0.021|  1.137|  30.2|   4.1|  222.9|
+>>>>>>> 966bacd07be1e372fa38e963594a45bcdfa97dfc
 
 .small[
 &lt;table&gt;
