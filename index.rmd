@@ -89,8 +89,9 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - Special lecture: [Porcupine Caribou Resource Selection](lectures/Lecture10/Lecture_PCH_RSF.pdf)
 
 ### Unit IV. Population Ecology: *What is happening to how many there are?*
-- 12. [Population Ecology - Part I](lectures/Module4_PopulationEcology/Lecture_PopulationEcology.html)
-
+- 12. [Population Ecology - Part I - Exponential Growth](lectures/Module4_PopulationEcology/Lecture_PopulationEcology.html)
+- 13. [Population Ecology - Part II - Carrying Capacity](lectures/Module4_PopulationEcology/Lecture_PopulationEcology_PartII.html)
+- 14. [Population Ecology - Part III - All The Rest](lectures/Module4_PopulationEcology/Lecture_PopulationEcology_PartIII.html)
 
 ## Labs
 - 1. [**Introduction to R**](labs/Lab1_IntroToR/IntroToR.html) <br> (also [R code](labs/Lab1_IntroToR/IntroToR.R) and [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv))
