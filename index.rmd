@@ -99,6 +99,9 @@ We will hopefully also get you even more interested in wildlife ecology than you
 
 - 3. [**Linear Models**](labs/Lab2_LinearModeling/Lab2_Modeling.html) <br>
 (also using the [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv))
+
+- 4. [**Exponential Growth**](labs/Lab3_ExponentialGrowth/Lab3_FittingExponentialGrowth.html) <br>
+(also using the [Washington State sea otter dataset](labs/Lab3_ExponentialGrowth/SeaOtters.csv) and the [British Columbia sea otter dataset](labs/Lab3_ExponentialGrowth/BC_SeaOtters.csv))
 <!--  -->
 
 
