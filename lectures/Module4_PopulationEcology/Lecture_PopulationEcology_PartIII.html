@@ -8,6 +8,12 @@
     <script src="Lecture_PopulationEcology_PartIII_files/header-attrs-2.28/header-attrs.js"></script>
     <link href="Lecture_PopulationEcology_PartIII_files/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="Lecture_PopulationEcology_PartIII_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <script src="Lecture_PopulationEcology_PartIII_files/fabric-4.3.1/fabric.min.js"></script>
+    <link href="Lecture_PopulationEcology_PartIII_files/xaringanExtra-scribble-0.0.1/scribble.css" rel="stylesheet" />
+    <script src="Lecture_PopulationEcology_PartIII_files/xaringanExtra-scribble-0.0.1/scribble.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function() { window.xeScribble = new Scribble({"pen_color":["#FF0000"],"pen_size":3,"eraser_size":30,"palette":[]}) })</script>
+    <link href="Lecture_PopulationEcology_PartIII_files/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
+    <script src="Lecture_PopulationEcology_PartIII_files/tile-view-0.2.6/tile-view.js"></script>
     <link rel="stylesheet" href="mycss.css" type="text/css" />
   </head>
   <body>
@@ -32,6 +38,12 @@ class: center, top, title-slide
 
 
 &lt;!-- https://bookdown.org/yihui/rmarkdown/xaringan-format.html --&gt;
+
+
+
+
+
+
 
 
 
@@ -456,6 +468,101 @@ Stage | Survival  | Fecundity
 ]
 
 
+
+---
+
+# Life History Tables
+
+
+&gt;.large[Widely used classic tool to obtain life-history / survivorship curves ]
+
+
+
+A "schedule" of all births and deaths in our population
+- .darkblue[**Fecundity schedule:**] *how many* offspring are born by **age**
+
+- .darkred[**Survivorship schedule:**] *with what probability* individuals by **age**
+
+
+With those (&amp; some tedious calculations) you can compute:
+
+- **Life expectancy**
+
+- Population **growth rate** `\(\lambda\)`  
+
+- **Age structure:**   .green[Are there lots of: young individuals? Old individuals? Reproductive age individuals?]
+
+- **Survivorship patterns:** .green[Does most mortality occur in young / old / across ages?]
+
+
+---
+class: inverse
+
+# Life History Tables - some "encouragement" 
+
+.center[![](images/gotelliencouragement.png)]
+
+
+---
+.pull-left-40[## Dall's sheep
+
+Estimated life expectance: **7.2 years** 
+But it if attains 6 years of age, anover **3.4 years**
+]
+.pull-right-60[.center[![](images/dallssheep.png)]]
+
+
+![](images/sheeplifetable.png)
+.center[(from Murie 1944)]
+
+---
+
+## Estimating Life Histories: **Vertical Life Table**
+
+.large[Take a snapshot of the age distribution and build survival schedule]
+
+.pull-left-40[
+
+.large[
+**Strong assumptions:**
+
+- `\(r = 0\)` or `\(\lambda = 1\)`
+
+- processes (birth and survival schedules) are **stationary**, meaning .green[*parameters* don't change over time.]
+
+- Of course - you also need to know **birth schedule**. 
+]
+]
+
+.pull-right-60[
+
+![](images/vertical.png)
+]
+
+---
+
+## Estimating Life Histories: **Cohort Life Table**
+
+.large[Follow a cohort (or cohorts) through time.  Track **survival**. Track **age at birth**.] 
+
+.pull-left-40[
+
+.large[
+
+**Minus:**
+
+- Can take a really long time! 
+
+
+**Plus:**
+
+- Population always decreasing!
+]]
+
+.pull-right-60[
+![](images/horizontal.png)
+]
+
 ---
 class:inverse
 
@@ -496,7 +603,7 @@ An interaction between organisms (intraspecific) or between species (interspecif
 ]
 
 .pull-right[
-
+![](https://upload.wikimedia.org/wikipedia/commons/7/7f/Panthera_leo_%26_Crocuta_crocuta.jpg)
 ]
 
 ---
@@ -543,15 +650,16 @@ Madison, Wisconsin
 
 Limited space | Limited carrying capacity |  Mutual animosity (periodic horn skewering and/or dropping on rocks) .... 
 
-.center[***Can they get along!?***]
+.center[***Can they get along!?***
 
 ![](images/squirlicornvspegamunk_small.png)
 
 https://egurarie.shinyapps.io/SquirlicornVsPegamunk
+]
 
 --
 
-**Takeaway:**  If the interactinos are not *too* extreme relative to population growth rate, coexistence is possible. 
+**Takeaway:**  If the interactions are not *too* extreme relative to population growth rate, coexistence is possible. 
 
 ---
 
