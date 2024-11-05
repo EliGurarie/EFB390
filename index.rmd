@@ -92,6 +92,9 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - 12. [Population Ecology - Part I - Exponential Growth](lectures/Module4_PopulationEcology/Lecture_PopulationEcology.html)
 - 13. [Population Ecology - Part II - Carrying Capacity](lectures/Module4_PopulationEcology/Lecture_PopulationEcology_PartII.html)
 - 14. [Population Ecology - Part III - All The Rest](lectures/Module4_PopulationEcology/Lecture_PopulationEcology_PartIII.html)
+- 14b. [Matrix Models](lectures/Module4_PopulationEcology/StructuredPopulations_MiscellaneousSlides.pdf)
+- 15. [Physiology and Disease](lectures/Lecture13_Diseases/Lecture_WildlifeDiseases.html)
+
 
 ## Labs
 - 1. [**Introduction to R**](labs/Lab1_IntroToR/IntroToR.html) <br> (also [R code](labs/Lab1_IntroToR/IntroToR.R) and [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv))
@@ -103,6 +106,8 @@ We will hopefully also get you even more interested in wildlife ecology than you
 
 - 4. [**Exponential Growth**](labs/Lab3_ExponentialGrowth/Lab3_FittingExponentialGrowth.html) <br>
 (also using the [Washington State sea otter dataset](labs/Lab3_ExponentialGrowth/SeaOtters.csv) and the [British Columbia sea otter dataset](labs/Lab3_ExponentialGrowth/BC_SeaOtters.csv))
+
+-5. [**Strctured Populations**](labs/Lab4_AgeStructuredPopulations/Lab4_AgeStructuredPopulations.Rmd)
 <!--  -->
 
 
