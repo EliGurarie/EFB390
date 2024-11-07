@@ -78,6 +78,7 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - 5. [Counting Animals, Part I](lectures/Lecture05/Lecture05_CountingAnimals.html)
 - 6. [Counting Animals, Part II](lectures/Lecture06/Lecture06_CountingAnimals_PartII.html)
 - 6b. [Estimating Ice Seal Abundance](lectures/Lecture06/Lecture06b_EstimatingAntarcticIceSeals.pdf)
+
 - 7. [Mark-Recapture and Index Counts](lectures/Lecture07/Lecture07_IndexCounts.html) 
 
 
@@ -92,9 +93,9 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - 12. [Population Ecology - Part I - Exponential Growth](lectures/Module4_PopulationEcology/Lecture_PopulationEcology.html)
 - 13. [Population Ecology - Part II - Carrying Capacity](lectures/Module4_PopulationEcology/Lecture_PopulationEcology_PartII.html)
 - 14. [Population Ecology - Part III - All The Rest](lectures/Module4_PopulationEcology/Lecture_PopulationEcology_PartIII.html)
-- 14b. [Matrix Models](lectures/Module4_PopulationEcology/StructuredPopulations_MiscellaneousSlides.pdf)
-- 15. [Physiology and Disease](lectures/Lecture13_Diseases/Lecture_WildlifeDiseases.html)
+- 14b. [Matrix Models](lectures/Module4_PopulationEcology/StructuredPopulations_MiscellaneousSlides.pdf)<br>
 
+- 15. [Physiology and Disease](lectures/Lecture13_Diseases/Lecture_WildlifeDiseases.html) (also: [COVID and Wildlife](lectures/Lecture13_Diseases/Covid and Wildlife.pdf) and [Wolf-Deer-CWD](lectures/Lecture13_Diseases/deer_wolf_CWD.pdf))
 
 ## Labs
 - 1. [**Introduction to R**](labs/Lab1_IntroToR/IntroToR.html) <br> (also [R code](labs/Lab1_IntroToR/IntroToR.R) and [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv))
