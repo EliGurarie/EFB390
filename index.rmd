@@ -97,6 +97,11 @@ We will hopefully also get you even more interested in wildlife ecology than you
 
 - 15. [Physiology and Disease](lectures/Lecture13_Diseases/Lecture_WildlifeDiseases.html) (also: [COVID and Wildlife](lectures/Lecture13_Diseases/Covid and Wildlife.pdf) and [Wolf-Deer-CWD](lectures/Lecture13_Diseases/deer_wolf_CWD.pdf))
 
+### Unit V. The North American Model of Wildlife Conservation
+
+- 16. [Introduction to NAM](lectures/Lecture14_NorthAmericanModel/Lecture_NAM.html)
+
+
 ## Labs
 - 1. [**Introduction to R**](labs/Lab1_IntroToR/IntroToR.html) <br> (also [R code](labs/Lab1_IntroToR/IntroToR.R) and [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv))
     
