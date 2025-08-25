@@ -21,7 +21,7 @@ output:
 
 > ## Course Materials
 >
-> This page mainly contains lectures, sometimes assignments and other resources, and will expand as the semester progresses.  Assignments, discussion boards and  announcements are on the [Blackboard site](https://blackboard.syracuse.edu/ultra/courses/_531605_1/outline).  Archived materials from 2023 are [here](Archive2023/index_archive.html)
+> This page mainly contains lectures, sometimes assignments and other resources, and will expand as the semester progresses.  Assignments, discussion boards and  announcements are on the [Blackboard site](https://blackboard.syracuse.edu/ultra/courses/_531605_1/outline).  Archived materials from 2024 are [here](Archive2024/index_archive.html)
 >
 
 ```{r, echo=FALSE, eval = TRUE}
@@ -37,8 +37,8 @@ htmltools::img(src = "assets/ESFStacked_Full color.png", alt = 'banner',
 
 **Co-instructors:** 
 
-- [Sydney Opel](mailto:slopel@esf.edu) | Office Hours TBD
-- [Colton Moyer](mailto:cmoyer@esf.edu) | Office Hours TBD 
+- [Rachelle Ketelhorn](mailto:rketelhorn@esf.edu) | Office Hours TBD 
+- [Seanna Jobe](mailto:sjobe@esf.edu) | Office Hours TBD
 
 **Locations and Times:** 
 
@@ -49,13 +49,13 @@ htmltools::img(src = "assets/ESFStacked_Full color.png", alt = 'banner',
   - Wed, 3:45-4:40 - Baker 314
   - Thurs, 8:00-8:55 - Baker 314
 
-**Syllabus: [EFB390_Syllabus_2024.pdf](EFB390_Syllabus_2024.pdf)**
+**Syllabus: [EFB390_Syllabus_2025.pdf](EFB390_Syllabus_2025.pdf)**
 
 ## Overview
 
 This is a broad, foundational course, the overarching goal is to make students familiar with fundamental topics in wildlife ecology and management. 
 
-Wildlife *ecology* is an extremely complex science, that explores themes like population dynamics, behaviors, space use, disease, habitat, trophic interactions, that is studied with a suite of rapidly evolving tools – field observations, advancing technology, statistics and modeling. 
+Wildlife *ecology* is an extremely complex science, that explores themes like p opulation dynamics, behaviors, space use, disease, habitat, trophic interactions, that is studied with a suite of rapidly evolving tools – field observations, advancing technology, statistics and modeling. 
 
 Wildlife *management* places all the complexity of wildlife ecology into a sloppy social, political, historical, ethical and legal realm. Most professional “wildlife” managers will openly admit that they spend much more time trying to manage people. 
 
@@ -70,50 +70,7 @@ We will hopefully also get you even more interested in wildlife ecology than you
 
 - 0. [Highlights of the Syllabus](lectures/Lecture00/HighlightsOfTheSyllabus.html)  
 - 1. [Definitions](lectures/Lecture01/Lecture_Basics.html) 
-- 2. [Mini-Lecture on Caribou and Referencing](lectures/Lecture03/ResearchAndCaribou.pdf)
-- 3. [Deep History of Human-Wildlife Interactions, Part I](lectures/Lecture03/Lecture03_DeepHistory.html)
-- 4. [Deep History of Human-Wildlife Interactions, Part II](lectures/Lecture04/Lecture04_HistoryPartII.html)
 
-### Unit II. Estimating Abundances: *How many animals are out there?*
-- 5. [Counting Animals, Part I](lectures/Lecture05/Lecture05_CountingAnimals.html)
-- 6. [Counting Animals, Part II](lectures/Lecture06/Lecture06_CountingAnimals_PartII.html)
-- 6b. [Estimating Ice Seal Abundance](lectures/Lecture06/Lecture06b_EstimatingAntarcticIceSeals.pdf)
-
-- 7. [Mark-Recapture and Index Counts](lectures/Lecture07/Lecture07_IndexCounts.html) 
-
-
-### Unit III. Habitats and Modeling: *Where are they? And why? And how do we know?*
-- 8. [Habitats - Part I](lectures/Lecture08/Lecture_Habitat_PartI.html)
-- 9. [The Niche Concept](lectures/Lecture09/Lecture09_NichesAndHabitats.html)
-- 10. [How to Model Anything - Part I](lectures/Lecture10/Lecture_Modeling.html)
-- 11. [How to Model Anything - Part II](lectures/Lecture10/Lecture_Modeling_PartII.html)
-- Special lecture: [Porcupine Caribou Resource Selection](lectures/Lecture10/Lecture_PCH_RSF.pdf)
-
-### Unit IV. Population Ecology: *What is happening to how many there are?*
-- 12. [Population Ecology - Part I - Exponential Growth](lectures/Module4_PopulationEcology/Lecture_PopulationEcology.html)
-- 13. [Population Ecology - Part II - Carrying Capacity](lectures/Module4_PopulationEcology/Lecture_PopulationEcology_PartII.html)
-- 14. [Population Ecology - Part III - All The Rest](lectures/Module4_PopulationEcology/Lecture_PopulationEcology_PartIII.html)
-- 14b. [Matrix Models](lectures/Module4_PopulationEcology/StructuredPopulations_MiscellaneousSlides.pdf)<br>
-
-- 15. [Physiology and Disease](lectures/Lecture13_Diseases/Lecture_WildlifeDiseases.html) (also: [COVID and Wildlife](lectures/Lecture13_Diseases/Covid and Wildlife.pdf) and [Wolf-Deer-CWD](lectures/Lecture13_Diseases/deer_wolf_CWD.pdf))
-
-### Unit V. The North American Model of Wildlife Conservation
-
-- 16. [Introduction to NAM](lectures/Lecture14_NorthAmericanModel/Lecture_NAM.html)
-
-
-## Labs
-- 1. [**Introduction to R**](labs/Lab1_IntroToR/IntroToR.html) <br> (also [R code](labs/Lab1_IntroToR/IntroToR.R) and [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv))
-    
-- 2. [**Estimating Abundances in R**](labs/Lab1b_EstimatingFlagAbundances/EstimatingAbundancesInR.html) <br> (also [R code](labs/Lab1b_EstimatingFlagAbundances/EstimatingAbundancesInR.R) and [flag count dataset](labs/Lab1b_EstimatingFlagAbundances/CirclesAndSquares.csv))
-
-- 3. [**Linear Models**](labs/Lab2_LinearModeling/Lab2_Modeling.html) <br>
-(also using the [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv))
-
-- 4. [**Exponential Growth**](labs/Lab3_ExponentialGrowth/Lab3_FittingExponentialGrowth.html) <br>
-(also using the [Washington State sea otter dataset](labs/Lab3_ExponentialGrowth/SeaOtters.csv) and the [British Columbia sea otter dataset](labs/Lab3_ExponentialGrowth/BC_SeaOtters.csv))
-
-- 5. [**Structured Populations**](labs/Lab4_AgeStructuredPopulations/Lab4_AgeStructuredPopulations.html)
 <!--  -->
 
 

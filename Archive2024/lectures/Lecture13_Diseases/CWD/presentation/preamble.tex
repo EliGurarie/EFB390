@@ -1,0 +1,110 @@
+\definecolor{links}{HTML}{2A1B81}
+\hypersetup{colorlinks,linkcolor=,urlcolor=links}
+
+\setbeamertemplate{items}[ball] 
+\setbeamertemplate{blocks}[rounded][shadow=true] 
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{}
+
+\setbeamersize{text margin left=1cm,text margin right=1cm} 
+
+\usepackage{alltt}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{tabulary}
+
+% For absolute positioning of text (e.g. little footlines)
+\usepackage[absolute,overlay]{textpos} 
+	
+% Color commands
+  \definecolor{darkblue}{rgb}{0,0,.3}
+  \definecolor{verylightblue}{rgb}{.9,.95,.99}
+  \definecolor{lightblue}{rgb}{.5,.6,.95}
+	\definecolor{green1}{rgb}{0,.5,.4}
+	\definecolor{cream1}{rgb}{.97,.97,.83}
+	\definecolor{deepcream}{rgb}{.2,.2,.05}
+	\definecolor{emphasis}{rgb}{0,.5,.1}
+	\definecolor{brightred}{rgb}{.95,.6,.6}
+	\definecolor{white}{rgb}{1,1,1}	
+	\definecolor{yellow}{rgb}{1,1,0}	
+	\definecolor{darkgreen}{rgb}{0,0.2,0}
+	\definecolor{darkorange}{rgb}{0.4,0.3,0}
+	\definecolor{darkred}{rgb}{0.7,0,0}
+	\definecolor{lightgray}{gray}{0.9}
+	\definecolor{lightred}{rgb}{1,.5,.5}
+	
+	\newcommand{\drd}{\textcolor{darkred}}
+	\newcommand{\rd}{\textcolor{red}}
+	\newcommand{\lrd}{\textcolor{lightred}}		
+	\newcommand{\bl}{\textcolor{blue}}
+	\newcommand{\gr}{\textcolor{darkgreen}}
+	\newcommand{\blk}{\textcolor{black}}
+	\newcommand{\wt}{\textcolor{white}}
+	\newcommand{\crm}{\textcolor{cream1}}
+	
+	\setbeamerfont{small}{size=\small}
+	\setbeamerfont{smaller}{size=\footnotesize}
+	\setbeamerfont{tiny}{size=\tiny}
+	\setbeamerfont{teeny}{size=\scriptsize}
+	
+	
+	\setbeamercolor{uppercol}{fg=cream1,bg=darkorange}
+	\setbeamercolor{lowercol}{fg=black,bg=cream1}
+  %\setbeamercolor{boxcolor}{fg=cream1,bg=green1}
+	%\setbeamercolor{boxcolor1}{fg=white,bg=darkorange}
+	%\setbeamercolor{boxcolor2}{fg=black,bg=cream1}
+  \setbeamercolor{titlelike}{bg = darkgreen, fg = white}
+  \setbeamercolor{block title}{bg = darkorange, fg = white}
+	\setbeamercolor{block body}{bg = cream1, fg = black}
+	  
+	\newcommand{\BackH}[1]{\setbeamertemplate{background canvas}{\includegraphics[height=\paperheight]{#1}}}
+	\newcommand{\BackW}[1]{\setbeamertemplate{background canvas}{\includegraphics[width=\paperwidth]{#1}}}
+	\newcommand{\BackPlain}{\setbeamertemplate{background canvas}{}}
+	
+	\newcommand{\PlotH}[2][1]{\includegraphics[height=#1\textheight]{#2}}
+	\newcommand{\PlotW}[2][1]{\includegraphics[width=#1\textwidth]{#2}}
+
+\newcommand{\MultiPlotH}[3][1]{\includegraphics[height=#1\textheight, page=#2]{#3}}
+\newcommand{\MultiPlotW}[3][1]{\includegraphics[width=#1\textwidth, page=#2]{#3}}
+
+\setbeamercolor{itemize item}{fg = black}
+\setbeamercolor{itemize subitem}{fg = black}
+\setbeamercolor{enumerate item}{fg = black}
+\setbeamercolor{enumerate subitem}{fg = black}
+
+
+% itemization commands
+%
+	\newcommand{\bi}{\begin{itemize}}
+	\newcommand{\ei}{\end{itemize}}
+	\newcommand{\I}{\item}
+	\newcommand{\ben}{\begin{enumerate}}
+	\newcommand{\een}{\end{enumerate}}
+	
+	\newcommand{\bcol}{\begin{columns}}
+	\newcommand{\col}[1][.5]{\column{#1\textwidth} }
+	\newcommand{\ecol}{\end{columns}}
+
+	\newcommand{\bc}{\begin{center}}
+	\newcommand{\ec}{\end{center}}
+	
+	\newcommand{\beq}{\begin{equation*}}
+	\newcommand{\eeq}{\end{equation*}}
+	
+	\newcommand{\beqrray}{\begin{eqnarray*}}
+	\newcommand{\eeqrray}{\end{eqnarray*}}
+	
+	\newcommand{\bbb}[1]{\begin{beamerboxesrounded}[upper=uppercol,lower=lowercol,shadow=false]{#1}}			
+	\newcommand{\ebb}{\end{beamerboxesrounded}}
+
+	\newcommand{\nd}{\vspace{.1in}}
+	\newcommand{\nup}{\vspace{-.1in}}
+	\newcommand{\nl}{\hspace{-.1in}}
+	\newcommand{\nr}{\hspace{+.1in}}
+	
+% Creates little textblocks!?
+	\newcommand\FrameText[1]{
+	  \begin{textblock*}{\paperwidth}(0pt,1pt)
+	    \raggedright #1
+	  \end{textblock*}}
+	
