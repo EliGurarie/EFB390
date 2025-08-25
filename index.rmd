@@ -1,6 +1,6 @@
 ---
 title: "Wildlife Ecology and Management"
-subtitle: "EFB 390: Fall 2024"
+subtitle: "EFB 390: Fall 2025"
 author: "Prof. [Elie Gurarie](https://eligurarie.github.io/)"
 output: 
   rmdformats::readthedown:
@@ -31,7 +31,7 @@ htmltools::img(src = "assets/ESFStacked_Full color.png", alt = 'banner',
 
 <img src="assets/moose.jpg" alt="wolf-caribou-moose" style="width:400px" align="right"/>
 
-**Instructor:** Dr. [**Elie Gurarie**](https://www.esf.edu/faculty/gurarie/), Illick 206
+**Instructor:** [**Dr. Elie Gurarie**](https://www.esf.edu/faculty/gurarie/), Illick 206
 
 **Office hours:**  Thursday 3:30-4:30 or by appointment, 
 
