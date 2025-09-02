@@ -67,12 +67,14 @@ We will hopefully also get you even more interested in wildlife ecology than you
 ## Lectures
 
 ### Unit I. Basics and history: *What do animals mean to us?*
-
 - 0. [Highlights of the Syllabus](lectures/Lecture00/HighlightsOfTheSyllabus.html)  
 - 1. [Definitions](lectures/Lecture01/Lecture_Basics.html) 
 - 2. [Mini-Lecture on Referencing](lectures/Lecture02/ResearchAndCaribou.pdf)
 - 3. [Deep History of Human-Wildlife Interactions](lectures/Lecture03/Lecture03_DeepHistory.html)
-<!--  -->
+- 4. [History of Human-Wildife Interaction to present](lectures/Lecture04/Lecture04_HistoryPartII.html)
+<!-- 
+
+-->
 
 
     
