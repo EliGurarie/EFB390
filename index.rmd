@@ -37,7 +37,7 @@ htmltools::img(src = "assets/ESFStacked_Full color.png", alt = 'banner',
 
 **Co-instructors:** 
 
-- [Rachelle Ketelhorn](mailto:rketelhorn@esf.edu) | Office Hours TBD 
+- [Rachelle Ketelhohn](mailto:rketelhohn@esf.edu) | Office Hours TBD 
 - [Seanna Jobe](mailto:sjobe@esf.edu) | Office Hours TBD
 
 **Locations and Times:** 
