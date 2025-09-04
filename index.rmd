@@ -72,6 +72,10 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - 2. [Mini-Lecture on Referencing](lectures/Lecture02/ResearchAndCaribou.pdf)
 - 3. [Deep History of Human-Wildlife Interactions](lectures/Lecture03/Lecture03_DeepHistory.html)
 - 4. [History of Human-Wildife Interaction to present](lectures/Lecture04/Lecture04_HistoryPartII.html)
+
+    - [Wildlife in the News- 2025](lectures/Lecture04/WildlifeInTheNews.pdf)
+    
+    
 <!-- 
 
 -->
