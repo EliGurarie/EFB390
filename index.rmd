@@ -33,21 +33,25 @@ htmltools::img(src = "assets/ESFStacked_Full color.png", alt = 'banner',
 
 **Instructor:** [**Dr. Elie Gurarie**](https://www.esf.edu/faculty/gurarie/), Illick 206
 
-**Office hours:**  Thursday 3:30-4:30 or by appointment, 
+**Office hours:**  Thursday 3:30-4:30 - Illick 206 - or by appointment, 
 
 **Co-instructors:** 
 
-- [Rachelle Ketelhohn](mailto:rketelhohn@esf.edu) | Office Hours TBD 
-- [Seanna Jobe](mailto:sjobe@esf.edu) | Office Hours TBD
+- [Rachelle Ketelhohn](mailto:rketelhohn@esf.edu) 
+    - email: [rketelhohn@esf.edu](mailto:rketelhohn@esf.edu)
+    - Office Hours:  **Thursdays 1-2 | Illick 305** or by appointment, 
+- [Seanna Jobe](mailto:sjobe@esf.edu) 
+    - email: [sjobe@esf.edu](mailto:sjobe@esf.edu)
+    - Office Hours: **Wednesday 2:30-3:30 | Illick 305** or by appointment, 
 
 **Locations and Times:** 
 
 - Lecture: Illick 5; Tue-Thu 2:00-3:20
 - Recitation Sections: 
-  - Tues, 3:30-4:25 - Baker 310
-  - Tues, 5:00-5:55 - Baker 314
-  - Wed, 3:45-4:40 - Baker 314
-  - Thurs, 8:00-8:55 - Baker 314
+  - **A:** Tues, 3:30-4:25 - Baker 310
+  - **B:** Tues, 5:00-5:55 - Baker 314
+  - **C:** Wed, 3:45-4:40 - Baker 314
+  - **D:** Thurs, 8:00-8:55 - Baker 314
 
 **Syllabus: [EFB390_Syllabus_2025.pdf](EFB390_Syllabus_2025.pdf)**
 
