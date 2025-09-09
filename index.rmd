@@ -55,7 +55,7 @@ htmltools::img(src = "assets/ESFStacked_Full color.png", alt = 'banner',
 
 This is a broad, foundational course, the overarching goal is to make students familiar with fundamental topics in wildlife ecology and management. 
 
-Wildlife *ecology* is an extremely complex science, that explores themes like p opulation dynamics, behaviors, space use, disease, habitat, trophic interactions, that is studied with a suite of rapidly evolving tools – field observations, advancing technology, statistics and modeling. 
+Wildlife *ecology* is an extremely complex science, that explores themes like population dynamics, behaviors, space use, disease, habitat, trophic interactions, that is studied with a suite of rapidly evolving tools – field observations, advancing technology, statistics and modeling. 
 
 Wildlife *management* places all the complexity of wildlife ecology into a sloppy social, political, historical, ethical and legal realm. Most professional “wildlife” managers will openly admit that they spend much more time trying to manage people. 
 
@@ -75,6 +75,8 @@ We will hopefully also get you even more interested in wildlife ecology than you
 
     - [Wildlife in the News- 2025](lectures/Lecture04/WildlifeInTheNews.pdf)
     
+### Unit II. Estimating Abundances: *How many animals are out there?*
+- 5. [Counting Animals, Part I](lectures/Lecture05/Lecture05_CountingAnimals.html)
     
 <!-- 
 
