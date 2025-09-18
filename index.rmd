@@ -68,22 +68,19 @@ In this course, we will introduce methods, theories, concepts, and contemporary 
 We will hopefully also get you even more interested in wildlife ecology than you maybe already are!  It is my opinion (and that of a great many of my colleagues) that there is no better or more interesting job than being a wildlife ecologist.   
 
 
-## Lectures
-
-### Unit I. Basics and history: *What do animals mean to us?*
-- 0. [Highlights of the Syllabus](lectures/Lecture00/HighlightsOfTheSyllabus.html)  
-- 1. [Definitions](lectures/Lecture01/Lecture_Basics.html) 
-- 2. [Mini-Lecture on Referencing](lectures/Lecture02/ResearchAndCaribou.pdf)
-- 3. [Deep History of Human-Wildlife Interactions](lectures/Lecture03/Lecture03_DeepHistory.html)
-- 4. [History of Human-Wildife Interaction to present](lectures/Lecture04/Lecture04_HistoryPartII.html)
-
+## Unit I. Basics and history: *What do animals mean to us?*
+- `0`. [Highlights of the Syllabus](lectures/Lecture00/HighlightsOfTheSyllabus.html)  
+- `1`. [Definitions](lectures/Lecture01/Lecture_Basics.html) 
+- `2`. [Mini-Lecture on Referencing](lectures/Lecture02/ResearchAndCaribou.pdf)
+- `3`. [Deep History of Human-Wildlife Interactions](lectures/Lecture03/Lecture03_DeepHistory.html)
+- `4`. [History of Human-Wildife Interaction to present](lectures/Lecture04/Lecture04_HistoryPartII.html)
     - [Wildlife in the News- 2025](lectures/Lecture04/WildlifeInTheNews.pdf)
     
-### Unit II. Estimating Abundances: *How many animals are out there?*
-- 5. [Counting Animals, Part I](lectures/Lecture05/Lecture05_CountingAnimals.html)
-- 6. [Counting Animals, Part II](lectures/Lecture06/Lecture06_CountingAnimals_PartII.html)
-- 6b. [Counting Ice Seals](lectures/Lecture06/Lecture06b_EstimatingAntarcticIceSeals.pdf)
-- 7. [Mark-Recapture and Index Counts](lectures/Lecture07/Lecture07_MarkRecaptureAndIndexCounts.html)    
+## Unit II. Estimating Abundances: *How many animals are out there?*
+- `5`. [Counting Animals, Part I](lectures/Lecture05/Lecture05_CountingAnimals.html)
+- `6`. [Counting Animals, Part II](lectures/Lecture06/Lecture06_CountingAnimals_PartII.html)
+- `6b`. [Counting Ice Seals](lectures/Lecture06/Lecture06b_EstimatingAntarcticIceSeals.pdf)
+- `7`. [Mark-Recapture and Index Counts](lectures/Lecture07/Lecture07_MarkRecaptureAndIndexCounts.html)    
     
 <!--    
 <!-- 
