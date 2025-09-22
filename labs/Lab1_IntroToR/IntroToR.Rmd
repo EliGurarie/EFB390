@@ -1,6 +1,6 @@
 ---
 title: "Introduction to R"
-subtitle: '[EFB 390](https://eligurarie.github.io/EFB390/) - Fall 2024'
+subtitle: '[EFB 390](https://eligurarie.github.io/EFB390/) - Fall 2025'
 author: "Dr. Elie Gurarie"
 date: "`r Sys.Date()`"
 output: 
@@ -300,7 +300,7 @@ sd(Length) # standard deviation
 
 A histogram (invoked by `hist()` command) can show us the distribution of a single continuous variable:
 
-```{r, echo = -1}
+```{r}
 hist(Length)
 ```
 
@@ -319,7 +319,7 @@ hist(Length)
 
 A boxplot shows us relationships between a continuous variable (like Length/Weight/Girth) and a discrete variable (like Island/Sex):
 
-```{r, echo = -1}
+```{r}
 boxplot(Weight ~ Sex)
 ```
 
@@ -339,7 +339,7 @@ Which sex is larger!?
 
 Finally, a scatterplot shows us relationships between two continuous variables:
 
-```{r, echo = -1}
+```{r}
 plot(Length, Weight)
 ```
 

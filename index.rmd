@@ -82,9 +82,26 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - `6b`. [Counting Ice Seals](lectures/Lecture06/Lecture06b_EstimatingAntarcticIceSeals.pdf)
 - `7`. [Mark-Recapture and Index Counts](lectures/Lecture07/Lecture07_MarkRecaptureAndIndexCounts.html)    
     
-<!--    
+    
+    
+
+## Labs
+
+These are mainly **R** labs.  To use **R**, you have to either:  (a) Use R on tour own computer (**recommended**).  To do this you need to install R and R studio. Those are 2 different programs - both free. Links to download and install are here: https://posit.co/download/rstudio-desktop/; (b) work with R on the cloud - which works fine for most purposes.  To do this, you have to get a Posit Account at this link: https://posit.cloud/; or (c) work on computers in the computer labs, which should all have R and Rstudio installed. 
+
+- 1. [**Introduction to R**](labs/Lab1_IntroToR/IntroToR.html) <br> (also [R code](labs/Lab1_IntroToR/IntroToR.R), [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv), and [flag abundance data](https://docs.google.com/spreadsheets/d/17NFcXVew_QLd1FED5-xYiEaXP0dCIXasWRXkXQCqec0/edit?usp=sharing)). 
+- 2. [**Estimating Abundances in R**](labs/Lab1b_EstimatingFlagAbundances/EstimatingAbundancesInR.html) <br> (also [R code](labs/Lab1b_EstimatingFlagAbundances/EstimatingAbundancesInR.R) and [flag count dataset](labs/Lab1b_EstimatingFlagAbundances/CirclesAndSquares.csv))
+
+  
 <!-- 
 
+- 3. [**Linear Models**](labs/Lab2_LinearModeling/Lab2_Modeling.html) <br>
+(also using the [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv))
+
+- 4. [**Exponential Growth**](labs/Lab3_ExponentialGrowth/Lab3_FittingExponentialGrowth.html) <br>
+(also using the [Washington State sea otter dataset](labs/Lab3_ExponentialGrowth/SeaOtters.csv) and the [British Columbia sea otter dataset](labs/Lab3_ExponentialGrowth/BC_SeaOtters.csv))
+
+- 5. [**Structured Populations**](labs/Lab4_AgeStructuredPopulations/Lab4_AgeStructuredPopulations.html)
 -->
 
 

@@ -2,7 +2,7 @@
 title: "Estimating Flag Abundances in **R**"
 subtitle: "R lab for [EFB 390]()" 
 author: "Dr. Gurarie"
-date: "2024-09-23"
+date: "2025-09-23"
 output: 
   html_document:
     theme: journal
@@ -274,7 +274,7 @@ The weights are:
 weight.square; weight.circle
 ```
 
-So exactly a 3:1 ratio.  So we value the estimate from the squares 3 times more than the estimate from the circle. 
+Exactly a 3:1 ratio.  So we value the estimate from the squares 3 times more than the estimate from the circle. 
 
 Putting it all together: 
 
