@@ -202,6 +202,7 @@ And there's a formule for SE
 
   
 ---
+class: inverse
 
 ## I banded students!
 
@@ -211,15 +212,15 @@ And there's a formule for SE
 
 .pull-right-50.center[
 
-... by going back in time and elaborately manipulating family histories so that exactly 
+... by going back in time and subtly manipulating your parents so that exactly 
 
-.Large.red[**M&lt;sub&gt;t&lt;/sub&gt; = 20**]
+.Large.red[**M&lt;sub&gt;t&lt;/sub&gt; = 27**]
 
 of you have the letter 
 
 .Large.red[**O**]
 
-in your last name. 
+in your first name. 
 
 ]
 
@@ -230,7 +231,7 @@ in your last name.
 
 ## How many O's? 
 .pull-left.large[
-You have **5 minutes** to ask as many students in the class as you can (but not more than 20). 
+You have **5 minutes** to survey as many students in the class as you can (but not more than 20). 
 
 Ask whether they have an .red[**"O"**] in their last name. 
 
@@ -248,11 +249,14 @@ https://forms.gle/JpVNNjxpsHcTRM3a9
 
 
 ---
-class:center
+class:center, inverse
+
 ## Pause to compute the results
 
 ![](images/MISS-O.gif)
 
+.pull-left[$$\large \widehat{N} = {𝑀 \times 𝐶\over 𝑅}$$]
+.pull-right[$$SE = \sqrt{M^2(C+1)(C-R)\over{(C+1)^2(C+2)}}$$]
 
 ---
 
@@ -536,9 +540,57 @@ Detecting trends, and inferring predator-prey interactions.
 
 Reveal impact of socioeconomic upheaval on wildlife. 
 
-
-
 ([Bragina et al. 2015](https://www.jstor.org/stable/23735998))
+
+
+---
+
+## Kalahari Tracking-Based Density Estimation
+
+
+.pull-left-30[
+FMP formula: 
+
+`\(\Large \widehat{D} = {\pi \over 2} {x\over S \widehat{M}}\)`
+
+]
+
+.pull-right-70[ 
+    ![](images/Gielen_tracking.png)
+]
+&lt;br&gt;
+.center[
+Big Question:  ***What is daily movement rate *** `\(\widehat{M}\)` ?
+
+]
+
+&lt;br&gt;&lt;br&gt;
+
+.pull-left-40[![](images/Gielen_title.png)]
+.pull-right-60[![](images/Kalahari_TrackerProject.png)]
+&lt;br&gt;&lt;br&gt;
+([Gielen et al. 2025](https://www.jstor.org/stable/23735998))
+
+---
+
+## Kalahari Tracking-Based Density Estimation
+
+.pull-left-40[![](images/GielenScaling.png) 
+
+.small[Field based tracking of lots of species, filling in the gap with linear models...]
+]
+
+--
+
+
+.pull-right-60[
+![](images/GielenEstimates.png) 
+can be converted to density Estimates (with confidence intervals of course)!
+
+]
+--
+
+.darkred[***Elegant combination of Indigenous Knowledge, non-invasive techniques, and some sneaky math to get density estimates.***]
 
 
 ---
@@ -583,14 +635,23 @@ Thinking about **abundance estimation** helps us think about: (a) tools for ober
 ---
 
 #### References
-.small[
-1. Altukhov, AV, RD Andrews, DG Calkins, TS Gelatt, ED Gurarie, TR Loughlin, EG Mamaev, VS Nikulin, PA Permyakov, SD Ryazanov, VV Vertyankin, and VN Burkanov. 2015. Age Specific Survival Rates of Steller Sea Lions at Rookeries with Divergent Population Trends in the Russian Far East. *PLOS ONE* 10\:e0127292. ([link](https://doi.org/10.1371/journal.pone.0127292))
-2. Bragina, EV, AR Ives, AM Pidgeon, T Kuemmerle, LM Baskin, YP Gubar, M Piquer-Rodríguez, NS Keuler, VG Petrosyan, and VC Radeloff. 2015. Rapid declines of large mammal populations after the collapse of the Soviet Union: Wildlife Decline after Collapse of Socialism. *Conservation Biology* 29:844–853. ([link](https://conbio.onlinelibrary.wiley.com/doi/10.1111/cobi.12450))
+.footnotesize[
+1. Altukhov, AV, et al.. 2015. Age Specific Survival Rates of Steller Sea Lions at Rookeries with Divergent Population Trends in the Russian Far East. *PLOS ONE* 10\:e0127292. ([link](https://doi.org/10.1371/journal.pone.0127292))
+
+2. Bragina, EV, et al.. 2015. Rapid declines of large mammal populations after the collapse of the Soviet Union: Wildlife Decline after Collapse of Socialism. *Conservation Biology* 29:844–853. ([link](https://conbio.onlinelibrary.wiley.com/doi/10.1111/cobi.12450))
+
 3. Eberhardt, LL, AK Majorowicz, and JA Wilcox. 1982. Apparent Rates of Increase for Two Feral Horse Herds. *The Journal of Wildlife Management* 46:367. ([link](https://doi.org/10.2307/3808648))
-4. Kauhala, K, and P Helle. 2000. The interactions of predator and hare populations in Finland — a study based on wildlife monitoring counts. *Annales Zoologici Fennici* 37:151–160. ([link](https://www.jstor.org/stable/23735728))
+
+4. Gielen, MC., Araldi, A., Jardeaux, M. et al. Refining population density estimation from track counts: improving daily travel distance estimates through trailing of large herbivores in the Kalahari, Botswana. Mov Ecol 13, 53 (2025). ([link](https://doi.org/10.1186/s40462-025-00582-1))
+
+4. Kauhala, K, and P Helle. 2000. The interactions of predator and hare populations in Finland — a study based on wildlife monitoring counts. *Annales Zoologici Fennici* 37:151–160.  ([link](https://www.jstor.org/stable/23735728))
+
 5. Lampa, S, J-B Mihoub, B Gruber, R Klenke, and K Henle. 2015. Non-Invasive Genetic Mark-Recapture as a Means to Study Population Sizes and Marking Behaviour of the Elusive Eurasian Otter (Lutra lutra). *PLOS ONE* 10\:e0125684. ([link](https://doi.org/10.1371/journal.pone.0125684))
+
 6. Morgan, BJT, PM North, CJ Ralph, and JM Scott. 1983. Estimating Numbers of Terrestrial Birds. *Biometrics* 39:1123. ([link](https://doi.org/10.2307/2531337))
+
 7. Petit, E, and N Valiere. 2006. Estimating Population Size with Noninvasive Capture-Mark-Recapture Data: Noninvasive Capture-Mark-Recapture Data. *Conservation Biology* 20:1062–1073. ([link](https://doi.org/10.1111/j.1523-1739.2006.00417.x))
+
 8. Stephens, PA, OY Zaumyslova, DG Miquelle, AI Myslenkov, and GD Hayward. 2006. Estimating population density from indirect sign: track counts and the Formozov–Malyshev–Pereleshin formula. *Animal Conservation* 9:339–348. ([link](https://doi.org/10.1111/j.1469-1795.2006.00044.x))
 ]
     </textarea>
