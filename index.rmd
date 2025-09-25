@@ -85,6 +85,7 @@ We will hopefully also get you even more interested in wildlife ecology than you
     
 ## Unit III. Habitats and Ranges: *Where are the animals and why?*    
 - `8`. [Habitats Part I](lectures/Lecture08/Lecture_Habitat_PartI.html)
+- `9`. [Habitats Part II: The Niche Concept](lectures/Lecture09/Lecture09_NichesAndHabitats.html)
 
 ## Labs
 
