@@ -86,15 +86,17 @@ We will hopefully also get you even more interested in wildlife ecology than you
 ## Unit III. Habitats and Ranges: *Where are the animals and why?*    
 - `8`. [Habitats Part I](lectures/Lecture08/Lecture_Habitat_PartI.html)
 - `9`. [Habitats Part II: The Niche Concept](lectures/Lecture09/Lecture09_NichesAndHabitats.html)
+- `10`. [Modeling (just about) Everthing Part I](lectures/Lecture10/Lecture_Modeling.html)
+- `11`. [Modeling (just about) Everthing Part II](lectures/LectuLecture_Modeling_PartII.html)
+- `11b`. [Cariboui Habitat Selection](lectures/Lecture10/Lecture11b_PCH_RSF.pdf)
 
 ## Labs
 
 These are mainly **R** labs.  To use **R**, you have to either:  (a) Use R on tour own computer (**recommended**).  To do this you need to install R and R studio. Those are 2 different programs - both free. Links to download and install are here: https://posit.co/download/rstudio-desktop/; (b) work with R on the cloud - which works fine for most purposes.  To do this, you have to get a Posit Account at this link: https://posit.cloud/; or (c) work on computers in the computer labs, which should all have R and Rstudio installed. 
 
-- 1. [**Introduction to R**](labs/Lab1_IntroToR/IntroToR.html) <br> (also [R code](labs/Lab1_IntroToR/IntroToR.R), [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv), and [flag abundance data](https://docs.google.com/spreadsheets/d/17NFcXVew_QLd1FED5-xYiEaXP0dCIXasWRXkXQCqec0/edit?usp=sharing)). 
-- 2. [**Estimating Abundances in R**](labs/Lab1b_EstimatingFlagAbundances/EstimatingAbundancesInR.html) <br> (also [R code](labs/Lab1b_EstimatingFlagAbundances/EstimatingAbundancesInR.R) and [flag count dataset](labs/Lab1b_EstimatingFlagAbundances/CirclesAndSquares.csv))
-
-- 2. [**Linear Modeling in R**](labs/Lab2_LinearModeling/Lab2_Modeling.html) and [SeaLions.csv](labs/Lab2_LinearModeling/SeaLions.csv))
+- `1.` [**Introduction to R**](labs/Lab1_IntroToR/IntroToR.html) <br> (also [R code](labs/Lab1_IntroToR/IntroToR.R), [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv), and [flag abundance data](https://docs.google.com/spreadsheets/d/17NFcXVew_QLd1FED5-xYiEaXP0dCIXasWRXkXQCqec0/edit?usp=sharing)). 
+- `1b.` [**Estimating Abundances in R**](labs/Lab1b_EstimatingFlagAbundances/EstimatingAbundancesInR.html) <br> (also [R code](labs/Lab1b_EstimatingFlagAbundances/EstimatingAbundancesInR.R) and [flag count dataset](labs/Lab1b_EstimatingFlagAbundances/CirclesAndSquares.csv))
+- `2.` [**Linear Modeling in R**](labs/Lab2_LinearModeling/Lab2_Modeling.html) and [SeaLions.csv](labs/Lab2_LinearModeling/SeaLions.csv))
 
 
   
