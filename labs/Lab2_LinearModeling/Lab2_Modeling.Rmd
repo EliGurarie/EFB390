@@ -114,7 +114,7 @@ table(Island, Sex)
 
 **Continuous data** contains a lot of different values.  The best way to see the spread (*distribution*) of those data is with a histogram - the `hist()` functino:
 
-```{r, echo = -1}
+```{r}
 hist(Length)
 ```
 
@@ -154,7 +154,7 @@ barplot(table(Island, Sex))
 
 A boxplot shows us relationships between a continuous variable (like Length/Weight/Girth) and a discrete variable (like Island/Sex).  The box contains the *median*, and 25% and 75% *quantiles* and shows points that are outside of an "extreme" range of 1.5 x the resepective interquantile range:
 
-```{r, echo = -1}
+```{r}
 boxplot(Length ~ Sex)
 ```
 
@@ -305,5 +305,5 @@ You now have all the tools to answer the question!
 
 </font>
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/StellerSealionFamily.jpg/800px-StellerSealionFamily.jpg)
+![](https://upload.wikimedia.org/wikipedia/commons/c/c5/StellerSealionFamily.jpg)
 <center>Sleepy family (my picture!)</center>
