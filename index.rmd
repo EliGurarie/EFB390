@@ -87,8 +87,8 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - `8`. [Habitats Part I](lectures/Lecture08/Lecture_Habitat_PartI.html)
 - `9`. [Habitats Part II: The Niche Concept](lectures/Lecture09/Lecture09_NichesAndHabitats.html)
 - `10`. [Modeling (just about) Everthing Part I](lectures/Lecture10/Lecture_Modeling.html)
-- `11`. [Modeling (just about) Everthing Part II](lectures/LectuLecture_Modeling_PartII.html)
-- `11b`. [Cariboui Habitat Selection](lectures/Lecture10/Lecture11b_PCH_RSF.pdf)
+- `11`. [Modeling (just about) Everthing Part II](lectures/Lecture10/Lecture_Modeling_PartII.html)
+- `11b`. [Caribou Habitat Selection](lectures/Lecture10/Lecture11b_PCH_RSF.pdf)
 
 ## Labs
 
