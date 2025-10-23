@@ -90,6 +90,10 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - `11`. [Modeling (just about) Everthing Part II](lectures/Lecture10/Lecture_Modeling_PartII.html)
 - `11b`. [Caribou Habitat Selection](lectures/Lecture10/Lecture11b_PCH_RSF.pdf)
 
+
+## Unit IV Population Ecology: *Why are there as many (or few) as there are?*   
+- `12`. [Part I: Exponential Growth and Stochasticity](lectures/Module_PopEcology/Lecture_PopulationEcology.html)
+
 ## Labs
 
 These are mainly **R** labs.  To use **R**, you have to either:  (a) Use R on tour own computer (**recommended**).  To do this you need to install R and R studio. Those are 2 different programs - both free. Links to download and install are here: https://posit.co/download/rstudio-desktop/; (b) work with R on the cloud - which works fine for most purposes.  To do this, you have to get a Posit Account at this link: https://posit.cloud/; or (c) work on computers in the computer labs, which should all have R and Rstudio installed. 
