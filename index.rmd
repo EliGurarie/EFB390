@@ -94,7 +94,7 @@ We will hopefully also get you even more interested in wildlife ecology than you
 ## Unit IV Population Ecology: *Why are there as many (or few) as there are?*   
 - `12`. [Part I: Exponential Growth and Stochasticity](lectures/Module_PopEcology/Lecture_PopulationEcology.html)
 - `13`. [Part II: Limits on Growth](lectures/Module_PopEcology/Lecture_PopulationEcology_PartII.html)
-- `14`. [Part III: Structured Populations](lectures/Module_PopEcologyLecture_PopulationEcology_PartIII.html)
+- `14`. [Part III: Structured Populations](lectures/Module_PopEcology/Lecture_PopulationEcology_PartIII.html)
 
 ## Labs
 
