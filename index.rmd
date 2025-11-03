@@ -95,6 +95,8 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - `12`. [Part I: Exponential Growth and Stochasticity](lectures/Module_PopEcology/Lecture_PopulationEcology.html)
 - `13`. [Part II: Limits on Growth](lectures/Module_PopEcology/Lecture_PopulationEcology_PartII.html)
 - `14`. [Part III: Structured Populations](lectures/Module_PopEcology/Lecture_PopulationEcology_PartIII.html)
+- `15`. [Part IV: Everything Else](lectures/Module_PopEcology/Lecture_PopulationEcology_PartIV.html)
+- `16`. [Physiology and Wildlife Diseases](lectures/Module_PopEcology/Lecture_WildlifeDisease/Lecture_WildlifeDiseases.html)
 
 ## Labs
 
@@ -105,7 +107,7 @@ These are mainly **R** labs.  To use **R**, you have to either:  (a) Use R on to
 - `2.` [**Linear Modeling in R**](labs/Lab2_LinearModeling/Lab2_Modeling.html) and [SeaLions.csv](labs/Lab2_LinearModeling/SeaLions.csv))
 - `3.` [**Exponential Growth**](labs/Lab3_ExponentialGrowth/Lab3_FittingExponentialGrowth.html) <br>
 (also using the [Washington State sea otter dataset](labs/Lab3_ExponentialGrowth/SeaOtters.csv) and the [British Columbia sea otter dataset](labs/Lab3_ExponentialGrowth/BC_SeaOtters.csv))
-
+- `4.` [**Structured Populations**](labs/Lab4_AgeStructuredPopulations/Lab4_AgeStructuredPopulations.html)
 
   
 <!-- 
@@ -116,7 +118,7 @@ These are mainly **R** labs.  To use **R**, you have to either:  (a) Use R on to
 - 4. [**Exponential Growth**](labs/Lab3_ExponentialGrowth/Lab3_FittingExponentialGrowth.html) <br>
 (also using the [Washington State sea otter dataset](labs/Lab3_ExponentialGrowth/SeaOtters.csv) and the [British Columbia sea otter dataset](labs/Lab3_ExponentialGrowth/BC_SeaOtters.csv))
 
-- 5. [**Structured Populations**](labs/Lab4_AgeStructuredPopulations/Lab4_AgeStructuredPopulations.html)
+
 -->
 
 
