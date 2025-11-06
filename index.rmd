@@ -98,6 +98,9 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - `15`. [Part IV: Everything Else](lectures/Module_PopEcology/Lecture_PopulationEcology_PartIV.html)
 - `16`. [Physiology and Wildlife Diseases](lectures/Module_PopEcology/Lecture_WildlifeDisease/Lecture_WildlifeDiseases.html)
 
+## Unit V North American Model of Wildlife Conservation 
+- `17`, [NAMWC](lectures/Lecture15/Lecture_NAM.html)
+
 ## Labs
 
 These are mainly **R** labs.  To use **R**, you have to either:  (a) Use R on tour own computer (**recommended**).  To do this you need to install R and R studio. Those are 2 different programs - both free. Links to download and install are here: https://posit.co/download/rstudio-desktop/; (b) work with R on the cloud - which works fine for most purposes.  To do this, you have to get a Posit Account at this link: https://posit.cloud/; or (c) work on computers in the computer labs, which should all have R and Rstudio installed. 
