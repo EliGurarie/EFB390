@@ -98,8 +98,8 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - `15`. [Part IV: Everything Else](lectures/Module_PopEcology/Lecture_PopulationEcology_PartIV.html)
 - `16`. [Physiology and Wildlife Diseases](lectures/Module_PopEcology/Lecture_WildlifeDisease/Lecture_WildlifeDiseases.html)
 
-## Unit V North American Model of Wildlife Conservation 
-- `17`, [NAMWC](lectures/Lecture15/Lecture_NAM.html)
+## Unit V Models of Wildlife Managment and Conservation 
+- `17`. [North American Model](lectures/Lecture15/Lecture_NAM.html)
 
 ## Labs
 
