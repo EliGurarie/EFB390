@@ -86,6 +86,8 @@ We will hopefully also get you even more interested in wildlife ecology than you
 ## Unit III. Habitats and Ranges: *Where are the animals and why?*    
 - `8`. [Habitats Part I](lectures/Lecture08/Lecture_Habitat_PartI.html)
 - `9`. [Habitats Part II: The Niche Concept](lectures/Lecture09/Lecture09_NichesAndHabitats.html)
+- Guest Lectures (*posted on Blackboard*) on:
+  - *Forest Management for Wildlife* - Dr. Andrew Vander Yacht 
 - `10`. [Modeling (just about) Everthing Part I](lectures/Lecture10/Lecture_Modeling.html)
 - `11`. [Modeling (just about) Everthing Part II](lectures/Lecture10/Lecture_Modeling_PartII.html)
 - `11b`. [Caribou Habitat Selection](lectures/Lecture10/Lecture11b_PCH_RSF.pdf)
@@ -100,6 +102,13 @@ We will hopefully also get you even more interested in wildlife ecology than you
 
 ## Unit V Models of Wildlife Managment and Conservation 
 - `17`. [North American Model](lectures/Lecture15/Lecture_NAM.html)
+- Guest Lectures (*posted on Blackboard*) on:
+  - *Indigeneous Models of Wildlife Conservation* - Dr. Kyle Artelle
+  - *Wildfowl Management and Ecology* - Dr. Michael Schummer
+  - *Hunter Perspectives* - Dr. Nate Wehr
+  - *Ungulate management in Europe* - Dr. Wibke Peters
+- `18`. [Urban Wildlife Ecology](lectures/Lecture16/Lecture_UrbanWildlifeEcology.html)
+
 
 ## Labs
 
