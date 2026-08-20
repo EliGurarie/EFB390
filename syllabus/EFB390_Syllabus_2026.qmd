@@ -150,6 +150,9 @@ Classes begin Tuesday, August 25. See the [academic calendar](#academic-calendar
 | | Dec 8 | Tues. | **Exam 2** (last day of classes) |
 | **Finals** | Dec 10–15 | (TBD) | **Final Project Presentations** |
 
+: {tbl-colwidths="[18,12,12,58]"}
+
+
 \* *For the final portion of class, recitations will be devoted to guided progress on final projects.*
 
 ::: {.callout-important}
