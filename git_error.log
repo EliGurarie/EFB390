@@ -1,0 +1,30 @@
+16:38:30.122929 exec-cmd.c:266          trace: resolved executable dir: C:/Program Files/Git/mingw64/bin
+16:38:30.130031 git.c:502               trace: built-in: git push
+16:38:30.132294 run-command.c:674       trace: run_command: GIT_DIR=.git git remote-https origin https://github.com/EliGurarie/EFB390
+16:38:30.132294 run-command.c:946       trace: start_command: git remote-https origin https://github.com/EliGurarie/EFB390
+16:38:30.154240 exec-cmd.c:266          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+16:38:30.157746 git.c:812               trace: exec: git-remote-https origin https://github.com/EliGurarie/EFB390
+16:38:30.157746 run-command.c:674       trace: run_command: git-remote-https origin https://github.com/EliGurarie/EFB390
+16:38:30.157746 run-command.c:946       trace: start_command: git-remote-https origin https://github.com/EliGurarie/EFB390
+16:38:30.179151 exec-cmd.c:266          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+16:38:30.324650 run-command.c:674       trace: run_command: 'git credential-manager get'
+16:38:30.324650 run-command.c:946       trace: start_command: 'C:/Program Files/Git/usr/bin/sh.exe' -c 'git credential-manager get' 'git credential-manager get'
+16:38:30.388822 exec-cmd.c:266          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+16:38:30.391144 git.c:812               trace: exec: git-credential-manager get
+16:38:30.391144 run-command.c:674       trace: run_command: git-credential-manager get
+16:38:30.391144 run-command.c:946       trace: start_command: git-credential-manager get
+16:38:30.496484 exec-cmd.c:266          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+16:38:30.501396 git.c:502               trace: built-in: git version
+16:38:30.530813 exec-cmd.c:266          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+16:38:30.533676 git.c:502               trace: built-in: git config list --show-scope -z --no-type
+16:38:30.963187 run-command.c:674       trace: run_command: 'git credential-manager store'
+16:38:30.963187 run-command.c:946       trace: start_command: 'C:/Program Files/Git/usr/bin/sh.exe' -c 'git credential-manager store' 'git credential-manager store'
+16:38:31.035750 exec-cmd.c:266          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+16:38:31.044852 git.c:812               trace: exec: git-credential-manager store
+16:38:31.044852 run-command.c:674       trace: run_command: git-credential-manager store
+16:38:31.044852 run-command.c:946       trace: start_command: git-credential-manager store
+16:38:31.146495 exec-cmd.c:266          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+16:38:31.151525 git.c:502               trace: built-in: git version
+16:38:31.180908 exec-cmd.c:266          trace: resolved executable dir: C:/Program Files/Git/mingw64/libexec/git-core
+16:38:31.180908 git.c:502               trace: built-in: git config list --show-scope -z --no-type
+Everything up-to-date

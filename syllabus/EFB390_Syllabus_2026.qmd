@@ -1,0 +1,181 @@
+---
+title: "EFB 390: Wildlife Ecology and Management"
+subtitle: "Syllabus — Fall 2026"
+format:
+  html:
+    toc: true
+    toc-location: left
+    number-sections: false
+    theme: cosmo
+---
+
+::: {.callout-note appearance="simple"}
+**Lecture:** Tues & Thurs 2:00–3:20, Illick 5
+
+**Recitations:** Tues 3:30–4:25 (Baker 310), Tues 5:00–5:55 (Baker 314), Wed 3:45–4:40 (Baker 314), Thurs 8:00–8:55 (Baker 314)
+:::
+
+**Instructor**: Dr. Elie Gurarie
+**Office**: Illick 206
+**Office hours**: Thursday 3:30–4:30 and by appointment
+**Email:** [egurarie@esf.edu](mailto:egurarie@esf.edu)
+
+**TAs**: Seanna Jobe ([sjobe@esf.edu](mailto:sjobe@esf.edu)) and Dani Venlen ([dverlen@esf.edu](mailto:dverlen@esf.edu))
+
+Office hours and locations TBA.
+
+## Course Description
+
+This is a broad, foundational course. The overarching goal is to make students familiar with fundamental topics in wildlife ecology and management.
+
+Wildlife *ecology* is an extremely complex science, that explores themes like population dynamics, behaviors, space use, disease, habitat, trophic interactions, that is studied with a suite of rapidly evolving tools — field observations, advancing technology, statistics and modeling.
+
+Wildlife *management* places all the complexity of wildlife ecology into a sloppy social, political, historical, ethical and legal realm. Most professional "wildlife" managers will openly admit that they spend much more time trying to manage *people*.
+
+In this course, we will introduce methods, theories, concepts, and contemporary research topics in wildlife ecology, placing these into the very human inflected context of management.
+
+We will hopefully also get you even more interested in wildlife ecology than you maybe already are! It is my opinion that there is no better or more interesting job than being a wildlife ecologist.
+
+## Course Learning Objectives / Outcomes
+
+- Understand fundamental concepts in wildlife ecology and ecological theory, such as population dynamics, wildlife-habitat relationships, limiting factors, surveying and estimation, wildlife statistics.
+- Develop and hone research skills — especially building a bibliography, understanding and synthesizing peer reviewed literature and grey literature on wildlife ecology and management.
+- Develop some rudimentary skills in R programming and statistical tools for fitting and interpreting commonly used models in wildlife ecology.
+- Learn to establish and maintain a camera trap study.
+- Become familiar with the historical context and current (conflicting) philosophies of wildlife management, how these apply to past, present, and future approaches to wildlife research and management.
+- Become familiar with the human dimensions of wildlife ecology and management including the role of social, economic, and political dimensions through analysis and synthesis of research articles, popular press articles, reports, and other media, and discussions.
+- Synthesize concepts in wildlife ecology, wildlife and habitat management, policy, and human dimensions components to describe, understand, and consider solutions to contemporary wildlife conservation and management challenges, using evidence-based approaches.
+
+## College Learning Outcomes
+
+<center>
+Scientific Reasoning | Quantitative Reasoning | Communication Skills
+
+Technological and Information Literacy (Zotero!) | Basic programming and statistics (R!)
+
+Values, Ethics and Diverse Perspectives | Critical Thinking | Collaborative work
+</center> 
+
+## Textbooks and Supplies
+
+There is no required textbook in this class, though a few texts can be recommended. There will, however, be many readings assigned — book chapters, scientific articles, population articles, "grey literature," some seminal readings. All materials will be made available on the course Blackboard page. All lectures (and other important materials) will be on the course website: [https://eligurarie.github.io/EFB390/](https://eligurarie.github.io/EFB390/). Bookmark this page!
+
+## Attendance Policy
+
+This course will **primarily** cover material that does not appear in your assigned readings or other out-of-class materials. Thus, you should make an effort to attend all classes. If you must be absent for a class, consult with me beforehand and make sure to obtain class notes from a classmate.
+
+We strongly encourage you to make sure to come to class prepared. If you come to class consistently, come prepared having completed any assigned reading or viewing, and pay attention, you are highly likely to succeed in learning the concepts and knowledge I am hoping for you to learn and earning a grade you are satisfied with.
+
+In view of the AI policy (see below), there will be occasional assessments or quizzes in recitation, for which attendance will be obligatory.
+
+Also — visit us, all of us, at office hours (or at other times)! We love to talk about this stuff.
+
+## Grading Structure
+
+Your grade will be based on 1 (or 2) quizzes, weekly assignments (including several group projects during the semester), and a final major project + final group presentation.
+
+| Assignment | Grade Percentage |
+|---|---|
+| Weekly Assignments | 30% |
+| Exams (2) | 25% |
+| Final project + presentation | 25% |
+| Participation + engagement + quizzes | 20% |
+| ***Total*** | ***100%*** |
+
+Academic dishonesty, non-discrimination and inclusive excellence, and others, can be found in the ESF student handbook ([https://www.esf.edu/students/handbook/](https://www.esf.edu/students/handbook/)).
+
+## Policy on the Use of AI Tools
+
+Large Language Models (LLMs) and other generative AI programs (ChatGPT, Claude, Gemini, etc.) are becoming increasingly powerful and accessible. As a practicing wildlife ecologist I use them routinely in my work to speed up certain tasks, though not without having to learn how to use those tools. However, there are real risks to relying on these tools too much. Remember, and think of, AI is a *tool*, not a substitute for thought. As an analogy, we are, mainly, no longer hunters and gatherers and could theoretically live a lifetime without exercising any muscles at all. And yet — we chose to move. In a similar way, *choose to use your brain!* Yes — you can get a result with a single prompt. It is much, much harder to internalize information and process ideas when you don't work through them and sit on them and sleep on them and discuss them before — finally, going through the act of articulating and communicating those ideas through writing. With that in mind, the policy in this course will be to:
+
+1. **Be transparent**: If you use a generative AI in completing assignments, you must clearly disclose (a) which you used, and (b) what for.
+2. **Have higher expectations**: Because these tools can accelerate some tasks, the standards for depth, accuracy, and originality in your work will be higher than in past versions of this course.
+3. **More in-class assessments**: To ensure each student is developing their own skills, a slightly greater portion of your grade will come from in-class assessments (e.g., short quizzes during recitation).
+
+This is a dynamic and rapidly evolving aspect of teaching and learning — we can work together to make the most of these new opportunities.
+
+## *Tentative* Class Schedule
+
+Classes begin Tuesday, August 25. See the [academic calendar](#academic-calendar) below for holidays and exam dates.
+
+*GL = Guest Lecture, filled out as speakers are confirmed. Recitation topics listed in italics.*
+
+::: {.column-page}
+
+| Module | Date | Day | Topic |
+|---|---|---|---|
+| **I. Background** | Aug 25 | Tues. | Basics and Definitions |
+| | Aug 25 | *Recitation* | *Wildlife in the News* |
+| | Aug 27 | Thurs. | Library Science and Research (GL: *Moon Library*) |
+| | Sep 1 | Tues. | Human-Wildlife History – Part I |
+| | Sep 1 | *Recitation* | *Referencing and Bibliographies* |
+| | Sep 3 | Thurs. | Human-Wildlife History – Part II |
+| **II. Estimation and Sampling** | Sep 8 | Tues. | Counting Animals – Part I |
+| | Sep 8 | *Recitation* | *Survey Methods + Camera Trap Deployment* |
+| | Sep 10 | Thurs. | Counting Animals – Part II |
+| | Sep 15 | Tues. | Counting Animals – Sampling Uncertainty |
+| | Sep 15 | *Recitation* | *Strategizing Flag Abundance Estimation* |
+| | Sep 17 | Thurs. | Flag Abundance – Field Simulation + Data Entry |
+| **III. Ranges and Habitats** | Sep 22 | Tues. | Mark-Recapture + Index Counts (GL: **Irina Trukhanova**)|
+| | Sep 22 | *Recitation* | *Count data analysis (R lab I)* |
+| | Sep 24 | Thurs. | *(no EG)* Distributions and Ranges \| Niches and Habitats |
+| | Sep 29 | Tues. | Modeling just about anything I |
+| | Sep 29 | *Recitation* | *Wildlife Statistics (R lab II)* |
+| | Oct 1 | Thurs. | Modeling just about anything II |
+| | Oct 6 | Tues. | Forest Management for Wildlife (GL: *Andrew Vander Yacht*) |
+| | Oct 6 | *Recitation* | *AIC Symposium Prep* |
+| | Oct 8 | Thurs. | Mega symposium of mini-talks on delta AIC in Wildlife Ecology |
+| | Oct 13 | Tues. | **NO CLASS \| NO RECITATION** (Fall Break) |
+| | Oct 15 | Thurs. | Exam 1 Review |
+| | Oct 20 | Tues. | **Exam I** |
+| | Oct 20 | *Recitation* | *ID'ing, Storing and Managing Camera Trap Data* |
+| **IV. Populations** | Oct 22 | Thurs. | *(no EG)* Population Growth |
+| | Oct 27 | Tues. | Limits to Growth |
+| | Oct 27 | *Recitation* | *Estimating Population Growth (R Lab 3)* |
+| | Oct 29 | Thurs. | Population Structure II (*GL: **TBD***) |
+| | Nov 3 | Tues. | Species Interactions \| Wildlife Diseases |
+| | Nov 3 | *Recitation* | *Structured Populations (R Lab 4)* |
+| **V. Models of Management**\* | Nov 5 | Thurs. | North American Model of Wildlife Conservation |
+| | Nov 10 | Tues. | Critiques of NAM (*GL: **TBD***) |
+| | Nov 12 | Thurs. | Hunter Perspectives (*GL: **TBD***) |
+| **VI. Wildlife Management in Practice** | Nov 17 | Tues. | Wildfowl Management (GL: ***Michael Schummer***) |
+| | Nov 19 | Thurs. | Wildlife Management Elsewhere (GL: ***TBD***) |
+| | Nov 24–26 | Tues./Thurs. | **NO CLASS \| NO RECITATION** (Thanksgiving Recess) |
+| | Dec 1 | Tues. | *Guest Lecture TBD* (Physiology \| Feds \| Collections) |
+| | Dec 3 | Thurs. | Exam Review |
+| | Dec 8 | Tues. | **Exam 2** (last day of classes) |
+| **Finals** | Dec 10–15 | (TBD) | **Final Project Presentations** |
+
+:::
+
+\* *For the final portion of class, recitations will be devoted to guided progress on final projects.*
+
+::: {.callout-important}
+I retain the right to change anything at any time! In practice this is nearly always to the benefit of the students.
+:::
+
+### Academic Calendar {#academic-calendar}
+
+| Event | Date(s) |
+|---|---|
+| Classes begin | August 24 |
+| Labor Day (no classes) | September 7 |
+| Fall Break (no classes) | October 12–13 |
+| Mid-term grading | October 12–16 |
+| Thanksgiving Recess (no classes) | November 22–29 |
+| Last day of classes | December 8 |
+| Final Exams | December 10–11 |
+| Final Exams | December 14–15 |
+| Grades due | December 22 |
+
+## Additional Important Information
+
+**Religious holy days:** Students who miss coursework due to the observance of a religious holy day will be given the opportunity to complete the work missed within a reasonable time after the absence, provided that the instructor is notified in advance (notify the course instructor at least 2 weeks prior to the class or an exam that will be missed).
+
+**Scholastic dishonesty:** Students must act with integrity in accordance to ESF's Code of Academic Integrity.
+
+**Common courtesy:** Turn cell phones off, put on silent mode, or whatever it takes to keep them quiet. No texting, emailing, etc. during lecture. Please be on time.
+
+**Disability Services:** SUNY-ESF works with the Office of Disability Services (ODS) at Syracuse University, who is responsible for coordinating disability-related accommodations. Students can contact ODS at 804 University Avenue-Room 309, 315-443-4498 to schedule an appointment and discuss their needs and the process for requesting accommodations. Students may also contact the ESF Office of Student Affairs, 110 Bray Hall, 315-470-6660 for assistance with the process. To learn more about ODS, visit [http://disabilityservices.syr.edu](http://disabilityservices.syr.edu). Authorized accommodation forms must be in the instructor's possession one week prior to any anticipated accommodation. Since accommodations may require early planning and generally are not provided retroactively, please contact ODS as soon as possible.
+
+**Diversity and Inclusion:** SUNY-ESF values diversity and inclusion; we are committed to a climate of mutual respect and full participation. Our goal is to create learning environments that are usable, equitable, inclusive and welcoming. If there are aspects of the instruction or design of this course that result in barriers to your inclusion or accurate assessment or achievement, we invite any student to meet with us to discuss additional strategies beyond accommodations that may be helpful to your success.
