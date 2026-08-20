@@ -1,12 +1,17 @@
 ---
 title: "EFB 390: Wildlife Ecology and Management"
 subtitle: "Syllabus — Fall 2026"
+author: "Dr. Elie Gurarie" 
 format:
   html:
     toc: true
     toc-location: left
     number-sections: false
     theme: cosmo
+  pdf:
+    toc: false
+    number-sections: false
+    geometry: margin=1in
 ---
 
 ::: {.callout-note appearance="simple"}
@@ -15,12 +20,12 @@ format:
 **Recitations:** Tues 3:30–4:25 (Baker 310), Tues 5:00–5:55 (Baker 314), Wed 3:45–4:40 (Baker 314), Thurs 8:00–8:55 (Baker 314)
 :::
 
-**Instructor**: Dr. Elie Gurarie
-**Office**: Illick 206
-**Office hours**: Thursday 3:30–4:30 and by appointment
-**Email:** [egurarie@esf.edu](mailto:egurarie@esf.edu)
+- **Instructor**: [Dr. Elie Gurarie](https://eligurarie.github.io/)
+- **Office**: Illick 206
+- **Office hours**: Thursday 3:30–4:30 and by appointment
+- **Email:** [egurarie@esf.edu](mailto:egurarie@esf.edu)
 
-**TAs**: Seanna Jobe ([sjobe@esf.edu](mailto:sjobe@esf.edu)) and Dani Venlen ([dverlen@esf.edu](mailto:dverlen@esf.edu))
+- **TAs**: Seanna Jobe ([sjobe@esf.edu](mailto:sjobe@esf.edu)) and Dani Venlen ([dverlen@esf.edu](mailto:dverlen@esf.edu))
 
 Office hours and locations TBA.
 
@@ -100,7 +105,6 @@ Classes begin Tuesday, August 25. See the [academic calendar](#academic-calendar
 
 *GL = Guest Lecture, filled out as speakers are confirmed. Recitation topics listed in italics.*
 
-::: {.column-page}
 
 | Module | Date | Day | Topic |
 |---|---|---|---|
@@ -145,8 +149,6 @@ Classes begin Tuesday, August 25. See the [academic calendar](#academic-calendar
 | | Dec 3 | Thurs. | Exam Review |
 | | Dec 8 | Tues. | **Exam 2** (last day of classes) |
 | **Finals** | Dec 10–15 | (TBD) | **Final Project Presentations** |
-
-:::
 
 \* *For the final portion of class, recitations will be devoted to guided progress on final projects.*
 
