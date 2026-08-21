@@ -1,7 +1,6 @@
 ---
 title: "EFB 390: Wildlife Ecology and Management"
 subtitle: "Syllabus — Fall 2026"
-author: "Dr. Elie Gurarie" 
 format:
   html:
     toc: true
@@ -14,20 +13,27 @@ format:
     geometry: margin=1in
 ---
 
-::: {.callout-note appearance="simple"}
-**Lecture:** Tues & Thurs 2:00–3:20, Illick 5
-
-**Recitations:** Tues 3:30–4:25 (Baker 310), Tues 5:00–5:55 (Baker 314), Wed 3:45–4:40 (Baker 314), Thurs 8:00–8:55 (Baker 314)
-:::
-
-- **Instructor**: [Dr. Elie Gurarie](https://eligurarie.github.io/)
+#### Instructor: [Dr. Elie Gurarie](https://eligurarie.github.io/)
 - **Office**: Illick 206
 - **Office hours**: Thursday 3:30–4:30 and by appointment
 - **Email:** [egurarie@esf.edu](mailto:egurarie@esf.edu)
 
-- **TAs**: Seanna Jobe ([sjobe@esf.edu](mailto:sjobe@esf.edu)) and Dani Venlen ([dverlen@esf.edu](mailto:dverlen@esf.edu))
+#### Teaching Assistants: 
+- Seanna Jobe ([sjobe@esf.edu](mailto:sjobe@esf.edu)) and Dani Venlen ([dverlen@esf.edu](mailto:dverlen@esf.edu))
 
 Office hours and locations TBA.
+
+
+::: {.callout-note appearance="simple"}
+**Lecture:** Tues & Thurs 2:00–3:20, Illick 5
+
+**Recitations:** 
+- Tues 3:30–4:25 (Baker 310) 
+- Tues 5:00–5:55 (Baker 314)
+- Wed 3:45–4:40 (Baker 314)
+- Thurs 8:00–8:55 (Baker 314)
+:::
+
 
 ## Course Description
 
@@ -110,8 +116,8 @@ Classes begin Tuesday, August 25. See the [academic calendar](#academic-calendar
 |---|---|---|---|
 | **I. Background** | Aug 25 | Tues. | Basics and Definitions |
 | | Aug 25 | *Recitation* | *Wildlife in the News* |
-| | Aug 27 | Thurs. | Library Science and Research (GL: *Moon Library*) |
-| | Sep 1 | Tues. | Human-Wildlife History – Part I |
+| | Aug 27 | Thurs. | Human-Wildlife History – Part I |
+| | Sep 1 | Tues. | Library Science and Research (GL: *Moon Library*) |
 | | Sep 1 | *Recitation* | *Referencing and Bibliographies* |
 | | Sep 3 | Thurs. | Human-Wildlife History – Part II |
 | **II. Estimation and Sampling** | Sep 8 | Tues. | Counting Animals – Part I |
