@@ -78,9 +78,11 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - `4`. [History of Human-Wildife Interactions](lectures/Lecture04/Lecture04_HistoryPartII.html)
    
    
-<!--    
+
 ## Unit II. Estimating Abundances: *How many animals are out there?*
-- `5`. [Counting Animals, Part I](lectures/Lecture05/Lecture05_CountingAnimals.html)
+- `5`. [Counting Animals, Part I](lectures/ModuleII/01_CountingAnimalsPartI/Lecture05_CountingAnimals.html)
+
+<!-- 
 - `6`. [Counting Animals, Part II](lectures/Lecture06/Lecture06_CountingAnimals_PartII.html)
 - `6b`. [Counting Ice Seals](lectures/Lecture06/Lecture06b_EstimatingAntarcticIceSeals.pdf)
 - `7`. [Mark-Recapture and Index Counts](lectures/Lecture07/Lecture07_MarkRecaptureAndIndexCounts.html)    
@@ -94,7 +96,7 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - `10`. [Modeling (just about) Everthing Part I](lectures/Lecture10/Lecture_Modeling.html)
 - `11`. [Modeling (just about) Everthing Part II](lectures/Lecture10/Lecture_Modeling_PartII.html)
 - `11b`. [Caribou Habitat Selection](lectures/Lecture10/Lecture11b_PCH_RSF.pdf)
-
+    
 
 ## Unit IV Population Ecology: *Why are there as many (or few) as there are?*   
 - `12`. [Part I: Exponential Growth and Stochasticity](lectures/Module_PopEcology/Lecture_PopulationEcology.html)
