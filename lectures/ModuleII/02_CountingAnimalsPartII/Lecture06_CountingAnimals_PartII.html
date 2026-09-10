@@ -4,7 +4,7 @@
     <title>.white[Counting Animals Part II: Sample Counts]</title>
     <meta charset="utf-8" />
     <meta name="author" content=".white[Dr. Elie Gurarie]" />
-    <script src="Lecture06_CountingAnimals_PartII_files/header-attrs-2.29/header-attrs.js"></script>
+    <script src="Lecture06_CountingAnimals_PartII_files/header-attrs-2.31/header-attrs.js"></script>
     <link href="Lecture06_CountingAnimals_PartII_files/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="Lecture06_CountingAnimals_PartII_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
     <link href="Lecture06_CountingAnimals_PartII_files/tile-view-0.2.6/tile-view.css" rel="stylesheet" />
@@ -29,7 +29,7 @@ class: left, title-slide
 ### .white[Dr. Elie Gurarie]
 ]
 .date[
-### .white[September 11, 2025]
+### .white[September 10, 2026]
 ]
 
 ---
@@ -45,10 +45,11 @@ class: left, title-slide
 
 
 
-## Drawbacks of total counts / censusing
+
 
 .pull-left-60.large[
 
+## Drawbacks of total counts / censusing
 
 Expensive &amp; labor-time intensive
 
@@ -61,22 +62,28 @@ Hard to assess precision
 ]
 
 .pull-right-40[
-![](images/hippos.png)
+.squeeze-90[![](images/hippos.png)]
 
-.center[**Hippos**]
+.center[**Hippos**
 
 .small.grey[(Marc Mol/Mercury Press/Caters)]
-]
+]]
 
 ---
 
 ### Is the great Elephant Census a Census?
+.squeeze-90[
 
 &lt;iframe src="https://www.youtube.com/embed/imvehfydUpc?controls=0" width="900px" height="500px"&gt;
 &lt;/iframe&gt;
 
+]
+
 ---
 class: inverse
+
+
+.squeeze-80[
 
 # Sample counts
 
@@ -84,16 +91,15 @@ class: inverse
 - count *some* of the individuals
 - extrapolate!
 
---
-
 ### In practice:
 
-- Necessarily - less **precise** due to **sampling error**. 
+- Less **precise** due to **sampling error**. 
 - BUT, if properly done, more **accurate** and **much less effort**. 
-- Involves some (tricky) *statistics* and *modeling!*
+- Involves some **statistics** (and **modeling**)
 
 ### By Necessity:  **Very Common**
 
+]
 
 ---
 
@@ -104,7 +110,7 @@ class: inverse
 
 ## A random population
 
-.pull-left-60[
+.pull-left[
 
 ![](images/Pop1.png)
 
@@ -112,7 +118,7 @@ class: inverse
 
 --
 
-.pull-right-40[
+.pull-right.large[
 
 ### Population density
 
@@ -130,7 +136,7 @@ class: inverse
 ## Sampling from the population
 
 
-.pull-left-60[
+.pull-left[
 ![](images/Pop2.png)
 
 .center[**Squares**, aka, **quadrats**]
@@ -153,6 +159,8 @@ class: inverse
 
 
 ---
+class: large
+
 ### Sample vs. Population
 
  | Population | Sample
@@ -176,9 +184,7 @@ Population **estimate** (best guess for `\(N\)`): just replace true (unknown) de
 
 ---
 
-
-
-.pull-left[
+.pull-left-40[
 ## Example
 
 ![](images/Pop2.png)
@@ -215,13 +221,26 @@ Population **estimate** (best guess for `\(N\)`): just replace true (unknown) de
 `$$\widehat{N} = \widehat{D} \times A = 100\times100\times0.021 = \textbf{210}$$`]
 
 
+
+
 ---
 
-## What happens when we do this many times?
-
-
+# You Try!
 
 .pull-left[
+![](images/Pop2.png)
+]
+
+
+.pull-right-40[![](images/QuadratQRcode.png)]
+
+---
+
+
+
+
+
+.pull-left-40[
 ![](images/popSims.png)
 ]
 
@@ -229,19 +248,25 @@ Population **estimate** (best guess for `\(N\)`): just replace true (unknown) de
 
 
 
-.pull-right[
-Every time you do this, you get a different value for `\(\widehat{N}\)`. 
+.pull-right-60[
+## When you do this many times 
 
-![](images/SimHist.png)
+You get lots of different estimates (values for `\(\widehat{N}\)`). 
+
+.squeeze-80[![](images/SimHist.png)]
+
+This is **Sampling Variation**, and is the #1 source of "error".
+
+*The problem is ...* ***We only get ONE chance!*** - but we still need to estimate that **error**. 
 
 ]
 
 
 ---
 
-### Statistics
+### In Our Sampling Experiment
 
-.pull-left-60[
+.pull-left[
 
 **Mean of estimates:** 
 `$$\widehat{N} = 301.5$$`
@@ -259,11 +284,13 @@ Every time you do this, you get a different value for `\(\widehat{N}\)`.
 ]
 
 
-.pull-right-40[
+.pull-right[
 ![](images/SimHist2.png)
 ]
 
 .green[**note:** the 1.96 (basically 2) is the number of standard deviations [on either side] that captures 95% of a normal distribution.]
+
+This is easy if you can repeat things 100 times, *BUT YOU CAN'T!* so we have to **ESTIMATE** the **STANDARD ERROR** (precision) from a **SINGLE SAMPLE**. 
 
 --
 
@@ -310,8 +337,8 @@ raw counts:  `n = {0,0,5,0,3,1,2,3,6,1}`
 
 quantity | value
 ---|---
-a | 10
-A | 100²
+a | 10 x 10 = 100
+A | 100 x 100 = 10000
 k | 10
 `\(\sum n\)` | 21
 ]
@@ -319,7 +346,7 @@ k | 10
 .pull-right.darkred[
 
 `$$\begin{align} SE &amp;= 100² \times {\sqrt{21} \over 100 \times 10}\\
-&amp;= {\huge 54.8} \end{align}$$`
+&amp;= {\huge 45.8} \end{align}$$`
 
 ]
 
@@ -338,7 +365,7 @@ k | 10
 
 --
 
-`$$SE(\widehat{N}) = {A \over ka}  \sqrt{ {\sum n_i^2 - (\sum n_i)^2/k) \over k(k - 1)}}$$`
+`$$SE(\widehat{N}) = {A \over a}  \sqrt{ {\sum n_i^2 - (\sum n_i)^2/k \over k(k - 1)}}$$`
 
 
 .center[**Much uglier!  But more useful!**]
@@ -348,7 +375,7 @@ k | 10
 
 ## In our example
 
-.Large.darkred[$$SE(\widehat{N}) = A  \sqrt{ {\sum n_i^2 - (\sum n_i)^2/k) \over k(k - 1)}}$$]
+.Large.darkred[$$SE(\widehat{N}) = {A \over a}  \sqrt{ {\sum n_i^2 - (\sum n_i)^2/k \over k(k - 1)}}$$]
 
 raw counts:  `n = {0,0,5,0,3,1,2,3,6,1}`
 
@@ -358,7 +385,7 @@ raw counts:  `n = {0,0,5,0,3,1,2,3,6,1}`
 
 quantity | value
 ---|---
-a | 10
+a | 10²
 A | 100²
 k | 10
 `\(\sum n^2\)` | 85
@@ -391,7 +418,7 @@ class: inverse
 
 #### Some facts
 
-- There are .red[**95**] students in this class (+/- 1 !). 
+- There are .red[**84**] students registered for this class (+/- 1 !). 
 
 - Each student has a first name, composed of some number *n* of letters
 
@@ -406,7 +433,7 @@ class: inverse
 #### formulae
 
 .center.red[ 
-`\(\widehat{N} = A {\sum n \over ak};  \,\,\,\,\, SE(\widehat{N}) = A  \sqrt{ {\sum n_i^2 - (\sum n_i)^2/k) \over k(k - 1)}}\)`
+`\(\widehat{N} = A {\sum n \over ak};  \,\,\,\,\, SE(\widehat{N}) = A  \sqrt{ {\sum n_i^2 - (\sum n_i)^2/k \over k(k - 1)}}\)`
 
 ] 
  
@@ -463,24 +490,11 @@ and the standard error will be:
 .red.center[*Is this estimate more precise?*]
 
 ---
-
-## Some other formulae
-
-
- from Fryxell book Chapter 12:
-
-![](images/fryxellformulae.png)
-These are used when **sampling areas** are unequal, and account for differences when sampling **with replacement** or **without replacement**. 
-
-
-
-
----
 ### Poisson process
 
 Models *counts*.  If you have a perfectly random process with mean *density* (aka *intensity*) 1, you might have some 0 counts, you might have some higher counts.  The *average* will be 1:
 
-![](images/Poisson1.png)
+.center.squeeze-80[![](images/Poisson1.png)]
 
 
 
@@ -489,7 +503,7 @@ Models *counts*.  If you have a perfectly random process with mean *density* (ak
 
 Here, the intensity is 4 ...
 
-![](images/Poisson4.png)
+.center.squeeze-80[![](images/Poisson4.png)]
 
 
 ---
@@ -497,7 +511,7 @@ Here, the intensity is 4 ...
 
 ... and 10.  Note, the bigger the intensity, the more "bell-shaped" the curve. 
 
-![](images/Poisson10.png)
+.center.squeeze-80[![](images/Poisson10.png)]
 
 Here's the formula of the Poisson Distribution: `\(\!f(k; \lambda)= \Pr(X{=}k)= \frac{\lambda^k e^{-\lambda}}{k!}\)`
 
@@ -513,14 +527,16 @@ If you **sample** from these kinds of spatial distributions, your standard error
 
 
 ---
-### Also ... densities of animals depend on habitat!
-.pull-left-60[
+
+.pull-left-40[
 **Wolf habitat use**
 ![](images/vikihabitat.png)
 
 ]
 
-.pull-right-40[
+.pull-right-60[
+### Also ... densities of animals depend on habitat!
+
 If you look closely: 
 
 - No locations in lakes
@@ -539,7 +555,7 @@ If you look closely:
 ---
 ## ... with observations of moose
 
-.pull-left-60[
+.pull-left-60.squeeze-80[
 ![](images/Moose2.png)]
 
 .pull-right-40[
@@ -553,10 +569,11 @@ mixed | 100 | 43 | 0.43
 dense | 200 | 31 | 0.16
 **total** | 400 | 95 | 0.24
 
-]
 
 
 
+
+&lt;br&gt;
 
 .blue[Knowing how densities differ as a function of **covariates** can be very important for generating estimates of abundances, increasing both **accuracy** and **precision**, and informing **survey design**.]
 
@@ -604,14 +621,14 @@ total area sampled is much less than total Area:  `$$a_s = \sum_{i=1}^k  a_i = k
 .pull-right[
 then: 
 
-$$\widehat{N} = {A \over a_s} \sum c_i = {A \over k \times a} \sum n_i $$
+$$\widehat{N} = {A \over a_s} \sum n_i = {A \over k \times a} \sum n_i $$
 
 `$$SE(\widehat{N}) =  {A \over a_s} \sqrt{\sum n_i} = {A \over a} {\sqrt{\sum n_i} \over k}$$`
 ]
 
 --
 
-.pull-left-40[![](images/Pop2.png)]
+.pull-left-40[.squeeze-80[![](images/Pop2.png)]]
 .pull-right-60.small[
 .darkred[
 
@@ -640,7 +657,7 @@ class: small
 
 
 
-.pull-left[
+.pull-left-40[
 
 .red.large.center[
 `\(n = 8\)`; `\(a = 1000\)`; `\(A = 10,000\)`
@@ -711,7 +728,7 @@ To capture variation!
 
  from Fryxell book Chapter 12:
 
-![](images/fryxellformulae.png)
+.center.squeeze-80[![](images/fryxellformulae.png)]
 These are used when **sampling areas** are unequal, and account for differences when sampling **with replacement** or **without replacement**. 
 
 
@@ -770,7 +787,7 @@ a = 100; A = 10,000]
 
 ## Example:  More Heterogeneity
 
-.pull-left[
+.pull-left-40[
 
 
 .darkred[
@@ -821,7 +838,7 @@ The larger the proportion sampled (*coverage*) - the smaller the **sampling erro
 **Ratio**: unequal sample frames .blue[(e.g. both hula hoops and meter squares)].
 
 
-- `\(\widehat{D} = \sum n_i / \sum y_i\)` (same as before)
+- `\(\widehat{D} = \sum n_i / \sum a_i\)` (same as before)
 
 - Standard errors: more complicated ... see formulae. 
 
@@ -829,7 +846,7 @@ The larger the proportion sampled (*coverage*) - the smaller the **sampling erro
 ---
 ### **Stratified sampling** for more efficient estimation
 
-![](images/stratification1.png)
+.squeeze-80[![](images/stratification1.png)]
 
 Sample more intensely in those habitats where animals are more likely to be found. 
 Intensely survey .orange[**blocks**] where detection is more difficult. 
@@ -840,9 +857,9 @@ Intensely survey .orange[**blocks**] where detection is more difficult.
 ---
 ### **Stratified sampling** for more efficient estimation
 
-![](images/stratification2.png)
+.squeeze-80[![](images/stratification2.png)]
 
-Actual elephant flight paths,
+Actual elephant flight paths
 
 .footnote[https://media.hhmi.org/biointeractive/click/elephants/survey/survey-aerial-surveys-methods.html]
 
@@ -853,9 +870,10 @@ Actual elephant flight paths,
 .pull-left[![](images/stratification1.png)]
 .pull-right[![](images/stratification2.png)]
 
+
 **Stratification** is used to optimize **effort** and **precision**.  Aircraft cost thousands of dollars per hour!
 
-(In all of these comprehensize surveys - *design* takes care of **accuracy**). 
+In all of these comprehensive surveys - *design* takes care of **accuracy**. 
 
 
 ---
@@ -879,8 +897,6 @@ See also: *Adaptive Sampling*
 
 
 ---
-### Detections usually get *worse* with distance!
-
 .pull-left-30[
 
 ![](images/DistanceEquations.png)
@@ -892,6 +908,8 @@ See also: *Adaptive Sampling*
 
 ## Distance Sampling
 
+(Detections usually get *worse* with distance!)
+
 The statistics of accounting for visibility decreasing with distance
 
 ![](images/DistanceCurves.webp)
@@ -901,22 +919,19 @@ The statistics of accounting for visibility decreasing with distance
 
 ---
 ## Example reindeer in Svalbard
+.center.squeeze-80[![](images/DistanceReindeer.png)]
 
-
-![](images/DistanceReindeer.png)
-
-
-.large[ **Estimated detection distance**, compared to **total count**, incorporated **vegetation modeling**, computed **standard errors**, concluded that you can get a 15% C.V. for 1/2 the cost.]
+**Estimated detection distance**, compared to **total count**, incorporated **vegetation modeling**, computed **standard errors**, concluded that you can get a 15% C.V. for 1/2 the cost  ([Moullec et al. 2017](https://nsojournals.onlinelibrary.wiley.com/doi/full/10.2981/wlb.00299))
 
 ---
 ## Example Ice-Seals
 
-![](images/lobodontini.png)
+.center.squeeze-60[![](images/lobodontini.png)]
 
 ---
 ## Example: Flag Counting at Baker
 
-![](images/court.png)
+.center.squeeze-80[![](images/court.png)]
 
 ---
 ## Looks like this
@@ -929,14 +944,15 @@ The statistics of accounting for visibility decreasing with distance
 
 https://vimeo.com/471257951
 
-![](images/countingcaribou.png)
+.center.squeeze-80[![](images/countingcaribou.png)]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
   "highlightStyle": "github",
   "countIncrementalSlides": false,
-  "highlightLines": true
+  "highlightLines": true,
+  "ratio": "16:9"
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
