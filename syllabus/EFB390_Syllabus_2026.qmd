@@ -95,9 +95,9 @@ Your grade will be based on 1 (or 2) quizzes, weekly assignments (including seve
 
 Academic dishonesty, non-discrimination and inclusive excellence, and others, can be found in the ESF student handbook ([https://www.esf.edu/students/handbook/](https://www.esf.edu/students/handbook/)).
 
-## Policy on the Use of AI Tools
+## Policy on AI Tools
 
-Large Language Models (LLMs) and other generative AI programs (ChatGPT, Claude, Gemini, etc.) are becoming increasingly powerful and accessible. As a practicing wildlife ecologist I use them routinely in my work to speed up certain tasks, though not without having to learn how to use those tools. However, there are real risks to relying on these tools too much. Remember, and think of, AI is a *tool*, not a substitute for thought. As an analogy, we are, mainly, no longer hunters and gatherers and could theoretically live a lifetime without exercising any muscles at all. And yet — we chose to move. In a similar way, *choose to use your brain!* Yes — you can get a result with a single prompt. It is much, much harder to internalize information and process ideas when you don't work through them and sit on them and sleep on them and discuss them before — finally, going through the act of articulating and communicating those ideas through writing. With that in mind, the policy in this course will be to:
+Large Language Models (LLMs) and other generative AI programs (ChatGPT, Claude, Gemini, etc.) are becoming increasingly powerful and accessible. As a practicing wildlife ecologist I do use them occasionally in my work -- almost exclusively to speed up routine or tedious tasks, never to *write*, and never to *think*.  There are real risks to relying on these tools too much. Remember: AI is a *tool* -- like a fussy and often inaccurate calculator -- and most definitely NOT a substitute for thought. As an analogy, we are, mainly, no longer hunters and gatherers and could theoretically live a lifetime without exercising any muscles at all. And yet — we chose to move. In a similar way, *choose to use your brain!*  Yes — you can get *a* result with a single prompt.  If you ask it to think for you, there is a large risk that it will simply be *wrong*, and the result will almost definitely be *unsatisfying*.  Compare to the act of internalizing information and processing ideas, working through them, discussing and sitting on and sleeping on them before — finally, going through the act of articulating and communicating those ideas through writing. With that in mind, the policy in this course will be to:
 
 1. **Be transparent**: If you use a generative AI in completing assignments, you must clearly disclose (a) which you used, and (b) what for.
 2. **Have higher expectations**: Because these tools can accelerate some tasks, the standards for depth, accuracy, and originality in your work will be higher than in past versions of this course.
@@ -111,13 +111,12 @@ Classes begin Tuesday, August 25. See the [academic calendar](#academic-calendar
 
 *GL = Guest Lecture, filled out as speakers are confirmed. Recitation topics listed in italics.*
 
-
 | Module | Date | Day | Topic |
 |---|---|---|---|
 | **I. Background** | Aug 25 | Tues. | Basics and Definitions |
 | | Aug 25 | *Recitation* | *Wildlife in the News* |
-| | Aug 27 | Thurs. | Human-Wildlife History – Part I |
-| | Sep 1 | Tues. | Library Science and Research (GL: *Moon Library*) |
+| | Aug 27 | Thurs. | Library Science and Research (GL: *Moon Library*) |
+| | Sep 1 | Tues. | Human-Wildlife History – Part I |
 | | Sep 1 | *Recitation* | *Referencing and Bibliographies* |
 | | Sep 3 | Thurs. | Human-Wildlife History – Part II |
 | **II. Estimation and Sampling** | Sep 8 | Tues. | Counting Animals – Part I |
@@ -126,40 +125,40 @@ Classes begin Tuesday, August 25. See the [academic calendar](#academic-calendar
 | | Sep 15 | Tues. | Counting Animals – Sampling Uncertainty |
 | | Sep 15 | *Recitation* | *Strategizing Flag Abundance Estimation* |
 | | Sep 17 | Thurs. | Flag Abundance – Field Simulation + Data Entry |
-| **III. Ranges and Habitats** | Sep 22 | Tues. | Mark-Recapture + Index Counts (GL: **Irina Trukhanova**)|
-| | Sep 22 | *Recitation* | *Count data analysis (R lab I)* |
-| | Sep 24 | Thurs. | *(no EG)* Distributions and Ranges \| Niches and Habitats |
-| | Sep 29 | Tues. | Modeling just about anything I |
+| | Sep 22 | Tues. | Mark-Recapture + Index Counts |
+| | Sep 22 | *Recitation* | *(no EG)* *Count data analysis (R lab I)* |
+| | Sep 24 | Thurs. | *(no EG)* Walrus Studies in Alaska (GL: *Irina Trukhanova*) |
+| **III. Ranges and Habitats** | Sep 29 | Tues. | Distributions and Ranges \| Niches and Habitats |
 | | Sep 29 | *Recitation* | *Wildlife Statistics (R lab II)* |
-| | Oct 1 | Thurs. | Modeling just about anything II |
-| | Oct 6 | Tues. | Forest Management for Wildlife (GL: *Andrew Vander Yacht*) |
+| | Oct 1 | Thurs. | Modeling just about anything I |
+| | Oct 6 | Tues. | Modeling just about anything II |
 | | Oct 6 | *Recitation* | *AIC Symposium Prep* |
 | | Oct 8 | Thurs. | Mega symposium of mini-talks on delta AIC in Wildlife Ecology |
-| | Oct 13 | Tues. | **NO CLASS \| NO RECITATION** (Fall Break) |
-| | Oct 15 | Thurs. | Exam 1 Review |
-| | Oct 20 | Tues. | **Exam I** |
-| | Oct 20 | *Recitation* | *ID'ing, Storing and Managing Camera Trap Data* |
-| **IV. Populations** | Oct 22 | Thurs. | *(no EG)* Population Growth |
-| | Oct 27 | Tues. | Limits to Growth |
+| | Oct 15 | [Thurs.]{style="color: red;"} | [Forest Management for Wildlife (GL: *Andrew Vander Yacht?*)]{style="color: red;"} |
+| | Oct 20 | [Tues.]{style="color: red;"} | [Exam 1 Review]{style="color: red;"} |
+| | Oct 20 | [*Recitation*]{style="color: red;"} | [*(no EG, no SJ)* *ID'ing, Storing and Managing Camera Trap Data*]{style="color: red;"} |
+| **IV. Populations** | Oct 22 | [Thurs.]{style="color: red;"} | [*(no EG, no SJ)* **Exam I**]{style="color: red;"}**|
+| | Oct 27 | Tues. | Population Growth |
 | | Oct 27 | *Recitation* | *Estimating Population Growth (R Lab 3)* |
-| | Oct 29 | Thurs. | Population Structure II (*GL: **TBD***) |
-| | Nov 3 | Tues. | Species Interactions \| Wildlife Diseases |
+| | Oct 29 | Thurs. | Limits to Growth |
+| | Nov 3 | Tues. | Population Structure II (GL: *Chloe Beaupré?*) |
 | | Nov 3 | *Recitation* | *Structured Populations (R Lab 4)* |
-| **V. Models of Management**\* | Nov 5 | Thurs. | North American Model of Wildlife Conservation |
-| | Nov 10 | Tues. | Critiques of NAM (*GL: **TBD***) |
-| | Nov 12 | Thurs. | Hunter Perspectives (*GL: **TBD***) |
-| **VI. Wildlife Management in Practice** | Nov 17 | Tues. | Wildfowl Management (GL: ***Michael Schummer***) |
-| | Nov 19 | Thurs. | Wildlife Management Elsewhere (GL: ***TBD***) |
+| | Nov 5 | Thurs. | Species Interactions \| Wildlife Diseases |
+| **V. Models of Management** | Nov 10 | Tues. | North American Model of Wildlife Conservation |
+| | Nov 12 | Thurs. | Beyond NAM (GL: *Kyle Artelle or Neil Patterson?*) |
+| | Nov 17 | Tues. | Mechanisms and Alternatives of NAM (GL: *Josh Millspaugh*) |
+| **VI. Wildlife Management in Practice** | Nov 19 | Thurs. | *Guest Lecture TBD* (Birds \| Physiology \| Feds \| Collections) |
 | | Nov 24–26 | Tues./Thurs. | **NO CLASS \| NO RECITATION** (Thanksgiving Recess) |
-| | Dec 1 | Tues. | *Guest Lecture TBD* (Physiology \| Feds \| Collections) |
+| | Dec 1 | Tues. | Urban Ecology |
 | | Dec 3 | Thurs. | Exam Review |
 | | Dec 8 | Tues. | **Exam 2** (last day of classes) |
-| **Finals** | Dec 10–15 | (TBD) | **Final Project Presentations** |
+| **Finals** | Dec 10–11, 14–15 | (TBD) | **Final Project Presentations** |
 
 : {tbl-colwidths="[18,12,12,58]"}
 
+\* *Date of Exam Review and Exam may change depending on guest speaker availability.*
 
-\* *For the final portion of class, recitations will be devoted to guided progress on final projects.*
+\** *For the final portion of class, recitations will be devoted to guided progress on final projects.*
 
 ::: {.callout-important}
 I retain the right to change anything at any time! In practice this is nearly always to the benefit of the students.

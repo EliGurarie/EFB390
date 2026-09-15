@@ -303,11 +303,11 @@ Conclusion: this estimate is **accurate** (unbiased), but not very **precise** (
 
 **IF:** Total area covered is small: `\(a_s \ll A\)` (.green[.small[*Fryxell says &lt; 15% coverage*]])
 
-**OR: ** You are potentially resampling the same individuals (.green[.small[***Sampling With Replacement*** [SWR]]])
+**OR: ** You are resampling the same individuals (.green[.small[***Sampling With Replacement*** [SWR]]])
 
-**And: ** samples are .blue[*distributed throughout the range*] - (.green.small[a BIG assumption to revisit!])
+**And: ** samples are .blue[*equally and completely randomly distributed in space*] - (.green.small[a BIG assumption to revisit!])
 
-**Then:**
+**Then the formula is simple:**
 
 --
 
@@ -349,6 +349,13 @@ k | 10
 &amp;= {\huge 45.8} \end{align}$$`
 
 ]
+
+---
+### Note three processes
+.squeeze-90[![](images/processes.png)]
+If you **sample** from these your standard error might be smaller (*inhibited*) or larger (*clustering*).  This is called *dispersion*.  
+
+&gt; .large[the "Simple" formula for Standard Error only works for "**Random**" sample! - but most cases are **not random**.]
 
 
 ---
@@ -416,27 +423,65 @@ class: inverse
 
 ## In-class Experiment
 
-#### Some facts
+### Some facts
 
-- There are .red[**84**] students registered for this class (+/- 1 !). 
+- There are .lightred[**84**] students registered for this class. 
 
-- Each student has a first name, composed of some number *n* of letters
+- Each student has a first name, composed of some number .lightred[*n*] of letters
 
-- There are a total of .red[***N***] letters in all the first names of the class.
+- There are a total of .lightred[***N***] letters in all the first names of the class.
 
-#### The challenge:
+### The challenge:
 
 - break into groups of **8-12** and record the number of letters in the first names of all the people in your group
 
-- estimate the total number of letters in the names of the entire class.
+- estimate the **mean** number of letters per student in the class from your sample
 
-#### formulae
+- estimate the **total** number of letters in the names of the entire class.  
 
-.center.red[ 
-`\(\widehat{N} = A {\sum n \over ak};  \,\,\,\,\, SE(\widehat{N}) = A  \sqrt{ {\sum n_i^2 - (\sum n_i)^2/k \over k(k - 1)}}\)`
 
-] 
  
+---
+
+.pull-left[
+
+## In-class Experiment: **Compute SE**
+
+### What is the equivalent of:
+
+
+- Total Area: `\(A\)`?
+
+- Area of sample: `\(a\)`?  
+
+- Number of samples: `\(k\)`? 
+
+- Density: `\(D\)`?
+
+- Total number `\(N = D\times A\)`?
+
+]
+
+
+
+.pull-right[
+
+### Formulae:
+
+.center.darkred[ 
+.large[
+
+`\(\widehat{N} = {A \over a} {\sum n_i \over k}\)` 
+
+`\(SE(\widehat{N}) = {A \over a}  \sqrt{ {\sum n_i^2 - (\sum n_i)^2/k \over k(k - 1)}}\)`
+]
+
+.squeeze-50[![](images/QR_letters.png)]
+
+(to perform computations)
+]
+
+]
  
  
 ---
@@ -444,7 +489,7 @@ class: inverse
 # Combining estimates
 
 .pull-left[
-If you have multiple sub-count estimates (e.g. one for each of `\(r\)` sub-region): 
+If you have multiple **independent** estimates of the *same* total `\(N\)` (e.g. `\(r\)` observers, or `\(r\)` repeated surveys):
 
 .darkred[
 
@@ -466,11 +511,11 @@ Then ... ]
 
 .pull-right[
 
-... the **total** estimate will be: 
+... the **combined** estimate is their **mean**: 
 
 .darkgreen[
 
-`$$\widehat{N} = \sum_{i = 1}^r \widehat{N_i}$$`
+`$$\widehat{N} = {1 \over r}\sum_{i = 1}^r \widehat{N_i}$$`
 
 
 ]
@@ -479,52 +524,14 @@ and the standard error will be:
 
 .darkgreen[
 
-`$$SE(\widehat{N}) = \sqrt{\sum_{i = 1}^r SE(\widehat{N_i})^2}$$`
+`$$SE(\widehat{N}) = {1 \over r}\sqrt{\sum_{i = 1}^r SE(\widehat{N_i})^2}$$`
 
 ]
 
-]
+] 
 
---
-
-.red.center[*Is this estimate more precise?*]
-
----
-### Poisson process
-
-Models *counts*.  If you have a perfectly random process with mean *density* (aka *intensity*) 1, you might have some 0 counts, you might have some higher counts.  The *average* will be 1:
-
-.center.squeeze-80[![](images/Poisson1.png)]
-
-
-
----
-### Poisson process
-
-Here, the intensity is 4 ...
-
-.center.squeeze-80[![](images/Poisson4.png)]
-
-
----
-### Poisson process
-
-... and 10.  Note, the bigger the intensity, the more "bell-shaped" the curve. 
-
-.center.squeeze-80[![](images/Poisson10.png)]
-
-Here's the formula of the Poisson Distribution: `\(\!f(k; \lambda)= \Pr(X{=}k)= \frac{\lambda^k e^{-\lambda}}{k!}\)`
-
-
----
-### Poisson distribution holds if process is truly random
-
-... not **clustered** or **inhibited**
-
-![](images/processes.png)
-If you **sample** from these kinds of spatial distributions, your standard error might be smaller (*inhibited*) or larger (*clustering*).  This is called *dispersion*.  
-
-
+&gt; .center[Let's try this with the Number of Letters Estimators!]
+ 
 
 ---
 
@@ -945,6 +952,8 @@ The statistics of accounting for visibility decreasing with distance
 https://vimeo.com/471257951
 
 .center.squeeze-80[![](images/countingcaribou.png)]
+
+
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
