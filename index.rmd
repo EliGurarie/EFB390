@@ -33,17 +33,17 @@ htmltools::img(src = "assets/ESFStacked_Full color.png", alt = 'banner',
 
 **Instructor:** [**Dr. Elie Gurarie**](https://www.esf.edu/faculty/gurarie/), Illick 206
 
-**Office hours:**  Thursday 3:30-4:30 - Illick 206 - or by appointment, 
+**Office hours:**  Thursday 3:30-4:30 - Illick 206, or by appointment
 
 **Co-instructors:** 
 
 - [Seanna Jobe](mailto:sjobe@esf.edu) 
     - email: [sjobe@esf.edu](mailto:sjobe@esf.edu)
-    - Office Hours: **TBD** or by appointment
+    - Office Hours: Monday 10:00-11:00 - Illick 305, or by appointment
     
 - [Dani Verlen](mailto:dverlen@esf.edu) 
     - email: [dverlen@esf.edu](mailto:dverlen@esf.edu)
-    - Office Hours: **TBD** or by appointment 
+    - Office Hours: Wednesday 2:30-3:30 - Illick 410, or by appointment
 
 **Locations and Times:** 
 
@@ -80,12 +80,16 @@ We will hopefully also get you even more interested in wildlife ecology than you
    
 
 ## Unit II. Estimating Abundances: *How many animals are out there?*
-- `5`. [Counting Animals, Part I](lectures/ModuleII/01_CountingAnimalsPartI/Lecture05_CountingAnimals.html)
-- `6`. [Counting Animals, Part II](lectures/ModuleII/02_CountingAnimalsPartII/Lecture06_CountingAnimals_PartII.html)
+- `5`. [Counting Animals, Part I](lectures/ModuleII/CountingAnimalsPartI/Lecture05_CountingAnimals.html)
+- `6`. [Counting Animals, Part II](lectures/ModuleII/CountingAnimalsPartII/Lecture06_CountingAnimals_PartII.html)
 - `6b`. [Example: Counting Ice Seals](lectures/ModuleII/Lecture06b_EstimatingAntarcticIceSeals.pdf)
+- `7`. [Mark Recapture and Index Counts](lectures/ModuleII/MarkRecapture/Lecture07_MarkRecaptureAndIndexCounts.html)
 
+## Labs
 
+These are mainly **R** labs.  To use **R**, you have to either:  (a) Use R on tour own computer (**recommended**).  To do this you need to install R and R studio. Those are 2 different programs - both free. Links to download and install are here: https://posit.co/download/rstudio-desktop/; (b) work with R on the cloud - which works fine for most purposes.  To do this, you have to get a Posit Account at this link: https://posit.cloud/; or (c) work on computers in the computer labs, which should all have R and Rstudio installed. 
 
+- `1.` [**Introduction to R**](labs/Lab1_IntroToR/IntroToR.html) <br> (also [R code](labs/Lab1_IntroToR/IntroToR.R), [sea lion dataset](labs/Lab1_IntroToR/SeaLions.csv), and [flag abundance data](https://docs.google.com/spreadsheets/d/1QnxmdeRZmkQKrkB52Sf67odLzlY75rHTZMyDAjA1Fxo/)). 
 
 
 <!-- 
