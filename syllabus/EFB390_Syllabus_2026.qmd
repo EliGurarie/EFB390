@@ -134,10 +134,10 @@ Classes begin Tuesday, August 25. See the [academic calendar](#academic-calendar
 | | Oct 6 | Tues. | Modeling just about anything II |
 | | Oct 6 | *Recitation* | *AIC Symposium Prep* |
 | | Oct 8 | Thurs. | Mega symposium of mini-talks on delta AIC in Wildlife Ecology |
-| | Oct 15 | [Thurs.]{style="color: red;"} | [Forest Management for Wildlife (GL: *Andrew Vander Yacht?*)]{style="color: red;"} |
-| | Oct 20 | [Tues.]{style="color: red;"} | [Exam 1 Review]{style="color: red;"} |
-| | Oct 20 | [*Recitation*]{style="color: red;"} | [*(no EG, no SJ)* *ID'ing, Storing and Managing Camera Trap Data*]{style="color: red;"} |
-| **IV. Populations** | Oct 22 | [Thurs.]{style="color: red;"} | [*(no EG, no SJ)* **Exam I**]{style="color: red;"}**|
+| | Oct 15 | [Thurs.] | [Exam 1 Review] |
+| | Oct 20 | [Tues.] | [Forest Management for Wildlife (GL: *Andrew Vander Yacht?*)] |
+| | Oct 20 | [*Recitation*] | [*(no EG, no SJ)* *ID'ing, Storing and Managing Camera Trap Data*] |
+| **IV. Populations** | Oct 22 | [Thurs.] | [*(no EG, no SJ)* **Exam I**]|
 | | Oct 27 | Tues. | Population Growth |
 | | Oct 27 | *Recitation* | *Estimating Population Growth (R Lab 3)* |
 | | Oct 29 | Thurs. | Limits to Growth |
@@ -155,8 +155,6 @@ Classes begin Tuesday, August 25. See the [academic calendar](#academic-calendar
 | **Finals** | Dec 10–11, 14–15 | (TBD) | **Final Project Presentations** |
 
 : {tbl-colwidths="[18,12,12,58]"}
-
-\* *Date of Exam Review and Exam may change depending on guest speaker availability.*
 
 \** *For the final portion of class, recitations will be devoted to guided progress on final projects.*
 
