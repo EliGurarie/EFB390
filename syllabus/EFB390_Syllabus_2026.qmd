@@ -114,44 +114,44 @@ Classes begin Tuesday, August 25. See the [academic calendar](#academic-calendar
 | Module | Date | Day | Topic |
 |---|---|---|---|
 | **I. Background** | Aug 25 | Tues. | Basics and Definitions |
-| | Aug 25 | *Recitation* | *Wildlife in the News* |
+| | Recitation | |  *Wildlife in the News* |
 | | Aug 27 | Thurs. | Library Science and Research (GL: *Moon Library*) |
 | | Sep 1 | Tues. | Human-Wildlife History – Part I |
-| | Sep 1 | *Recitation* | *Referencing and Bibliographies* |
+| | Recitation | |  *Referencing and Bibliographies* |
 | | Sep 3 | Thurs. | Human-Wildlife History – Part II |
 | **II. Estimation and Sampling** | Sep 8 | Tues. | Counting Animals – Part I |
-| | Sep 8 | *Recitation* | *Survey Methods + Camera Trap Deployment* |
+| | Sep 8 Recitation | |  *Survey Methods + Camera Trap Deployment* |
 | | Sep 10 | Thurs. | Counting Animals – Part II |
 | | Sep 15 | Tues. | Counting Animals – Sampling Uncertainty |
-| | Sep 15 | *Recitation* | *Strategizing Flag Abundance Estimation* |
+| | Recitation | |  *Strategizing Flag Abundance Estimation* |
 | | Sep 17 | Thurs. | Flag Abundance – Field Simulation + Data Entry |
 | | Sep 22 | Tues. | Mark-Recapture + Index Counts |
-| | Sep 22 | *Recitation* | *(no EG)* *Count data analysis (R lab I)* |
-| | Sep 24 | Thurs. | *(no EG)* Walrus Studies in Alaska (GL: *Irina Trukhanova*) |
+| |  Recitation | |  Count data analysis (R lab I) *(no EG)* |
+| | Sep 24 | Thurs. | Walrus Studies in Alaska <br> **GL: Irina Trukhanova** |
 | **III. Ranges and Habitats** | Sep 29 | Tues. | Distributions and Ranges \| Niches and Habitats |
-| | Sep 29 | *Recitation* | *Wildlife Statistics (R lab II)* |
+| | Recitation | |  *Wildlife Statistics (R lab II)* |
 | | Oct 1 | Thurs. | Modeling just about anything I |
 | | Oct 6 | Tues. | Modeling just about anything II |
-| | Oct 6 | *Recitation* | *AIC Symposium Prep* |
+| | Recitation | |  *AIC Symposium Prep* |
 | | Oct 8 | Thurs. | Mega symposium of mini-talks on delta AIC in Wildlife Ecology |
-| | Oct 15 | [Thurs.] | [Exam 1 Review] |
-| | Oct 20 | [Tues.] | [Forest Management for Wildlife (GL: *Andrew Vander Yacht?*)] |
-| | Oct 20 | [*Recitation*] | [*(no EG, no SJ)* *ID'ing, Storing and Managing Camera Trap Data*] |
-| **IV. Populations** | Oct 22 | [Thurs.] | [*(no EG, no SJ)* **Exam I**]|
-| | Oct 27 | Tues. | Population Growth |
-| | Oct 27 | *Recitation* | *Estimating Population Growth (R Lab 3)* |
+| | Oct 15 | Thurs. | Exam 1 Review |
+| | Oct 20 | Tues. | Forest Management for Wildlife <br> GL: **Andrew Vander Yacht** |
+| | Recitation | |  *ID'ing, Storing and Managing Camera Trap Data* *(no EG, no SJ)* |
+| | Oct 22 | Thurs. |  **Exam I** *(no EG, no SJ)*|
+| **IV. Population Ecology** | Oct 27 | Tues. | Population Growth |
+| | Recitation | |  *Estimating Population Growth (R Lab 3)* |
 | | Oct 29 | Thurs. | Limits to Growth |
 | | Nov 3 | Tues. | Population Structure II (GL: *Chloe Beaupré?*) |
-| | Nov 3 | *Recitation* | *Structured Populations (R Lab 4)* |
+| | Recitation | |  *Structured Populations (R Lab 4)* |
 | | Nov 5 | Thurs. | Species Interactions \| Wildlife Diseases |
 | **V. Models of Management** | Nov 10 | Tues. | North American Model of Wildlife Conservation |
-| | Nov 12 | Thurs. | Beyond NAM (GL: *Kyle Artelle or Neil Patterson?*) |
-| | Nov 17 | Tues. | Mechanisms and Alternatives of NAM (GL: *Josh Millspaugh*) |
+| | Nov 12 | Thurs. | Beyond NAM <br> GL: *Kyle Artelle or Neil Patterson?* |
+| | Nov 17 | Tues. | Mechanisms and Alternatives of NAM <br> **GL: Josh Millspaugh** |
 | **VI. Wildlife Management in Practice** | Nov 19 | Thurs. | *Guest Lecture TBD* (Birds \| Physiology \| Feds \| Collections) |
 | | Nov 24–26 | Tues./Thurs. | **NO CLASS \| NO RECITATION** (Thanksgiving Recess) |
 | | Dec 1 | Tues. | Urban Ecology |
 | | Dec 3 | Thurs. | Exam Review |
-| | Dec 8 | Tues. | **Exam 2** (last day of classes) |
+| | Dec 8 | Tues. | **Exam 2** (*last day of classes*s) |
 | **Finals** | Dec 10–11, 14–15 | (TBD) | **Final Project Presentations** |
 
 : {tbl-colwidths="[18,12,12,58]"}
