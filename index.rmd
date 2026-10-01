@@ -88,6 +88,8 @@ We will hopefully also get you even more interested in wildlife ecology than you
 ## Unit III. Habitats and Ranges: *Where are the animals and why?*    
 - `8`. [Habitats Part I](lectures/ModuleIII/Habitat_PartI/Lecture_Habitat_PartI.html)
 - `9`. [Habitats Part II](lectures/ModuleIII/Habitat_PartII/NichesAndHabitats.html)
+- `10`. [Modeling (just about) Everthing Part I](lectures/ModuleIII/Modeling/Lecture_Modeling.html)
+- `11`. [Modeling (just about) Everthing Part II](lectures/ModuleIII/Modeling/Lecture_Modeling_PartII.html)
 
 
 ## Labs
@@ -105,10 +107,6 @@ These are mainly **R** labs.  To use **R**, you have to either:  (a) Use R on to
 <!--
 
 ## Unit III. Habitats and Ranges: *Where are the animals and why?*    
-- `8`. [Habitats Part I](lectures/Lecture08/Lecture_Habitat_PartI.html)
-- `9`. [Habitats Part II: The Niche Concept](lectures/Lecture09/Lecture09_NichesAndHabitats.html)
-- Guest Lectures (*posted on Blackboard*) on:
-  - *Forest Management for Wildlife* - Dr. Andrew Vander Yacht 
 - `10`. [Modeling (just about) Everthing Part I](lectures/Lecture10/Lecture_Modeling.html)
 - `11`. [Modeling (just about) Everthing Part II](lectures/Lecture10/Lecture_Modeling_PartII.html)
 - `11b`. [Caribou Habitat Selection](lectures/Lecture10/Lecture11b_PCH_RSF.pdf)
