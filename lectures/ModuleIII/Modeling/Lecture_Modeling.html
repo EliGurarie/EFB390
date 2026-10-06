@@ -672,33 +672,97 @@ This is what we expect ... the interaction between **sex** and **length** is con
 ]
 ---
 
+.pull-left-60[
+
 ## Model selection vs. parameter estimates
 
 The best model: 
 
-`$$Y_{ijk} = \beta_{sex} + \beta_{island} \text{Island}_{ijk} + (\beta_{length} \times\text{Length}_{ijk}) + \epsilon_{ijk}$$`
+`$$Y_{ijk} = \mu_{j} + \beta_{island,i} + \gamma_{j}\,(\text{X}_{ijk} - \overline{\text{X}}) + \epsilon_{ijk}$$`
 
 .pull-left[
 
-What are the **parameter estimates** (effect sizes) of the selected model? 
+#### Island main effects
 
 .small[
-
-|term           | estimate| std.error| statistic| p.value|
-|:--------------|--------:|---------:|---------:|-------:|
-|SexFemale      |   -39.34|      3.69|    -10.67|    0.00|
-|SexMale        |   -59.29|      3.06|    -19.37|    0.00|
-|Length         |     0.66|      0.03|     19.11|    0.00|
-|IslandChirpoev |    -2.00|      0.34|     -5.81|    0.00|
-|IslandLovushki |    -0.47|      0.34|     -1.35|    0.18|
-|IslandRaykoke  |    -0.45|      0.35|     -1.31|    0.19|
-|IslandSrednova |    -0.35|      0.35|     -1.00|    0.32|
-|SexMale:Length |     0.20|      0.04|      4.55|    0.00|
-
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Parameter &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Estimate &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; SE &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &amp;beta;&lt;sub&gt;Antsiferov&lt;/sub&gt; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.65 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.22 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &amp;beta;&lt;sub&gt;Chirpoev&lt;/sub&gt; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; -1.35 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.22 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &amp;beta;&lt;sub&gt;Lovushki&lt;/sub&gt; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.19 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.22 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &amp;beta;&lt;sub&gt;Raykoke&lt;/sub&gt; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.20 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.22 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &amp;beta;&lt;sub&gt;Srednova&lt;/sub&gt; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.31 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.22 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
 ]]
 
 .pull-right[
-![](Lecture_Modeling_files/figure-html/unnamed-chunk-19-1.png)&lt;!-- --&gt;
+
+#### Sex: Main &amp; interaction effects with length
+
+.small[
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Parameter &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Estimate &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; SE &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &amp;mu;&lt;sub&gt;female&lt;/sub&gt; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 32.22 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.19 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &amp;mu;&lt;sub&gt;male&lt;/sub&gt; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 34.06 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.16 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &amp;gamma;&lt;sub&gt;female&lt;/sub&gt; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.66 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.03 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &amp;gamma;&lt;sub&gt;male&lt;/sub&gt; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.86 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.03 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]]]
+
+.pull-right-40[
+![](Lecture_Modeling_files/figure-html/unnamed-chunk-20-1.png)&lt;!-- --&gt;
 ]
 
     </textarea>

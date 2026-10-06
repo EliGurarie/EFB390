@@ -90,6 +90,7 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - `9`. [Habitats Part II](lectures/ModuleIII/Habitat_PartII/NichesAndHabitats.html)
 - `10`. [Modeling (just about) Everthing Part I](lectures/ModuleIII/Modeling/Lecture_Modeling.html)
 - `11`. [Modeling (just about) Everthing Part II](lectures/ModuleIII/Modeling/Lecture_Modeling_PartII.html)
+- `11b`.  [Caribou Habitat Selection](lectures/ModuleIII/Modeling/Lecture9b_PCH_RSF.pdf)
 
 
 ## Labs

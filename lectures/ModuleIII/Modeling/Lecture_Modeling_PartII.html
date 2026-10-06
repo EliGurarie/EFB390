@@ -4,8 +4,8 @@
     <title>How to model just about anything (but especially habitat) Part II</title>
     <meta charset="utf-8" />
     <meta name="author" content="Dr. Elie Gurarie" />
-    <meta name="date" content="2024-10-03" />
-    <script src="Lecture_Modeling_PartII_files/header-attrs-2.25/header-attrs.js"></script>
+    <meta name="date" content="2026-10-06" />
+    <script src="Lecture_Modeling_PartII_files/header-attrs-2.31/header-attrs.js"></script>
     <link href="Lecture_Modeling_PartII_files/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link href="Lecture_Modeling_PartII_files/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
     <script src="Lecture_Modeling_PartII_files/fabric-4.3.1/fabric.min.js"></script>
@@ -32,7 +32,7 @@ class: center, middle, white, title-slide
 ### Dr. Elie Gurarie
 ]
 .date[
-### October 3, 2024
+### October 6, 2026
 ]
 
 ---
@@ -206,7 +206,7 @@ Lots of competing models with different **main** and **interaction** effects.
 ## **Model Selection**
 
 
-&lt;table class="table" style="margin-left: auto; margin-right: auto;"&gt;
+&lt;table class="table" style="color: black; margin-left: auto; margin-right: auto;"&gt;
  &lt;thead&gt;
   &lt;tr&gt;
    &lt;th style="text-align:left;"&gt; Model &lt;/th&gt;
@@ -330,91 +330,101 @@ Total probability score of model. It ALWAYS increases the more complex the model
 
 ---
 
+.pull-left-60[
+
 ## Model selection vs. parameter estimates
 
 The best model: 
 
-`$$Y_{ijk} = \beta_{sex} + \beta_{island} \text{Island}_{ijk} + (\beta_{length} \times\text{Length}_{ijk}) + \epsilon_{ijk}$$`
+`$$Y_{ijk} = \mu_{j} + \beta_{island,i} + \gamma_{j}\,(\text{X}_{ijk} - \overline{\text{X}}) + \epsilon_{ijk}$$`
 
 .pull-left[
 
-What are the **parameter estimates** (effect sizes) of the selected model? 
+#### Island main effects
 
 .small[
 &lt;table&gt;
  &lt;thead&gt;
   &lt;tr&gt;
-   &lt;th style="text-align:left;"&gt; term &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; estimate &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; std.error &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; statistic &lt;/th&gt;
-   &lt;th style="text-align:right;"&gt; p.value &lt;/th&gt;
+   &lt;th style="text-align:left;"&gt; Parameter &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Estimate &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; SE &lt;/th&gt;
   &lt;/tr&gt;
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; SexFemale &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -39.34 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.69 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -10.67 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.00 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; &amp;beta;&lt;sub&gt;Antsiferov&lt;/sub&gt; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.65 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.22 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; SexMale &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -59.29 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 3.06 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -19.37 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.00 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; Length &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.66 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.03 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 19.11 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.00 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; IslandChirpoev &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -2.00 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.34 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -5.81 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.00 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; IslandLovushki &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -0.47 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.34 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; &amp;beta;&lt;sub&gt;Chirpoev&lt;/sub&gt; &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; -1.35 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.18 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.22 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; IslandRaykoke &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -0.45 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.35 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -1.31 &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; &amp;beta;&lt;sub&gt;Lovushki&lt;/sub&gt; &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 0.19 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.22 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; IslandSrednova &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -0.35 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.35 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; -1.00 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.32 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:left;"&gt; SexMale:Length &lt;/td&gt;
+   &lt;td style="text-align:left;"&gt; &amp;beta;&lt;sub&gt;Raykoke&lt;/sub&gt; &lt;/td&gt;
    &lt;td style="text-align:right;"&gt; 0.20 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.04 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 4.55 &lt;/td&gt;
-   &lt;td style="text-align:right;"&gt; 0.00 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.22 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &amp;beta;&lt;sub&gt;Srednova&lt;/sub&gt; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.31 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.22 &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 ]]
 
 .pull-right[
-![](Lecture_Modeling_PartII_files/figure-html/unnamed-chunk-12-1.png)&lt;!-- --&gt;
+
+#### Sex: Main &amp; interaction effects with length
+
+.small[
+&lt;table&gt;
+ &lt;thead&gt;
+  &lt;tr&gt;
+   &lt;th style="text-align:left;"&gt; Parameter &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; Estimate &lt;/th&gt;
+   &lt;th style="text-align:right;"&gt; SE &lt;/th&gt;
+  &lt;/tr&gt;
+ &lt;/thead&gt;
+&lt;tbody&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &amp;mu;&lt;sub&gt;female&lt;/sub&gt; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 32.22 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.19 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &amp;mu;&lt;sub&gt;male&lt;/sub&gt; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 34.06 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.16 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &amp;gamma;&lt;sub&gt;female&lt;/sub&gt; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.66 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.03 &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:left;"&gt; &amp;gamma;&lt;sub&gt;male&lt;/sub&gt; &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.86 &lt;/td&gt;
+   &lt;td style="text-align:right;"&gt; 0.03 &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+]]]
+
+.pull-right-40[
+
+
+### Coefficient plots
+
+![](Lecture_Modeling_PartII_files/figure-html/unnamed-chunk-13-1.png)&lt;!-- --&gt;
 ]
 
 
@@ -483,7 +493,7 @@ class: small
 .large[$$Y_i \sim {\cal Normal}(\alpha_0 + \beta_1 X_i, \sigma)$$]
 Models continuous data with a "normal-like" distribution.
 
-![](Lecture_Modeling_PartII_files/figure-html/unnamed-chunk-13-1.png)&lt;!-- --&gt;
+![](Lecture_Modeling_PartII_files/figure-html/unnamed-chunk-14-1.png)&lt;!-- --&gt;
 ]
 
 --
@@ -497,7 +507,7 @@ There's some *probability* of something happening that depends on the predictor 
 
 **Bernoulli** just means the data are all 0 or 1. 
 
-![](Lecture_Modeling_PartII_files/figure-html/unnamed-chunk-14-1.png)&lt;!-- --&gt;
+![](Lecture_Modeling_PartII_files/figure-html/unnamed-chunk-15-1.png)&lt;!-- --&gt;
 
 This models **presence/absence**, **dead/alive**, **male/female** other response variables with **2** possible outcomes. 
 ]
@@ -513,7 +523,7 @@ Sampled in the estuary of the Tejo river in Portugal
 - Lots of environmental factors in data
 
 .pull-right-70[.footnotesize[
-&lt;table class="table" style="margin-left: auto; margin-right: auto;"&gt;
+&lt;table class="table" style="color: black; margin-left: auto; margin-right: auto;"&gt;
  &lt;thead&gt;
   &lt;tr&gt;
    &lt;th style="text-align:right;"&gt; depth &lt;/th&gt;
@@ -603,7 +613,7 @@ Sampled in the estuary of the Tejo river in Portugal
 # Presence of *Solea solea* against **salinity**
 
 .pull-left-40[
-![](Lecture_Modeling_PartII_files/figure-html/unnamed-chunk-16-1.png)&lt;!-- --&gt;
+![](Lecture_Modeling_PartII_files/figure-html/unnamed-chunk-17-1.png)&lt;!-- --&gt;
 ]
 
 .pull-right-60[
@@ -652,7 +662,7 @@ Clearly - *Solea solea* presence is very significantly *negatively* related to s
 ### Out of this model we can make predictions
 
 
-&lt;img src="Lecture_Modeling_PartII_files/figure-html/unnamed-chunk-19-1.png" width="80%" /&gt;
+&lt;img src="Lecture_Modeling_PartII_files/figure-html/unnamed-chunk-20-1.png" alt="" width="80%" /&gt;
 
 ---
 
@@ -777,21 +787,21 @@ Clearly - *Solea solea* presence is very significantly *negatively* related to s
 .pull-right[
 **Salinity** clearly among the more important covariates (in the top 4 models). 
 
-![](Lecture_Modeling_PartII_files/figure-html/unnamed-chunk-22-1.png)&lt;!-- --&gt;
+![](Lecture_Modeling_PartII_files/figure-html/unnamed-chunk-23-1.png)&lt;!-- --&gt;
 
 ]
 
 
 ---
 class: inverse 
-.pull-left-20[
+
 ### We interrupt your regularly scheduled lecture for a special guest presentation... 
-]
+
 .pull-right-80[![](PCH_RSF.png)]
 
 
 ---
-# **Poisson regression**
+# **Poisson regression** (for abundance estimation)
 
 .pull-left-30[
 
@@ -855,7 +865,7 @@ region | area
 ##     4  0  0  1
 ```
 
-![](Lecture_Modeling_PartII_files/figure-html/unnamed-chunk-24-1.png)&lt;!-- --&gt;
+![](Lecture_Modeling_PartII_files/figure-html/unnamed-chunk-25-1.png)&lt;!-- --&gt;
 ]
 
 .pull-right[
@@ -889,7 +899,7 @@ Exact same syntax as before, except the "family" is **Poisson.**
 ##     4  0  0  1
 ```
 
-![](Lecture_Modeling_PartII_files/figure-html/unnamed-chunk-26-1.png)&lt;!-- --&gt;
+![](Lecture_Modeling_PartII_files/figure-html/unnamed-chunk-27-1.png)&lt;!-- --&gt;
 ]
 
 .pull-right[
@@ -1073,10 +1083,10 @@ background-size: cover
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"highlightStyle": "github",
-"countIncrementalSlides": false,
-"highlightLines": true,
-"ratio": "16:9"
+  "highlightStyle": "github",
+  "countIncrementalSlides": false,
+  "highlightLines": true,
+  "ratio": "16:9"
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
