@@ -145,7 +145,7 @@ Ok, here goes:
 ```{r}
 SE.transect <- (A/(k*a)) * sqrt( (sum(transect.counts^2) - 
                                     (sum(transect.counts)^2/k)) / 
-                                   (k * k-1)  ) 
+                                   (k * (k-1))  ) 
 
 SE.transect
 ```
@@ -166,6 +166,14 @@ D.hat*A + 2 * SE.transect
 ```
 
 So: 188 (95% C.I. 174-201).  Usually, we round these to the nearest integer.  
+
+
+## What if you only have ONE transect!
+
+If you only have ONE transect, the formula above will break down!   Why?   Because $k = 1$ and $k - 1 = 0$ and you CANNOT have 0's in denominators.  
+
+
+
 
 # Circles and Squares
 
