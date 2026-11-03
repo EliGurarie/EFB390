@@ -97,6 +97,8 @@ We will hopefully also get you even more interested in wildlife ecology than you
 ## Unit IV Population Ecology: *Why are there as many (or few) as there are?*   
 - `12`. [Part I: Exponential Growth and Stochasticity](lectures/ModuleIV/Lecture_PopulationEcology.html)
 - `13`. [Part II: Limits on Growth](lectures/ModuleIV/Lecture_PopulationEcology_PartII.html)
+- `14`. [Part III: Structured Populations](lectures/ModuleIV/Lecture_PopulationEcology_PartIII.html)
+
 
 
 
@@ -114,6 +116,8 @@ These are mainly **R** labs.  To use **R**, you have to either:  (a) Use R on to
 
 - `3.` [**Exponential Growth**](labs/Lab3_ExponentialGrowth/Lab3_FittingExponentialGrowth.html) <br>
 (also using the [Washington State sea otter dataset](labs/Lab3_ExponentialGrowth/SeaOtters.csv) and the [British Columbia sea otter dataset](labs/Lab3_ExponentialGrowth/BC_SeaOtters.csv))
+
+- `4.` [**Structured Populations**](labs/Lab4_AgeStructuredPopulations/Lab4_AgeStructuredPopulations.html)
 
 
 <!--
