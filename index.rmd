@@ -99,6 +99,10 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - `13`. [Part II: Limits on Growth](lectures/ModuleIV/Lecture_PopulationEcology_PartII.html)
 - `14`. [Part III: Structured Populations](lectures/ModuleIV/Lecture_PopulationEcology_PartIII.html)
 
+## Mini-Unit V. Physiology and Disease
+
+- `16`. [Physiology and Wildlife Diseases](lectures/ModuleV/Lecture_WildlifeDiseases.html)
+
 
 
 
