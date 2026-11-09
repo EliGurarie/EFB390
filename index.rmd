@@ -99,12 +99,12 @@ We will hopefully also get you even more interested in wildlife ecology than you
 - `13`. [Part II: Limits on Growth](lectures/ModuleIV/Lecture_PopulationEcology_PartII.html)
 - `14`. [Part III: Structured Populations](lectures/ModuleIV/Lecture_PopulationEcology_PartIII.html)
 - `15`. [Part IV: Species Interactions](lectures/ModuleIV/Lecture_PopulationEcology_PartIV.html)
+- `16`. [Physiology and Wildlife Diseases](lectures/ModuleIVb/Lecture_WildlifeDiseases.html)
 
-## Mini-Unit V. Physiology and Disease
+## Unit V: Models of Managemetn and Conservation
+(*with several guest lectures on Blackboard*)
 
-- `16`. [Physiology and Wildlife Diseases](lectures/ModuleV/Lecture_WildlifeDiseases.html)
-
-
+- `17`. [North American Model of Wildlife Conservation](lectures/ModuleV/Lecture_NAM.html) 
 
 
 ## Labs

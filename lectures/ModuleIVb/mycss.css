@@ -1,3 +1,4 @@
+
 .pull-left {
   float: left;
   width: 47%;
@@ -16,31 +17,26 @@
 .center-70 { text-align-last: center; width: 70%; }
 .center-80 { text-align-last: center; width: 80%; }
 
-.pull-wide{ float: left; width: 100%; }
-
-.pull-left-80 { float: left; width: 79%; }
-.pull-right-20 { float: right; width: 19%; }
-.pull-right-20 + * { clear: both; }
-
 .pull-left-70 { float: left; width: 66.5%; }
 .pull-right-30 { float: right; width: 28.5%; }
 .pull-right-30 + * { clear: both; }
 
-.pull-left-60 { float: left; width: 59%; }
-.pull-right-40 { float: right; width: 39%; }
+.pull-left-60 { float: left; width: 57%; }
+.pull-right-40 { float: right; width: 38%; }
 .pull-right-40 + * { clear: both; }
 
 .pull-left-50 { float: left; width: 50%; }
 .pull-right-50 { float: right; width: 50%; }
 .pull-right-50 + * { clear: both; }
 
-.pull-left-40 { float: left; width: 39%; }
-.pull-right-60 { float: right; width: 59%; }
+.pull-left-40 { float: left; width: 38%; }
+.pull-right-60 { float: right; width: 57%; }
 .pull-right-60 + * { clear: both; }
 
 .pull-left-30 { float: left; width: 28.5%; }
 .pull-right-70 { float: right; width: 66.5%; }
 .pull-right-70 + * { clear: both; }
+
 
 .Large { font-size: 144% }
 .large { font-size: 120% }
