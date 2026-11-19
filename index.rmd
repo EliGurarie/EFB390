@@ -21,7 +21,7 @@ output:
 
 > ## Course Materials
 >
-> This page mainly contains lectures, sometimes assignments and other resources, and will expand as the semester progresses.  Assignments, discussion boards and  announcements are on the [Blackboard site](https://blackboard.syracuse.edu/ultra/courses/_576089_1/outline).  Archived materials from 2025 are [here](Archive2025/index2025.html)
+> This page mainly contains lectures, sometimes assignments and other resources, and will expand as the semester progresses.  Assignments, discussion boards and  announcements are on the [Blackboard site](https://blackboard.syracuse.edu/ultra/courses/_576089_1/outline).
 >
 
 ```{r, echo=FALSE, eval = TRUE}
@@ -105,6 +105,12 @@ We will hopefully also get you even more interested in wildlife ecology than you
 (*with several guest lectures on Blackboard*)
 
 - `17`. [North American Model of Wildlife Conservation](lectures/ModuleV/Lecture_NAM.html) 
+- Guest Lectures (*posted on Blackboard*) on:
+  - *Themes related to NAM* - Dr. Joshua Millspaugh
+  - *Reflections on the role of hunters* - Dr. Gurarie
+  - *Co-production of knowledge* - Dr. Gurarie
+- `18`. [Urban Wildlife Ecology](lectures/UrbanEcology/Lecture_UrbanWildlifeEcology.html)
+
 
 
 ## Labs
